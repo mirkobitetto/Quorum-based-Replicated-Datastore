@@ -55,12 +55,14 @@ public class Storage {
                 InetSocketAddress currentHolder = writeLockHolders.get(key);
                 if (currentHolder != null && currentHolder.equals(holder)) {
                     writeLockHolders.remove(key);
+                    // Release the write lock on the key
+                    lock.writeLock().unlock();
                 }
-            } finally {
-                // Release the write lock on the key
-                lock.writeLock().unlock();
-                ;
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
             }
+
         }
     }
 
