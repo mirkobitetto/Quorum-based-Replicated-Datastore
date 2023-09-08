@@ -28,7 +28,8 @@ public class Replica {
             while (true) {
                 // Wait for a client connection
                 Socket clientSocket = serverSocket.accept();
-                System.out.println("Client connected.");
+                System.out.println("Client connected. Client IP: " + clientSocket.getInetAddress().getHostAddress()
+                        + " Port: " + clientSocket.getPort());
 
                 // Create a new thread to handle the client request
                 StorageHandler requestHandler = new StorageHandler(clientSocket, replica);

@@ -49,7 +49,7 @@ public class QuorumTest2 {
         // Implement concurrent operations here for each client's Quorum instance
         for (int i = 0; i < numOperations; i++) {
             // Simulate concurrent PUT and GET operations on different keys
-            String key = "key" + i;
+            String key = "key";
             String value = "value" + i;
 
             // Example: Perform PUT operation on the client's Quorum instance
@@ -57,6 +57,9 @@ public class QuorumTest2 {
 
             // Example: Perform GET operation on the client's Quorum instance
             String retrievedValue = quorum.getValue(key);
+
+            String[] parts = retrievedValue.split(" ");
+            retrievedValue = parts[1];
 
             // Assert consistency or other conditions as needed
             assertEquals(value, retrievedValue);

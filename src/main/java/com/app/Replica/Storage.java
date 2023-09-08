@@ -118,6 +118,56 @@ public class Storage {
         }
     }
 
+    public void update(String key, String value, int receivedVersion) {
+        // Acquire read lock to check the current version
+        ReentrantReadWriteLock lock = locks.get(key);
+        if (lock == null) {
+            // Lock for the key doesn't exist
+            System.out.println("Update failed for key " + key + " with value " + value + " and version "
+                    + receivedVersion + ". Lock for the key doesn't exist");
+            return;
+        }
+
+        boolean readLockAcquired = lock.readLock().tryLock();
+        if (!readLockAcquired) {
+            // Failed to acquire read lock, no need to proceed
+            System.out.println("Update failed for key " + key + " with value " + value + " and version "
+                    + receivedVersion + ". Read lock could not be acquired");
+            return;
+        }
+
+        try {
+            int currentVersion = versions.getOrDefault(key, -1);
+
+            // Check if the received version is greater than the stored one
+            if (receivedVersion > currentVersion) {
+                // Release the read lock before acquiring the write lock
+                lock.readLock().unlock();
+
+                // Acquire write lock to update the value and version
+                boolean writeLockAcquired = lock.writeLock().tryLock();
+                if (!writeLockAcquired) {
+                    // Failed to acquire write lock, do not update
+                    System.out.println("Update failed for key " + key + " with value " + value + " and version "
+                            + receivedVersion + ". Write lock could not be acquired");
+                    return;
+                }
+
+                try {
+                    store.put(key, value);
+                    versions.put(key, receivedVersion);
+                    System.out.println("Updated stale response for key: " + key + " to: " + value + " with version: "
+                            + receivedVersion);
+                } finally {
+                    // Release the write lock
+                    lock.writeLock().unlock();
+                }
+            }
+        } finally {
+            // The read lock was already released before acquiring the write lock.
+        }
+    }
+
     public static class WriteLockResult {
         private boolean success;
         private int currentVersion;
@@ -139,6 +189,7 @@ public class Storage {
         public String toString() {
             return "WriteLockResult [success=" + success + ", currentVersion=" + currentVersion + "]";
         }
+
     }
 
     // Getters for testing

@@ -55,6 +55,16 @@ public class StorageHandler implements Runnable {
                             clientSocket.getInetAddress().getHostAddress(), clientSocket.getPort());
                     boolean success = replica.put(key, value, clientAddress, version);
                     response = success ? "PUT_SUCCESS" : "PUT_FAILED";
+                } else if ("UPDATE".equals(method) && parts.length == 4) {
+                    // Handle the "UPDATE" request
+                    System.out.println("Trying to update stale response for key " + parts[1]);
+                    String key = parts[1];
+                    String value = parts[2];
+                    int receivedVersion = Integer.parseInt(parts[3]);
+
+                    // Call the new update method in the replica
+                    replica.update(key, value, receivedVersion);
+                    response = "UPDATE_RECEIVED";
                 } else {
                     response = "INVALID_REQUEST";
                 }

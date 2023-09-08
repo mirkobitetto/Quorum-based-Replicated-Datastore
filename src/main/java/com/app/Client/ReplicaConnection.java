@@ -59,6 +59,13 @@ public class ReplicaConnection {
         return putResponse.equals("PUT_SUCCESS");
     }
 
+    public boolean update(String key, String value, int version) throws IOException {
+        String updateRequest = "UPDATE " + key + " " + value + " " + version;
+        output.println(updateRequest);
+        String updateResponse = input.readLine();
+        return updateResponse.equals("UPDATE_RECEIVED");
+    }
+
     public String toString() {
         return clientSocket.getLocalAddress().toString() + ":" + clientSocket.getPort();
     }

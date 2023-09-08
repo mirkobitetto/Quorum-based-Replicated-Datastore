@@ -97,6 +97,8 @@ public class Quorum {
     public String getValue(String key) {
         // list to hold all values returned by replicas
         List<String> values = new ArrayList<>();
+        List<String> serverSocket = new ArrayList<>();
+
         for (String replicaInfo : readQuorumList) {
             String[] parts = replicaInfo.split(":");
             String serverAddress = parts[0];
@@ -106,6 +108,7 @@ public class Quorum {
                 ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort);
                 String value = connection.get(key);
                 values.add(value);
+                serverSocket.add(serverAddress + ":" + serverPort);
                 System.out.println("GET operation successful on Replica " + connection.toString()
                         + ". Value: " + value);
                 connection.closeConnection();
@@ -120,7 +123,8 @@ public class Quorum {
         String mostRecentValue = null;
 
         for (String value : values) {
-            if (value != null) {
+
+            if (value.startsWith("GET_SUCCESS")) {
                 System.out.println("Value: " + value);
                 String[] parts = value.split(" ");
                 int version = Integer.parseInt(parts[2]);
@@ -129,6 +133,30 @@ public class Quorum {
                 if (version > highestVersionNumber) {
                     highestVersionNumber = version;
                     mostRecentValue = value;
+                }
+            }
+        }
+
+        // READ-REPAIR
+        // Detect stale responses and update the replicas
+        for (String value : values) {
+            if (value.startsWith("GET_SUCCESS") && highestVersionNumber != -1) {
+                String[] parts = value.split(" ");
+                int version = Integer.parseInt(parts[2]);
+                if (version < highestVersionNumber) {
+                    String[] serverInfo = serverSocket.get(values.indexOf(value)).split(":");
+                    String serverAddress = serverInfo[0];
+                    String valueToSend = mostRecentValue.split(" ")[1];
+                    int serverPort = Integer.parseInt(serverInfo[1]);
+                    try {
+                        ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort);
+                        connection.update(key, valueToSend, highestVersionNumber);
+                        System.out.println("UPDATE operation sent on Replica " + connection.toString()
+                                + ". Value: " + valueToSend);
+                        connection.closeConnection();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }
