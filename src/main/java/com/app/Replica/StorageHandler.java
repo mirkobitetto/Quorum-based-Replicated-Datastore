@@ -57,7 +57,7 @@ public class StorageHandler implements Runnable {
                     response = success ? "PUT_SUCCESS" : "PUT_FAILED";
                 } else if ("UPDATE".equals(method) && parts.length == 4) {
                     // Handle the "UPDATE" request
-                    System.out.println("Trying to update stale response for key " + parts[1]);
+                    System.out.println("Trying to update stale response for key: " + parts[1]);
                     String key = parts[1];
                     String value = parts[2];
                     int receivedVersion = Integer.parseInt(parts[3]);

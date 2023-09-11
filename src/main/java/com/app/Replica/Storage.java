@@ -1,7 +1,10 @@
 package com.app.Replica;
 
 import java.net.InetSocketAddress;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Storage {
@@ -120,13 +123,7 @@ public class Storage {
 
     public void update(String key, String value, int receivedVersion) {
         // Acquire read lock to check the current version
-        ReentrantReadWriteLock lock = locks.get(key);
-        if (lock == null) {
-            // Lock for the key doesn't exist
-            System.out.println("Update failed for key " + key + " with value " + value + " and version "
-                    + receivedVersion + ". Lock for the key doesn't exist");
-            return;
-        }
+        ReentrantReadWriteLock lock = locks.computeIfAbsent(key, k -> new ReentrantReadWriteLock());
 
         boolean readLockAcquired = lock.readLock().tryLock();
         if (!readLockAcquired) {
@@ -190,6 +187,22 @@ public class Storage {
             return "WriteLockResult [success=" + success + ", currentVersion=" + currentVersion + "]";
         }
 
+    }
+
+    // Get a random key from the store
+    public String getRandomKey() {
+        if (store.isEmpty()) {
+            return null;
+        }
+
+        // Get the keys as an ArrayList for efficient random access
+        List<String> keysList = new ArrayList<>(store.keySet());
+
+        // Generate a random index within the bounds of the key list
+        int index = ThreadLocalRandom.current().nextInt(keysList.size());
+
+        // Retrieve and return the random key
+        return keysList.get(index);
     }
 
     // Getters for testing

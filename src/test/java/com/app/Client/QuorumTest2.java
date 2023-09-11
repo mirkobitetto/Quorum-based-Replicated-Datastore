@@ -49,7 +49,10 @@ public class QuorumTest2 {
         // Implement concurrent operations here for each client's Quorum instance
         for (int i = 0; i < numOperations; i++) {
             // Simulate concurrent PUT and GET operations on different keys
-            String key = "key";
+
+            // key randommly generated
+            String key = "key" + (int) (Math.random() * 10);
+
             String value = "value" + i;
 
             // Example: Perform PUT operation on the client's Quorum instance

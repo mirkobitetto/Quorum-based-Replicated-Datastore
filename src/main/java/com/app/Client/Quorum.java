@@ -109,8 +109,8 @@ public class Quorum {
                 String value = connection.get(key);
                 values.add(value);
                 serverSocket.add(serverAddress + ":" + serverPort);
-                System.out.println("GET operation successful on Replica " + connection.toString()
-                        + ". Value: " + value);
+                System.out.println("GET operation successful on Replica " + connection.toString() + ". Key: " + key
+                        + " Value: " + value);
                 connection.closeConnection();
 
             } catch (Exception e) {
@@ -125,7 +125,6 @@ public class Quorum {
         for (String value : values) {
 
             if (value.startsWith("GET_SUCCESS")) {
-                System.out.println("Value: " + value);
                 String[] parts = value.split(" ");
                 int version = Integer.parseInt(parts[2]);
 
@@ -152,7 +151,7 @@ public class Quorum {
                         ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort);
                         connection.update(key, valueToSend, highestVersionNumber);
                         System.out.println("UPDATE operation sent on Replica " + connection.toString()
-                                + ". Value: " + valueToSend);
+                                + ". Key: " + key + " Value: " + valueToSend);
                         connection.closeConnection();
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -195,13 +194,14 @@ public class Quorum {
                 e.printStackTrace();
             }
             if (lockAcquired == -1) {
-                System.out.println("Failed to acquire lock on Replica: " + (connection.toString()));
+                System.out
+                        .println("Failed to acquire lock on Replica: " + (connection.toString() + " for key: " + key));
                 releaseLocks(replicaConnections, key);
                 closeReplicaConnections(replicaConnections);
                 return "false";
             } else {
                 System.out.println("Lock acquired on Replica " + (connection.toString())
-                        + " Version Number: " + lockAcquired);
+                        + " Key: " + key + " Version Number: " + lockAcquired);
                 versionNumbers.add(lockAcquired);
             }
         }
@@ -215,9 +215,10 @@ public class Quorum {
                 if (connection.put(key, value, newVersionNumber)) {
                     System.out
                             .println("PUT operation successful on Replica " + (connection.toString())
-                                    + ". Value: " + value + " Version Number: " + newVersionNumber);
+                                    + ". Key: " + key + " Value: " + value + " Version Number: " + newVersionNumber);
                 } else {
-                    System.out.println("PUT operation failed on Replica " + (connection.toString()));
+                    System.out
+                            .println("PUT operation failed on Replica " + (connection.toString()) + " for key: " + key);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
