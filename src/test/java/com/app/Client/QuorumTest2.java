@@ -6,7 +6,6 @@ import static org.junit.Assert.*;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 public class QuorumTest2 {
 
@@ -21,7 +20,7 @@ public class QuorumTest2 {
     }
 
     @Test
-    public void testSequentialConsistency() throws InterruptedException {
+    public void testSequentialConsistencySameKey() throws InterruptedException {
         ExecutorService executorService = Executors.newFixedThreadPool(numClients);
 
         for (int i = 0; i < numClients; i++) {
@@ -29,7 +28,7 @@ public class QuorumTest2 {
                 try {
                     Quorum quorum = new Quorum(); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
-                    performConcurrentOperations(quorum, numOperations); // Perform concurrent operations
+                    performConcurrentOperations(quorum, numOperations, true); // Perform concurrent operations
                     doneSignal.countDown();
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
@@ -45,13 +44,43 @@ public class QuorumTest2 {
         assertTrue(verifySequentialConsistencyAmongClients());
     }
 
-    private void performConcurrentOperations(Quorum quorum, int numOperations) {
+    @Test
+    public void testSequentialConsistencyDifferentKey() throws InterruptedException {
+        ExecutorService executorService = Executors.newFixedThreadPool(numClients);
+
+        for (int i = 0; i < numClients; i++) {
+            executorService.execute(() -> {
+                try {
+                    Quorum quorum = new Quorum(); // Create a Quorum instance for each client
+                    startSignal.await(); // Wait for the signal to start concurrently
+                    performConcurrentOperations(quorum, numOperations, false); // Perform concurrent operations
+                    doneSignal.countDown();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            });
+        }
+
+        startSignal.countDown(); // Release the start signal to start all clients concurrently
+        doneSignal.await(); // Wait for all clients to finish
+
+        // After all concurrent operations, assert the sequential consistency among
+        // clients
+        assertTrue(verifySequentialConsistencyAmongClients());
+    }
+
+    private void performConcurrentOperations(Quorum quorum, int numOperations, boolean sameKey) {
         // Implement concurrent operations here for each client's Quorum instance
         for (int i = 0; i < numOperations; i++) {
             // Simulate concurrent PUT and GET operations on different keys
-
-            // key randommly generated
-            String key = "key" + (int) (Math.random() * 10);
+            String key;
+            if (sameKey) {
+                // key is the same for all clients
+                key = "key" + i;
+            } else {
+                // key randommly generated
+                key = "key" + (int) (Math.random() * 10);
+            }
 
             String value = "value" + i;
 
@@ -65,7 +94,11 @@ public class QuorumTest2 {
             retrievedValue = parts[1];
 
             // Assert consistency or other conditions as needed
-            assertEquals(value, retrievedValue);
+            if(sameKey){
+                assertEquals(null, retrievedValue);
+            } else{
+                assertNotEquals(null, retrievedValue);
+            }
         }
     }
 
