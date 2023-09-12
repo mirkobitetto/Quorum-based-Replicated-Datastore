@@ -120,7 +120,7 @@ public class Quorum {
         String mostRecentValue = null;
 
         for (String value : values) {
-            if (value != null) {
+            if (value.startsWith("GET_SUCCESS") && value != null) {
                 System.out.println("Value: " + value);
                 String[] parts = value.split(" ");
                 int version = Integer.parseInt(parts[2]);
@@ -163,7 +163,6 @@ public class Quorum {
             try {
                 lockAcquired = connection.acquireLock(key);
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             if (lockAcquired == -1) {
@@ -209,7 +208,6 @@ public class Quorum {
             try {
                 connection.closeConnection();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -221,7 +219,6 @@ public class Quorum {
             try {
                 connection.releaseLock(key);
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

@@ -34,7 +34,6 @@ public class Storage {
                     return new WriteLockResult(false, 0); // Lock not acquired
                 }
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         } else if (currentHolder.equals(holder)) {
@@ -59,7 +58,6 @@ public class Storage {
                     lock.writeLock().unlock();
                 }
             } catch (Exception e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
 
