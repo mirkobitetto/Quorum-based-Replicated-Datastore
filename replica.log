@@ -1,738 +1,994 @@
-20:14:13.351 [main] (12345) INFO  - Replica listening on port 12345
-20:14:17.057 [main] (12346) INFO  - Replica listening on port 12346
-20:14:21.197 [main] (12347) INFO  - Replica listening on port 12347
-20:14:24.442 [main] (12348) INFO  - Replica listening on port 12348
-20:14:27.493 [main] (12349) INFO  - Replica listening on port 12349
-20:14:33.252 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53574
-20:14:33.251 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53573
-20:14:33.252 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53575
-20:14:33.254 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53571
-20:14:33.257 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53572
-20:14:33.257 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53577
-20:14:33.257 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53570
-20:14:33.257 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53576
-20:14:33.261 [Thread-0] (12346) INFO  - Acquiring write lock for key: test1key0
-20:14:33.261 [Thread-1] (12346) INFO  - Acquiring write lock for key: test1key1
-20:14:33.282 [Thread-0] (12345) INFO  - Acquiring write lock for key: test1key0
-20:14:33.282 [Thread-1] (12345) INFO  - Acquiring write lock for key: test1key1
-20:14:33.287 [Thread-0] (12348) INFO  - Acquiring write lock for key: test1key0
-20:14:33.287 [Thread-0] (12347) INFO  - Acquiring write lock for key: test1key1
-20:14:33.291 [Thread-1] (12347) INFO  - Acquiring write lock for key: test1key0
-20:14:33.291 [Thread-0] (12349) INFO  - Acquiring write lock for key: test1key1
-20:14:33.294 [Thread-0] (12346) INFO  - Putting value for key test1key0
-20:14:33.295 [Thread-1] (12346) INFO  - Putting value for key test1key1
-20:14:33.310 [Thread-1] (12345) INFO  - Putting value for key test1key1
-20:14:33.310 [Thread-0] (12345) INFO  - Putting value for key test1key0
-20:14:33.311 [Thread-0] (12347) INFO  - Putting value for key test1key1
-20:14:33.312 [Thread-0] (12348) INFO  - Putting value for key test1key0
-20:14:33.314 [Thread-1] (12347) INFO  - Putting value for key test1key0
-20:14:33.314 [Thread-0] (12349) INFO  - Putting value for key test1key1
-20:14:33.323 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53578
-20:14:33.325 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53579
-20:14:33.325 [Thread-2] (12346) INFO  - Getting value for key test1key1
-20:14:33.326 [Thread-3] (12346) INFO  - Getting value for key test1key0
-20:14:33.338 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53580
-20:14:33.341 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53581
-20:14:33.342 [Thread-2] (12345) INFO  - Getting value for key test1key0
-20:14:33.343 [Thread-3] (12345) INFO  - Getting value for key test1key1
-20:14:33.346 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53583
-20:14:33.346 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53582
-20:14:33.348 [Thread-1] (12349) INFO  - Getting value for key test1key1
-20:14:33.348 [Thread-1] (12348) INFO  - Getting value for key test1key0
-20:14:33.354 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53584
-20:14:33.355 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53585
-20:14:33.356 [Thread-4] (12346) INFO  - Getting value for key test1key0
-20:14:33.357 [Thread-5] (12346) INFO  - Getting value for key test1key1
-20:14:33.359 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53586
-20:14:33.360 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53587
-20:14:33.360 [Thread-4] (12345) INFO  - Getting value for key test1key0
-20:14:33.362 [Thread-5] (12345) INFO  - Getting value for key test1key1
-20:14:33.363 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53588
-20:14:33.365 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53589
-20:14:33.365 [Thread-2] (12348) INFO  - Getting value for key test1key0
-20:14:33.367 [Thread-2] (12349) INFO  - Getting value for key test1key1
-20:14:33.369 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53590
-20:14:33.371 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53591
-20:14:33.372 [Thread-6] (12346) INFO  - Getting value for key test1key0
-20:14:33.373 [Thread-7] (12346) INFO  - Getting value for key test1key1
-20:14:33.374 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53592
-20:14:33.376 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53593
-20:14:33.376 [Thread-6] (12345) INFO  - Getting value for key test1key0
-20:14:33.377 [Thread-7] (12345) INFO  - Getting value for key test1key1
-20:14:33.379 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53594
-20:14:33.379 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53595
-20:14:33.381 [Thread-3] (12349) INFO  - Getting value for key test1key1
-20:14:33.380 [Thread-3] (12348) INFO  - Getting value for key test1key0
-20:14:33.384 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53596
-20:14:33.385 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53597
-20:14:33.387 [Thread-9] (12346) INFO  - Getting value for key test1key0
-20:14:33.387 [Thread-8] (12346) INFO  - Getting value for key test1key1
-20:14:33.390 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53599
-20:14:33.391 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53598
-20:14:33.393 [Thread-8] (12345) INFO  - Getting value for key test1key0
-20:14:33.393 [Thread-9] (12345) INFO  - Getting value for key test1key1
-20:14:33.395 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53600
-20:14:33.396 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53601
-20:14:33.397 [Thread-4] (12348) INFO  - Getting value for key test1key0
-20:14:33.397 [Thread-4] (12349) INFO  - Getting value for key test1key1
-20:14:33.400 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53603
-20:14:33.401 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53602
-20:14:33.403 [Thread-11] (12346) INFO  - Getting value for key test1key0
-20:14:33.403 [Thread-10] (12346) INFO  - Getting value for key test1key1
-20:14:33.406 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53604
-20:14:33.408 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53605
-20:14:33.409 [Thread-10] (12345) INFO  - Getting value for key test1key0
-20:14:33.409 [Thread-11] (12345) INFO  - Getting value for key test1key1
-20:14:33.413 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53606
-20:14:33.413 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53607
-20:14:33.416 [Thread-5] (12348) INFO  - Getting value for key test1key0
-20:14:33.416 [Thread-5] (12349) INFO  - Getting value for key test1key1
-20:14:33.420 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53608
-20:14:33.421 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53609
-20:14:33.422 [Thread-12] (12346) INFO  - Getting value for key test1key0
-20:14:33.423 [Thread-13] (12346) INFO  - Getting value for key test1key1
-20:14:33.425 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53610
-20:14:33.426 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53611
-20:14:33.426 [Thread-12] (12345) INFO  - Getting value for key test1key0
-20:14:33.427 [Thread-13] (12345) INFO  - Getting value for key test1key1
-20:14:33.429 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53612
-20:14:33.429 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53613
-20:14:33.431 [Thread-6] (12349) INFO  - Getting value for key test1key1
-20:14:33.431 [Thread-6] (12348) INFO  - Getting value for key test1key0
-20:14:33.434 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53615
-20:14:33.435 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53614
-20:14:33.437 [Thread-14] (12346) INFO  - Getting value for key test1key0
-20:14:33.437 [Thread-15] (12346) INFO  - Getting value for key test1key1
-20:14:33.439 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53616
-20:14:33.441 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53617
-20:14:33.441 [Thread-14] (12345) INFO  - Getting value for key test1key0
-20:14:33.443 [Thread-15] (12345) INFO  - Getting value for key test1key1
-20:14:33.444 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53618
-20:14:33.445 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53619
-20:14:33.447 [Thread-7] (12349) INFO  - Getting value for key test1key1
-20:14:33.447 [Thread-7] (12348) INFO  - Getting value for key test1key0
-20:14:33.450 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53621
-20:14:33.451 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53620
-20:14:33.452 [Thread-16] (12346) INFO  - Getting value for key test1key1
-20:14:33.453 [Thread-17] (12346) INFO  - Getting value for key test1key0
-20:14:33.456 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53622
-20:14:33.457 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53623
-20:14:33.457 [Thread-16] (12345) INFO  - Getting value for key test1key1
-20:14:33.458 [Thread-17] (12345) INFO  - Getting value for key test1key0
-20:14:33.459 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53624
-20:14:33.461 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53625
-20:14:33.462 [Thread-8] (12349) INFO  - Getting value for key test1key1
-20:14:33.463 [Thread-8] (12348) INFO  - Getting value for key test1key0
-20:14:33.465 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53626
-20:14:33.466 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53627
-20:14:33.467 [Thread-18] (12346) INFO  - Getting value for key test1key1
-20:14:33.470 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53628
-20:14:33.468 [Thread-19] (12346) INFO  - Getting value for key test1key0
-20:14:33.473 [Thread-18] (12345) INFO  - Getting value for key test1key1
-20:14:33.473 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53629
-20:14:33.476 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53630
-20:14:33.475 [Thread-19] (12345) INFO  - Getting value for key test1key0
-20:14:33.478 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53631
-20:14:33.479 [Thread-9] (12349) INFO  - Getting value for key test1key1
-20:14:33.480 [Thread-9] (12348) INFO  - Getting value for key test1key0
-20:14:33.481 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53632
-20:14:33.483 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53633
-20:14:33.486 [Thread-21] (12346) INFO  - Getting value for key test1key0
-20:14:33.486 [Thread-20] (12346) INFO  - Getting value for key test1key1
-20:14:33.489 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53635
-20:14:33.490 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53634
-20:14:33.490 [Thread-20] (12345) INFO  - Getting value for key test1key1
-20:14:33.491 [Thread-21] (12345) INFO  - Getting value for key test1key0
-20:14:33.494 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53636
-20:14:33.495 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53637
-20:14:33.496 [Thread-10] (12349) INFO  - Getting value for key test1key1
-20:14:33.496 [Thread-10] (12348) INFO  - Getting value for key test1key0
-20:14:37.698 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53646
-20:14:37.699 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53647
-20:14:37.699 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53648
-20:14:37.700 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53645
-20:14:37.701 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53651
-20:14:37.700 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53650
-20:14:37.702 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53652
-20:14:37.703 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53649
-20:14:37.703 [Thread-22] (12346) INFO  - Acquiring write lock for key: test2key
-20:14:37.703 [Thread-23] (12346) INFO  - Acquiring write lock for key: test2key
-20:14:37.718 [Thread-23] (12346) INFO  - Releasing lock for key test2key
-20:14:37.719 [Thread-22] (12345) INFO  - Releasing lock for key test2key
-20:14:37.721 [Thread-3] (12347) INFO  - Releasing lock for key test2key
-20:14:37.722 [Thread-11] (12348) INFO  - Acquiring write lock for key: test2key
-20:14:37.723 [Thread-12] (12349) INFO  - Releasing lock for key test2key
-20:14:37.724 [Thread-2] (12347) INFO  - Acquiring write lock for key: test2key
-20:14:37.726 [Thread-11] (12349) INFO  - Acquiring write lock for key: test2key
-20:14:37.727 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53653
-20:14:37.729 [Thread-22] (12346) INFO  - Putting value for key test2key
-20:14:37.730 [Thread-24] (12346) INFO  - Getting value for key test2key
-20:14:37.740 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53654
-20:14:37.741 [Thread-23] (12345) INFO  - Getting value for key test2key
-20:14:37.743 [Thread-11] (12348) INFO  - Putting value for key test2key
-20:14:37.744 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53655
-20:14:37.745 [Thread-2] (12347) INFO  - Putting value for key test2key
-20:14:37.746 [Thread-11] (12349) INFO  - Putting value for key test2key
-20:14:37.746 [Thread-4] (12347) INFO  - Getting value for key test2key
-20:14:37.752 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53656
-20:14:37.754 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53657
-20:14:37.756 [Thread-24] (12345) INFO  - Trying to update stale response for key: test2key
-20:14:37.756 [Thread-25] (12345) INFO  - Getting value for key test2key
-20:14:37.759 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53658
-20:14:37.760 [Thread-5] (12347) INFO  - Getting value for key test2key
-20:14:37.762 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53659
-20:14:37.764 [Thread-24] (12345) INFO  - Updated stale response for key: test2key to: test2value with version: 1
-20:14:37.764 [Thread-13] (12349) INFO  - Getting value for key test2key
-20:14:37.769 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53660
-20:14:37.769 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53661
-20:14:37.770 [Thread-25] (12346) INFO  - Getting value for key test2key
-20:14:37.770 [Thread-26] (12345) INFO  - Trying to update stale response for key: test2key
-20:14:37.772 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53663
-20:14:37.773 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53662
-20:14:37.774 [Thread-27] (12345) INFO  - Getting value for key test2key
-20:14:37.775 [Thread-28] (12345) INFO  - Getting value for key test2key
-20:14:37.777 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53664
-20:14:37.778 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53665
-20:14:37.778 [Thread-6] (12347) INFO  - Getting value for key test2key
-20:14:37.779 [Thread-7] (12347) INFO  - Getting value for key test2key
-20:14:37.781 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53666
-20:14:37.782 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53667
-20:14:37.785 [Thread-26] (12346) INFO  - Getting value for key test2key
-20:14:37.785 [Thread-14] (12349) INFO  - Getting value for key test2key
-20:14:37.788 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53668
-20:14:37.790 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53669
-20:14:37.791 [Thread-29] (12345) INFO  - Getting value for key test2key
-20:14:37.791 [Thread-30] (12345) INFO  - Getting value for key test2key
-20:14:37.793 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53670
-20:14:37.794 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53671
-20:14:37.794 [Thread-8] (12347) INFO  - Getting value for key test2key
-20:14:37.796 [Thread-9] (12347) INFO  - Getting value for key test2key
-20:14:37.799 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53672
-20:14:37.799 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53673
-20:14:37.803 [Thread-27] (12346) INFO  - Getting value for key test2key
-20:14:37.803 [Thread-15] (12349) INFO  - Getting value for key test2key
-20:14:37.806 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53675
-20:14:37.807 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53674
-20:14:37.807 [Thread-31] (12345) INFO  - Getting value for key test2key
-20:14:37.808 [Thread-32] (12345) INFO  - Getting value for key test2key
-20:14:37.810 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53676
-20:14:37.811 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53677
-20:14:37.811 [Thread-10] (12347) INFO  - Getting value for key test2key
-20:14:37.812 [Thread-11] (12347) INFO  - Getting value for key test2key
-20:14:37.814 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53678
-20:14:37.816 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53679
-20:14:37.818 [Thread-16] (12349) INFO  - Getting value for key test2key
-20:14:37.818 [Thread-28] (12346) INFO  - Getting value for key test2key
-20:14:37.821 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53680
-20:14:37.822 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53681
-20:14:37.823 [Thread-33] (12345) INFO  - Getting value for key test2key
-20:14:37.824 [Thread-34] (12345) INFO  - Getting value for key test2key
-20:14:37.826 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53682
-20:14:37.827 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53683
-20:14:37.827 [Thread-12] (12347) INFO  - Getting value for key test2key
-20:14:37.829 [Thread-13] (12347) INFO  - Getting value for key test2key
-20:14:37.830 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53684
-20:14:37.831 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53685
-20:14:37.833 [Thread-29] (12346) INFO  - Getting value for key test2key
-20:14:37.833 [Thread-17] (12349) INFO  - Getting value for key test2key
-20:14:37.836 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53686
-20:14:37.837 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53687
-20:14:37.837 [Thread-35] (12345) INFO  - Getting value for key test2key
-20:14:37.839 [Thread-36] (12345) INFO  - Getting value for key test2key
-20:14:37.841 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53688
-20:14:37.843 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53689
-20:14:37.844 [Thread-14] (12347) INFO  - Getting value for key test2key
-20:14:37.844 [Thread-15] (12347) INFO  - Getting value for key test2key
-20:14:37.847 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53691
-20:14:37.847 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53690
-20:14:37.849 [Thread-30] (12346) INFO  - Getting value for key test2key
-20:14:37.849 [Thread-18] (12349) INFO  - Getting value for key test2key
-20:14:37.854 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53692
-20:14:37.855 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53693
-20:14:37.856 [Thread-37] (12345) INFO  - Getting value for key test2key
-20:14:37.858 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53694
-20:14:37.857 [Thread-38] (12345) INFO  - Getting value for key test2key
-20:14:37.860 [Thread-16] (12347) INFO  - Getting value for key test2key
-20:14:37.862 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53695
-20:14:37.863 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53696
-20:14:37.864 [Thread-17] (12347) INFO  - Getting value for key test2key
-20:14:37.871 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53697
-20:14:37.876 [Thread-31] (12346) INFO  - Getting value for key test2key
-20:14:37.880 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53698
-20:14:37.885 [Thread-19] (12349) INFO  - Getting value for key test2key
-20:14:37.888 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53699
-20:14:37.908 [Thread-40] (12345) INFO  - Getting value for key test2key
-20:14:37.908 [Thread-39] (12345) INFO  - Getting value for key test2key
-20:14:37.915 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53700
-20:14:37.917 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53701
-20:14:37.922 [Thread-19] (12347) INFO  - Getting value for key test2key
-20:14:37.923 [Thread-18] (12347) INFO  - Getting value for key test2key
-20:14:37.925 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53702
-20:14:37.927 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53703
-20:14:37.934 [Thread-32] (12346) INFO  - Getting value for key test2key
-20:14:37.934 [Thread-20] (12349) INFO  - Getting value for key test2key
-20:14:37.937 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53704
-20:14:37.938 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53705
-20:14:37.938 [Thread-41] (12345) INFO  - Getting value for key test2key
-20:14:37.939 [Thread-42] (12345) INFO  - Getting value for key test2key
-20:14:37.942 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53706
-20:14:37.943 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53707
-20:14:37.943 [Thread-20] (12347) INFO  - Getting value for key test2key
-20:14:37.944 [Thread-21] (12347) INFO  - Getting value for key test2key
-20:14:37.946 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53708
-20:14:37.947 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53709
-20:14:37.948 [Thread-33] (12346) INFO  - Getting value for key test2key
-20:14:37.949 [Thread-21] (12349) INFO  - Getting value for key test2key
-20:14:37.950 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53710
-20:14:37.952 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53711
-20:14:37.953 [Thread-43] (12345) INFO  - Getting value for key test2key
-20:14:37.953 [Thread-44] (12345) INFO  - Getting value for key test2key
-20:14:37.955 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53712
-20:14:37.956 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53713
-20:14:37.957 [Thread-22] (12347) INFO  - Getting value for key test2key
-20:14:37.958 [Thread-23] (12347) INFO  - Getting value for key test2key
-20:14:37.961 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53714
-20:14:37.962 [Thread-22] (12349) INFO  - Getting value for key test2key
-20:14:41.571 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53724
-20:14:41.572 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53725
-20:14:41.572 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53726
-20:14:41.573 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53727
-20:14:41.573 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53723
-20:14:41.574 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53728
-20:14:41.575 [Thread-35] (12346) INFO  - Getting value for key test3key
-20:14:41.575 [Thread-34] (12346) INFO  - Acquiring write lock for key: test3key
-20:14:41.576 [Thread-36] (12346) INFO  - Getting value for key test3key
-20:14:41.577 [Thread-36] (12346) WARN  - Failed to acquire read lock for key: test3key
-20:14:41.600 [Thread-12] (12348) INFO  - Acquiring write lock for key: test3key
-20:14:41.603 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53729
-20:14:41.603 [Thread-24] (12347) INFO  - Acquiring write lock for key: test3key
-20:14:41.604 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53730
-20:14:41.605 [Thread-45] (12345) INFO  - Getting value for key test3key
-20:14:41.605 [Thread-23] (12349) INFO  - Acquiring write lock for key: test3key
-20:14:41.605 [Thread-25] (12347) INFO  - Getting value for key test3key
-20:14:41.608 [Thread-25] (12347) WARN  - Failed to acquire read lock for key: test3key
-20:14:41.609 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53731
-20:14:41.610 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53732
-20:14:41.609 [Thread-34] (12346) INFO  - Putting value for key test3key
-20:14:41.613 [Thread-24] (12349) INFO  - Getting value for key test3key
-20:14:41.615 [Thread-24] (12349) WARN  - Failed to acquire read lock for key: test3key
-20:14:41.623 [Thread-26] (12347) INFO  - Getting value for key test3key
-20:14:41.624 [Thread-26] (12347) WARN  - Failed to acquire read lock for key: test3key
-20:14:41.630 [Thread-12] (12348) INFO  - Putting value for key test3key
-20:14:45.535 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53741
-20:14:45.536 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53744
-20:14:45.536 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53742
-20:14:45.537 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53746
-20:14:45.537 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53743
-20:14:45.537 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53747
-20:14:45.538 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53745
-20:14:45.538 [Thread-37] (12346) INFO  - Acquiring write lock for key: test4key8
-20:14:45.538 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53748
-20:14:45.538 [Thread-38] (12346) INFO  - Acquiring write lock for key: test4key0
-20:14:45.561 [Thread-46] (12345) INFO  - Acquiring write lock for key: test4key8
-20:14:45.561 [Thread-47] (12345) INFO  - Acquiring write lock for key: test4key0
-20:14:45.563 [Thread-27] (12347) INFO  - Acquiring write lock for key: test4key8
-20:14:45.563 [Thread-28] (12347) INFO  - Acquiring write lock for key: test4key0
-20:14:45.565 [Thread-26] (12349) INFO  - Acquiring write lock for key: test4key8
-20:14:45.565 [Thread-25] (12349) INFO  - Acquiring write lock for key: test4key0
-20:14:45.568 [Thread-37] (12346) INFO  - Putting value for key test4key8
-20:14:45.568 [Thread-38] (12346) INFO  - Putting value for key test4key0
-20:14:45.583 [Thread-46] (12345) INFO  - Putting value for key test4key8
-20:14:45.583 [Thread-47] (12345) INFO  - Putting value for key test4key0
-20:14:45.585 [Thread-28] (12347) INFO  - Putting value for key test4key0
-20:14:45.585 [Thread-27] (12347) INFO  - Putting value for key test4key8
-20:14:45.587 [Thread-25] (12349) INFO  - Putting value for key test4key0
-20:14:45.587 [Thread-26] (12349) INFO  - Putting value for key test4key8
-20:14:45.596 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53750
-20:14:45.597 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53752
-20:14:45.599 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53754
-20:14:45.598 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53751
-20:14:45.599 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53756
-20:14:45.600 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53753
-20:14:45.600 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53755
-20:14:45.600 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53757
-20:14:45.600 [Thread-40] (12346) INFO  - Acquiring write lock for key: test4key1
-20:14:45.601 [Thread-39] (12346) INFO  - Acquiring write lock for key: test4key5
-20:14:45.603 [Thread-49] (12345) INFO  - Acquiring write lock for key: test4key1
-20:14:45.604 [Thread-48] (12345) INFO  - Acquiring write lock for key: test4key5
-20:14:45.605 [Thread-30] (12347) INFO  - Acquiring write lock for key: test4key1
-20:14:45.606 [Thread-29] (12347) INFO  - Acquiring write lock for key: test4key5
-20:14:45.607 [Thread-28] (12349) INFO  - Acquiring write lock for key: test4key1
-20:14:45.607 [Thread-27] (12349) INFO  - Acquiring write lock for key: test4key5
-20:14:45.608 [Thread-40] (12346) INFO  - Putting value for key test4key1
-20:14:45.609 [Thread-39] (12346) INFO  - Putting value for key test4key5
-20:14:45.610 [Thread-49] (12345) INFO  - Putting value for key test4key1
-20:14:45.610 [Thread-48] (12345) INFO  - Putting value for key test4key5
-20:14:45.611 [Thread-30] (12347) INFO  - Putting value for key test4key1
-20:14:45.611 [Thread-29] (12347) INFO  - Putting value for key test4key5
-20:14:45.612 [Thread-28] (12349) INFO  - Putting value for key test4key1
-20:14:45.612 [Thread-27] (12349) INFO  - Putting value for key test4key5
-20:14:45.616 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53758
-20:14:45.617 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53760
-20:14:45.617 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53759
-20:14:45.618 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53762
-20:14:45.618 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53761
-20:14:45.619 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53765
-20:14:45.619 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53763
-20:14:45.619 [Thread-41] (12346) INFO  - Acquiring write lock for key: test4key6
-20:14:45.619 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53764
-20:14:45.621 [Thread-51] (12345) INFO  - Acquiring write lock for key: test4key6
-20:14:45.620 [Thread-42] (12346) INFO  - Acquiring write lock for key: test4key6
-20:14:45.623 [Thread-32] (12347) INFO  - Acquiring write lock for key: test4key6
-20:14:45.625 [Thread-29] (12349) INFO  - Acquiring write lock for key: test4key6
-20:14:45.628 [Thread-41] (12346) INFO  - Putting value for key test4key6
-20:14:45.630 [Thread-51] (12345) INFO  - Putting value for key test4key6
-20:14:45.631 [Thread-42] (12346) INFO  - Releasing lock for key test4key6
-20:14:45.631 [Thread-32] (12347) INFO  - Putting value for key test4key6
-20:14:45.633 [Thread-29] (12349) INFO  - Putting value for key test4key6
-20:14:45.637 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53766
-20:14:45.638 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53767
-20:14:45.632 [Thread-50] (12345) INFO  - Releasing lock for key test4key6
-20:14:45.640 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53768
-20:14:45.641 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53769
-20:14:45.640 [Thread-31] (12347) INFO  - Releasing lock for key test4key6
-20:14:45.643 [Thread-30] (12349) INFO  - Releasing lock for key test4key6
-20:14:45.643 [Thread-43] (12346) INFO  - Acquiring write lock for key: test4key4
-20:14:45.647 [Thread-52] (12345) INFO  - Acquiring write lock for key: test4key4
-20:14:45.648 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53770
-20:14:45.650 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53771
-20:14:45.650 [Thread-33] (12347) INFO  - Acquiring write lock for key: test4key4
-20:14:45.651 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53772
-20:14:45.651 [Thread-31] (12349) INFO  - Acquiring write lock for key: test4key4
-20:14:45.652 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53773
-20:14:45.653 [Thread-43] (12346) INFO  - Putting value for key test4key4
-20:14:45.653 [Thread-44] (12346) INFO  - Acquiring write lock for key: test4key5
-20:14:45.654 [Thread-52] (12345) INFO  - Putting value for key test4key4
-20:14:45.656 [Thread-33] (12347) INFO  - Putting value for key test4key4
-20:14:45.657 [Thread-31] (12349) INFO  - Putting value for key test4key4
-20:14:45.661 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53774
-20:14:45.657 [Thread-53] (12345) INFO  - Acquiring write lock for key: test4key5
-20:14:45.664 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53775
-20:14:45.664 [Thread-34] (12347) INFO  - Acquiring write lock for key: test4key5
-20:14:45.664 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53776
-20:14:45.665 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53777
-20:14:45.666 [Thread-45] (12346) INFO  - Acquiring write lock for key: test4key7
-20:14:45.666 [Thread-32] (12349) INFO  - Acquiring write lock for key: test4key5
-20:14:45.667 [Thread-44] (12346) INFO  - Putting value for key test4key5
-20:14:45.667 [Thread-54] (12345) INFO  - Acquiring write lock for key: test4key7
-20:14:45.669 [Thread-53] (12345) INFO  - Putting value for key test4key5
-20:14:45.669 [Thread-35] (12347) INFO  - Acquiring write lock for key: test4key7
-20:14:45.670 [Thread-34] (12347) INFO  - Putting value for key test4key5
-20:14:45.671 [Thread-32] (12349) INFO  - Putting value for key test4key5
-20:14:45.671 [Thread-33] (12349) INFO  - Acquiring write lock for key: test4key7
-20:14:45.673 [Thread-45] (12346) INFO  - Putting value for key test4key7
-20:14:45.674 [Thread-54] (12345) INFO  - Putting value for key test4key7
-20:14:45.674 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53778
-20:14:45.675 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53779
-20:14:45.675 [Thread-35] (12347) INFO  - Putting value for key test4key7
-20:14:45.676 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53780
-20:14:45.677 [Thread-33] (12349) INFO  - Putting value for key test4key7
-20:14:45.677 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53781
-20:14:45.681 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53782
-20:14:45.679 [Thread-46] (12346) INFO  - Acquiring write lock for key: test4key4
-20:14:45.682 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53783
-20:14:45.683 [Thread-55] (12345) INFO  - Acquiring write lock for key: test4key4
-20:14:45.684 [Thread-47] (12346) INFO  - Acquiring write lock for key: test4key2
-20:14:45.685 [Thread-56] (12345) INFO  - Acquiring write lock for key: test4key2
-20:14:45.693 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53785
-20:14:45.693 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53784
-20:14:45.693 [Thread-36] (12347) INFO  - Acquiring write lock for key: test4key4
-20:14:45.695 [Thread-37] (12347) INFO  - Acquiring write lock for key: test4key2
-20:14:45.696 [Thread-34] (12349) INFO  - Acquiring write lock for key: test4key4
-20:14:45.698 [Thread-46] (12346) INFO  - Putting value for key test4key4
-20:14:45.698 [Thread-35] (12349) INFO  - Acquiring write lock for key: test4key2
-20:14:45.699 [Thread-55] (12345) INFO  - Putting value for key test4key4
-20:14:45.699 [Thread-47] (12346) INFO  - Putting value for key test4key2
-20:14:45.701 [Thread-36] (12347) INFO  - Putting value for key test4key4
-20:14:45.702 [Thread-34] (12349) INFO  - Putting value for key test4key4
-20:14:45.702 [Thread-56] (12345) INFO  - Putting value for key test4key2
-20:14:45.703 [Thread-37] (12347) INFO  - Putting value for key test4key2
-20:14:45.704 [Thread-35] (12349) INFO  - Putting value for key test4key2
-20:14:45.705 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53786
-20:14:45.706 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53787
-20:14:45.707 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53788
-20:14:45.707 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53789
-20:14:45.708 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53790
-20:14:45.708 [Thread-48] (12346) INFO  - Acquiring write lock for key: test4key3
-20:14:45.709 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53791
-20:14:45.709 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53792
-20:14:45.712 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53793
-20:14:45.712 [Thread-49] (12346) INFO  - Acquiring write lock for key: test4key3
-20:14:45.714 [Thread-49] (12346) INFO  - Releasing lock for key test4key3
-20:14:45.715 [Thread-57] (12345) INFO  - Acquiring write lock for key: test4key3
-20:14:45.715 [Thread-58] (12345) INFO  - Releasing lock for key test4key3
-20:14:45.716 [Thread-39] (12347) INFO  - Releasing lock for key test4key3
-20:14:45.716 [Thread-38] (12347) INFO  - Acquiring write lock for key: test4key3
-20:14:45.718 [Thread-37] (12349) INFO  - Releasing lock for key test4key3
-20:14:45.718 [Thread-36] (12349) INFO  - Acquiring write lock for key: test4key3
-20:14:45.720 [Thread-48] (12346) INFO  - Putting value for key test4key3
-20:14:45.720 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53794
-20:14:45.722 [Thread-57] (12345) INFO  - Putting value for key test4key3
-20:14:45.722 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53795
-20:14:45.723 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53796
-20:14:45.724 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53797
-20:14:45.725 [Thread-38] (12347) INFO  - Putting value for key test4key3
-20:14:45.724 [Thread-50] (12346) INFO  - Acquiring write lock for key: test4key1
-20:14:45.726 [Thread-59] (12345) INFO  - Acquiring write lock for key: test4key1
-20:14:45.727 [Thread-36] (12349) INFO  - Putting value for key test4key3
-20:14:45.730 [Thread-40] (12347) INFO  - Acquiring write lock for key: test4key1
-20:14:45.732 [Thread-38] (12349) INFO  - Acquiring write lock for key: test4key1
-20:14:45.733 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53798
-20:14:45.733 [Thread-50] (12346) INFO  - Putting value for key test4key1
-20:14:45.734 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53799
-20:14:45.735 [Thread-59] (12345) INFO  - Putting value for key test4key1
-20:14:45.735 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53800
-20:14:45.736 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53801
-20:14:45.736 [Thread-40] (12347) INFO  - Putting value for key test4key1
-20:14:45.737 [Thread-38] (12349) INFO  - Putting value for key test4key1
-20:14:45.740 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53802
-20:14:45.736 [Thread-51] (12346) INFO  - Acquiring write lock for key: test4key9
-20:14:45.742 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53803
-20:14:45.743 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53804
-20:14:45.743 [Thread-60] (12345) INFO  - Acquiring write lock for key: test4key9
-20:14:45.744 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53805
-20:14:45.744 [Thread-52] (12346) INFO  - Acquiring write lock for key: test4key8
-20:14:45.745 [Thread-41] (12347) INFO  - Acquiring write lock for key: test4key9
-20:14:45.747 [Thread-61] (12345) INFO  - Acquiring write lock for key: test4key8
-20:14:45.747 [Thread-39] (12349) INFO  - Acquiring write lock for key: test4key9
-20:14:45.749 [Thread-51] (12346) INFO  - Putting value for key test4key9
-20:14:45.749 [Thread-42] (12347) INFO  - Acquiring write lock for key: test4key8
-20:14:45.750 [Thread-60] (12345) INFO  - Putting value for key test4key9
-20:14:45.750 [Thread-40] (12349) INFO  - Acquiring write lock for key: test4key8
-20:14:45.751 [Thread-41] (12347) INFO  - Putting value for key test4key9
-20:14:45.752 [Thread-52] (12346) INFO  - Putting value for key test4key8
-20:14:45.753 [Thread-39] (12349) INFO  - Putting value for key test4key9
-20:14:45.753 [Thread-61] (12345) INFO  - Putting value for key test4key8
-20:14:45.754 [Thread-42] (12347) INFO  - Putting value for key test4key8
-20:14:45.756 [Thread-40] (12349) INFO  - Putting value for key test4key8
-20:14:45.756 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53806
-20:14:45.757 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53807
-20:14:45.758 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53808
-20:14:45.759 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53809
-20:14:45.759 [Thread-53] (12346) INFO  - Acquiring write lock for key: test4key7
-20:14:45.762 [Thread-62] (12345) INFO  - Acquiring write lock for key: test4key7
-20:14:45.762 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53810
-20:14:45.764 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53811
-20:14:45.764 [Thread-43] (12347) INFO  - Acquiring write lock for key: test4key7
-20:14:45.766 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53812
-20:14:45.766 [Thread-41] (12349) INFO  - Acquiring write lock for key: test4key7
-20:14:45.767 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53813
-20:14:45.767 [Thread-54] (12346) INFO  - Acquiring write lock for key: test4key9
-20:14:45.768 [Thread-53] (12346) INFO  - Putting value for key test4key7
-20:14:45.769 [Thread-62] (12345) INFO  - Putting value for key test4key7
-20:14:45.768 [Thread-63] (12345) INFO  - Acquiring write lock for key: test4key9
-20:14:45.770 [Thread-43] (12347) INFO  - Putting value for key test4key7
-20:14:45.770 [Thread-44] (12347) INFO  - Acquiring write lock for key: test4key9
-20:14:45.771 [Thread-41] (12349) INFO  - Putting value for key test4key7
-20:14:45.772 [Thread-42] (12349) INFO  - Acquiring write lock for key: test4key9
-20:14:45.774 [Thread-54] (12346) INFO  - Putting value for key test4key9
-20:14:45.774 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53814
-20:14:45.775 [Thread-63] (12345) INFO  - Putting value for key test4key9
-20:14:45.775 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53815
-20:14:45.776 [Thread-44] (12347) INFO  - Putting value for key test4key9
-20:14:45.776 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53816
-20:14:45.777 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53817
-20:14:45.778 [Thread-42] (12349) INFO  - Putting value for key test4key9
-20:14:45.779 [Thread-55] (12346) INFO  - Acquiring write lock for key: test4key0
-20:14:45.781 [Thread-64] (12345) INFO  - Acquiring write lock for key: test4key0
-20:14:45.782 [Thread-45] (12347) INFO  - Acquiring write lock for key: test4key0
-20:14:45.787 [Thread-43] (12349) INFO  - Acquiring write lock for key: test4key0
-20:14:45.789 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53818
-20:14:45.789 [Thread-55] (12346) INFO  - Putting value for key test4key0
-20:14:45.791 [Thread-64] (12345) INFO  - Putting value for key test4key0
-20:14:45.791 [Thread-56] (12346) INFO  - Getting value for key test4key0
-20:14:45.793 [Thread-45] (12347) INFO  - Putting value for key test4key0
-20:14:45.794 [Thread-43] (12349) INFO  - Putting value for key test4key0
-20:14:45.797 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53819
-20:14:45.798 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53820
-20:14:45.799 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53821
-20:14:45.800 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53822
-20:14:45.800 [Thread-57] (12346) INFO  - Acquiring write lock for key: test4key2
-20:14:45.803 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53823
-20:14:45.803 [Thread-65] (12345) INFO  - Acquiring write lock for key: test4key2
-20:14:45.805 [Thread-47] (12347) INFO  - Getting value for key test4key0
-20:14:45.805 [Thread-46] (12347) INFO  - Acquiring write lock for key: test4key2
-20:14:45.806 [Thread-44] (12349) INFO  - Acquiring write lock for key: test4key2
-20:14:45.807 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53824
-20:14:45.808 [Thread-57] (12346) INFO  - Putting value for key test4key2
-20:14:45.809 [Thread-65] (12345) INFO  - Putting value for key test4key2
-20:14:45.811 [Thread-46] (12347) INFO  - Putting value for key test4key2
-20:14:45.814 [Thread-44] (12349) INFO  - Putting value for key test4key2
-20:14:45.809 [Thread-45] (12349) INFO  - Getting value for key test4key0
-20:14:45.852 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53825
-20:14:45.857 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53826
-20:14:45.876 [Thread-59] (12346) INFO  - Getting value for key test4key1
-20:14:45.876 [Thread-58] (12346) INFO  - Getting value for key test4key0
-20:14:45.878 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53828
-20:14:45.879 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53829
-20:14:45.881 [Thread-48] (12347) INFO  - Getting value for key test4key1
-20:14:45.881 [Thread-13] (12348) INFO  - Getting value for key test4key0
-20:14:45.884 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53831
-20:14:45.885 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53830
-20:14:45.886 [Thread-46] (12349) INFO  - Getting value for key test4key0
-20:14:45.886 [Thread-47] (12349) INFO  - Getting value for key test4key1
-20:14:45.888 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53832
-20:14:45.891 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53833
-20:14:45.891 [Thread-14] (12348) INFO  - Trying to update stale response for key: test4key0
-20:14:45.892 [Thread-60] (12346) INFO  - Getting value for key test4key2
-20:14:45.896 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53834
-20:14:45.899 [Thread-49] (12347) INFO  - Getting value for key test4key2
-20:14:45.903 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53835
-20:14:45.905 [Thread-14] (12348) INFO  - Updated stale response for key: test4key0 to: newValue0 with version: 2
-20:14:45.908 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53836
-20:14:45.906 [Thread-48] (12349) INFO  - Getting value for key test4key2
-20:14:45.910 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53837
-20:14:45.909 [Thread-61] (12346) INFO  - Getting value for key test4key1
-20:14:45.914 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53838
-20:14:45.916 [Thread-15] (12348) INFO  - Getting value for key test4key1
-20:14:45.916 [Thread-62] (12346) INFO  - Getting value for key test4key3
-20:14:45.920 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53839
-20:14:45.922 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53840
-20:14:45.923 [Thread-49] (12349) INFO  - Getting value for key test4key1
-20:14:45.924 [Thread-50] (12347) INFO  - Getting value for key test4key3
-20:14:45.926 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53841
-20:14:45.927 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53842
-20:14:45.930 [Thread-16] (12348) INFO  - Trying to update stale response for key: test4key1
-20:14:45.932 [Thread-16] (12348) INFO  - Updated stale response for key: test4key1 to: newValue1 with version: 2
-20:14:45.930 [Thread-50] (12349) INFO  - Getting value for key test4key3
-20:14:45.934 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53843
-20:14:45.937 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53844
-20:14:45.937 [Thread-63] (12346) INFO  - Getting value for key test4key2
-20:14:45.939 [Thread-64] (12346) INFO  - Getting value for key test4key4
-20:14:45.940 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53845
-20:14:45.941 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53846
-20:14:45.943 [Thread-17] (12348) INFO  - Getting value for key test4key2
-20:14:45.947 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53847
-20:14:45.945 [Thread-51] (12347) INFO  - Getting value for key test4key4
-20:14:45.950 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53848
-20:14:45.951 [Thread-52] (12349) INFO  - Getting value for key test4key4
-20:14:45.954 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53849
-20:14:45.956 [Thread-65] (12346) INFO  - Getting value for key test4key5
-20:14:45.949 [Thread-51] (12349) INFO  - Getting value for key test4key2
-20:14:45.959 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53850
-20:14:45.959 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53851
-20:14:45.964 [Thread-52] (12347) INFO  - Getting value for key test4key5
-20:14:45.965 [Thread-18] (12348) INFO  - Trying to update stale response for key: test4key2
-20:14:45.968 [Thread-18] (12348) INFO  - Updated stale response for key: test4key2 to: newValue2 with version: 2
-20:14:45.969 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53852
-20:14:45.971 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53853
-20:14:45.973 [Thread-66] (12346) INFO  - Getting value for key test4key3
-20:14:45.972 [Thread-53] (12349) INFO  - Getting value for key test4key5
-20:14:45.977 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53854
-20:14:45.981 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53855
-20:14:45.982 [Thread-19] (12348) INFO  - Getting value for key test4key3
-20:14:45.983 [Thread-67] (12346) INFO  - Getting value for key test4key6
-20:14:45.985 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53856
-20:14:45.987 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53857
-20:14:45.988 [Thread-53] (12347) INFO  - Getting value for key test4key6
-20:14:45.989 [Thread-54] (12349) INFO  - Getting value for key test4key3
-20:14:45.992 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53859
-20:14:45.992 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53858
-20:14:45.996 [Thread-55] (12349) INFO  - Getting value for key test4key6
-20:14:45.996 [Thread-20] (12348) INFO  - Trying to update stale response for key: test4key3
-20:14:46.000 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53860
-20:14:45.998 [Thread-20] (12348) INFO  - Updated stale response for key: test4key3 to: newValue3 with version: 1
-20:14:46.003 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53861
-20:14:46.002 [Thread-68] (12346) INFO  - Getting value for key test4key7
-20:14:46.006 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53862
-20:14:46.004 [Thread-69] (12346) INFO  - Getting value for key test4key4
-20:14:46.008 [Thread-54] (12347) INFO  - Getting value for key test4key7
-20:14:46.009 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53863
-20:14:46.010 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53864
-20:14:46.012 [Thread-21] (12348) INFO  - Getting value for key test4key4
-20:14:46.012 [Thread-56] (12349) INFO  - Getting value for key test4key7
-20:14:46.015 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53865
-20:14:46.016 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53866
-20:14:46.017 [Thread-57] (12349) INFO  - Getting value for key test4key4
-20:14:46.017 [Thread-70] (12346) INFO  - Getting value for key test4key8
-20:14:46.020 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53867
-20:14:46.020 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53868
-20:14:46.022 [Thread-55] (12347) INFO  - Getting value for key test4key8
-20:14:46.022 [Thread-22] (12348) INFO  - Trying to update stale response for key: test4key4
-20:14:46.023 [Thread-22] (12348) INFO  - Updated stale response for key: test4key4 to: newValue4 with version: 2
-20:14:46.025 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53869
-20:14:46.026 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53870
-20:14:46.027 [Thread-58] (12349) INFO  - Getting value for key test4key8
-20:14:46.028 [Thread-71] (12346) INFO  - Getting value for key test4key5
-20:14:46.031 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53871
-20:14:46.031 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53872
-20:14:46.032 [Thread-72] (12346) INFO  - Getting value for key test4key9
-20:14:46.032 [Thread-23] (12348) INFO  - Getting value for key test4key5
-20:14:46.035 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53873
-20:14:46.035 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53874
-20:14:46.037 [Thread-59] (12349) INFO  - Getting value for key test4key5
-20:14:46.037 [Thread-56] (12347) INFO  - Getting value for key test4key9
-20:14:46.039 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53875
-20:14:46.039 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53876
-20:14:46.040 [Thread-60] (12349) INFO  - Getting value for key test4key9
-20:14:46.040 [Thread-24] (12348) INFO  - Trying to update stale response for key: test4key5
-20:14:46.041 [Thread-24] (12348) INFO  - Updated stale response for key: test4key5 to: newValue5 with version: 2
-20:14:46.044 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53877
-20:14:46.046 [Thread-73] (12346) INFO  - Getting value for key test4key6
-20:14:46.049 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53878
-20:14:46.051 [Thread-25] (12348) INFO  - Getting value for key test4key6
-20:14:46.054 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53879
-20:14:46.059 [Thread-61] (12349) INFO  - Getting value for key test4key6
-20:14:46.066 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53880
-20:14:46.068 [Thread-26] (12348) INFO  - Trying to update stale response for key: test4key6
-20:14:46.069 [Thread-26] (12348) INFO  - Updated stale response for key: test4key6 to: newValue6 with version: 1
-20:14:46.070 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53881
-20:14:46.072 [Thread-74] (12346) INFO  - Getting value for key test4key7
-20:14:46.074 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53882
-20:14:46.075 [Thread-27] (12348) INFO  - Getting value for key test4key7
-20:14:46.078 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53883
-20:14:46.079 [Thread-62] (12349) INFO  - Getting value for key test4key7
-20:14:46.081 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53884
-20:14:46.082 [Thread-28] (12348) INFO  - Trying to update stale response for key: test4key7
-20:14:46.083 [Thread-28] (12348) INFO  - Updated stale response for key: test4key7 to: newValue7 with version: 2
-20:14:46.085 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53885
-20:14:46.086 [Thread-75] (12346) INFO  - Getting value for key test4key8
-20:14:46.088 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53886
-20:14:46.089 [Thread-29] (12348) INFO  - Getting value for key test4key8
-20:14:46.092 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53887
-20:14:46.094 [Thread-63] (12349) INFO  - Getting value for key test4key8
-20:14:46.097 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53888
-20:14:46.099 [Thread-30] (12348) INFO  - Trying to update stale response for key: test4key8
-20:14:46.100 [Thread-30] (12348) INFO  - Updated stale response for key: test4key8 to: newValue8 with version: 2
-20:14:46.101 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53889
-20:14:46.102 [Thread-76] (12346) INFO  - Getting value for key test4key9
-20:14:46.104 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53890
-20:14:46.106 [Thread-31] (12348) INFO  - Getting value for key test4key9
-20:14:46.108 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53891
-20:14:46.109 [Thread-64] (12349) INFO  - Getting value for key test4key9
-20:14:46.111 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53892
-20:14:46.112 [Thread-32] (12348) INFO  - Trying to update stale response for key: test4key9
-20:14:46.114 [Thread-32] (12348) INFO  - Updated stale response for key: test4key9 to: newValue9 with version: 2
-20:15:13.349 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53901
-20:15:13.358 [Thread-77] (12346) INFO  - Trying to update stale response for key: test4key7
-20:15:13.360 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53902
-20:15:13.362 [Thread-57] (12347) INFO  - Trying to update stale response for key: test4key7
-20:15:17.064 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53905
-20:15:17.071 [Thread-58] (12347) INFO  - Trying to update stale response for key: test3key
-20:15:17.076 [Thread-58] (12347) WARN  - Update failed for key test3key with value writeInProgressValue and version 1. Read lock could not be acquired
-20:15:17.078 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53906
-20:15:17.079 [Thread-66] (12345) INFO  - Trying to update stale response for key: test3key
-20:15:17.080 [Thread-66] (12345) INFO  - Updated stale response for key: test3key to: writeInProgressValue with version: 1
-20:15:21.202 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53907
-20:15:21.212 [Thread-67] (12345) INFO  - Trying to update stale response for key: test4key4
-20:15:21.215 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53908
-20:15:21.217 [Thread-78] (12346) INFO  - Trying to update stale response for key: test4key4
-20:15:24.452 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53911
-20:15:24.462 [Thread-79] (12346) INFO  - Trying to update stale response for key: test3key
-20:15:24.464 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53912
-20:15:24.466 [Thread-65] (12349) INFO  - Trying to update stale response for key: test3key
-20:15:24.471 [Thread-65] (12349) WARN  - Update failed for key test3key with value writeInProgressValue and version 1. Read lock could not be acquired
-20:15:27.489 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53913
-20:15:27.494 [Thread-33] (12348) INFO  - Trying to update stale response for key: test4key9
-20:15:27.496 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53914
-20:15:27.497 [Thread-66] (12349) INFO  - Trying to update stale response for key: test4key9
-20:16:13.352 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53939
-20:16:13.354 [Thread-67] (12349) INFO  - Trying to update stale response for key: test4key8
-20:16:13.355 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53940
-20:16:13.356 [Thread-68] (12345) INFO  - Trying to update stale response for key: test4key8
-20:16:17.050 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53943
-20:16:17.052 [Thread-68] (12349) INFO  - Trying to update stale response for key: test4key9
-20:16:17.054 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53944
-20:16:17.055 [Thread-80] (12346) INFO  - Trying to update stale response for key: test4key9
-20:16:21.191 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 53946
-20:16:21.193 [Thread-81] (12346) INFO  - Trying to update stale response for key: test2key
+22:12:08.571 [main] (12345) INFO  - Replica listening on port 12345
+22:12:12.286 [main] (12346) INFO  - Replica listening on port 12346
+22:12:15.983 [main] (12347) INFO  - Replica listening on port 12347
+22:12:19.425 [main] (12348) INFO  - Replica listening on port 12348
+22:12:22.548 [main] (12349) INFO  - Replica listening on port 12349
+22:12:47.680 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56887
+22:12:47.680 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56889
+22:12:47.680 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56888
+22:12:47.680 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56890
+22:12:47.680 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56891
+22:12:47.680 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56893
+22:12:47.680 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56892
+22:12:47.680 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56894
+22:12:47.680 [Thread-1] (12346) INFO  - Acquiring write lock for key: test1key1
+22:12:47.680 [Thread-0] (12346) INFO  - Acquiring write lock for key: test1key0
+22:12:47.712 [Thread-1] (12348) INFO  - Acquiring write lock for key: test1key0
+22:12:47.712 [Thread-0] (12348) INFO  - Acquiring write lock for key: test1key1
+22:12:47.712 [Thread-0] (12347) INFO  - Acquiring write lock for key: test1key1
+22:12:47.712 [Thread-1] (12347) INFO  - Acquiring write lock for key: test1key0
+22:12:47.720 [Thread-0] (12349) INFO  - Acquiring write lock for key: test1key1
+22:12:47.720 [Thread-1] (12349) INFO  - Acquiring write lock for key: test1key0
+22:12:47.727 [Thread-1] (12346) INFO  - Putting value for key test1key1
+22:12:47.727 [Thread-0] (12346) INFO  - Putting value for key test1key0
+22:12:47.728 [Thread-0] (12346) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.728 [Thread-1] (12346) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.736 [Thread-0] (12348) INFO  - Putting value for key test1key1
+22:12:47.736 [Thread-1] (12348) INFO  - Putting value for key test1key0
+22:12:47.736 [Thread-0] (12348) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.736 [Thread-1] (12348) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.736 [Thread-1] (12347) INFO  - Putting value for key test1key0
+22:12:47.736 [Thread-0] (12347) INFO  - Putting value for key test1key1
+22:12:47.744 [Thread-0] (12347) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.744 [Thread-1] (12347) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.744 [Thread-1] (12349) INFO  - Putting value for key test1key0
+22:12:47.744 [Thread-0] (12349) INFO  - Putting value for key test1key1
+22:12:47.744 [Thread-0] (12349) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.744 [Thread-1] (12349) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.753 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56895
+22:12:47.753 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56896
+22:12:47.753 [Thread-2] (12348) INFO  - Getting value for key test1key0
+22:12:47.753 [Thread-2] (12346) INFO  - Getting value for key test1key1
+22:12:47.761 [Thread-2] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.761 [Thread-2] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.777 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56898
+22:12:47.777 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56897
+22:12:47.777 [Thread-2] (12347) INFO  - Getting value for key test1key0
+22:12:47.777 [Thread-3] (12348) INFO  - Getting value for key test1key1
+22:12:47.777 [Thread-3] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.777 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56899
+22:12:47.785 [Thread-3] (12347) INFO  - Getting value for key test1key1
+22:12:47.785 [Thread-2] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.785 [Thread-3] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.793 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56900
+22:12:47.793 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56901
+22:12:47.793 [Thread-2] (12349) INFO  - Getting value for key test1key0
+22:12:47.793 [Thread-3] (12346) INFO  - Getting value for key test1key1
+22:12:47.793 [Thread-3] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.793 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56902
+22:12:47.801 [Thread-4] (12348) INFO  - Getting value for key test1key1
+22:12:47.801 [Thread-4] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.801 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56903
+22:12:47.801 [Thread-2] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.801 [Thread-4] (12347) INFO  - Getting value for key test1key1
+22:12:47.801 [Thread-4] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.809 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56904
+22:12:47.809 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56905
+22:12:47.809 [Thread-5] (12348) INFO  - Getting value for key test1key0
+22:12:47.809 [Thread-5] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.809 [Thread-4] (12346) INFO  - Getting value for key test1key1
+22:12:47.809 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56906
+22:12:47.809 [Thread-4] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.817 [Thread-5] (12347) INFO  - Getting value for key test1key0
+22:12:47.817 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56907
+22:12:47.817 [Thread-5] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.817 [Thread-6] (12348) INFO  - Getting value for key test1key1
+22:12:47.817 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56908
+22:12:47.817 [Thread-6] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.825 [Thread-3] (12349) INFO  - Getting value for key test1key0
+22:12:47.827 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56909
+22:12:47.827 [Thread-3] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.827 [Thread-6] (12347) INFO  - Getting value for key test1key1
+22:12:47.827 [Thread-6] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.827 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56910
+22:12:47.833 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56911
+22:12:47.827 [Thread-7] (12348) INFO  - Getting value for key test1key0
+22:12:47.833 [Thread-7] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.833 [Thread-5] (12346) INFO  - Getting value for key test1key1
+22:12:47.833 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56912
+22:12:47.833 [Thread-5] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.833 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56913
+22:12:47.833 [Thread-7] (12347) INFO  - Getting value for key test1key0
+22:12:47.833 [Thread-7] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.841 [Thread-8] (12348) INFO  - Getting value for key test1key1
+22:12:47.841 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56914
+22:12:47.841 [Thread-8] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.841 [Thread-4] (12349) INFO  - Getting value for key test1key0
+22:12:47.841 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56915
+22:12:47.841 [Thread-4] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.841 [Thread-8] (12347) INFO  - Getting value for key test1key1
+22:12:47.841 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56916
+22:12:47.849 [Thread-8] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.849 [Thread-9] (12348) INFO  - Getting value for key test1key0
+22:12:47.849 [Thread-9] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.849 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56917
+22:12:47.849 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56918
+22:12:47.849 [Thread-6] (12346) INFO  - Getting value for key test1key1
+22:12:47.849 [Thread-6] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.849 [Thread-9] (12347) INFO  - Getting value for key test1key0
+22:12:47.857 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56919
+22:12:47.849 [Thread-9] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.857 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56920
+22:12:47.857 [Thread-10] (12348) INFO  - Getting value for key test1key1
+22:12:47.857 [Thread-10] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.857 [Thread-5] (12349) INFO  - Getting value for key test1key0
+22:12:47.857 [Thread-5] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.857 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56921
+22:12:47.865 [Thread-10] (12347) INFO  - Getting value for key test1key1
+22:12:47.865 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56922
+22:12:47.865 [Thread-10] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.865 [Thread-11] (12348) INFO  - Getting value for key test1key0
+22:12:47.865 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56923
+22:12:47.865 [Thread-11] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.865 [Thread-7] (12346) INFO  - Getting value for key test1key1
+22:12:47.865 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56924
+22:12:47.865 [Thread-7] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.874 [Thread-11] (12347) INFO  - Getting value for key test1key0
+22:12:47.874 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56925
+22:12:47.874 [Thread-11] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.874 [Thread-12] (12348) INFO  - Getting value for key test1key1
+22:12:47.874 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56926
+22:12:47.874 [Thread-12] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.882 [Thread-6] (12349) INFO  - Getting value for key test1key0
+22:12:47.883 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56927
+22:12:47.883 [Thread-6] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.883 [Thread-12] (12347) INFO  - Getting value for key test1key1
+22:12:47.883 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56928
+22:12:47.883 [Thread-12] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.883 [Thread-13] (12348) INFO  - Getting value for key test1key0
+22:12:47.883 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56929
+22:12:47.883 [Thread-13] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.890 [Thread-8] (12346) INFO  - Getting value for key test1key1
+22:12:47.890 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56930
+22:12:47.890 [Thread-8] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.890 [Thread-13] (12347) INFO  - Getting value for key test1key0
+22:12:47.890 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56931
+22:12:47.890 [Thread-13] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.898 [Thread-14] (12348) INFO  - Getting value for key test1key1
+22:12:47.898 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56932
+22:12:47.898 [Thread-14] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.898 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56933
+22:12:47.898 [Thread-7] (12349) INFO  - Getting value for key test1key0
+22:12:47.898 [Thread-7] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.898 [Thread-14] (12347) INFO  - Getting value for key test1key1
+22:12:47.898 [Thread-14] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.906 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56934
+22:12:47.908 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56935
+22:12:47.908 [Thread-15] (12348) INFO  - Getting value for key test1key0
+22:12:47.908 [Thread-15] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.908 [Thread-9] (12346) INFO  - Getting value for key test1key1
+22:12:47.908 [Thread-9] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.908 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56936
+22:12:47.915 [Thread-15] (12347) INFO  - Getting value for key test1key0
+22:12:47.915 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56937
+22:12:47.915 [Thread-15] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.915 [Thread-16] (12348) INFO  - Getting value for key test1key1
+22:12:47.915 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56938
+22:12:47.915 [Thread-16] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.915 [Thread-8] (12349) INFO  - Getting value for key test1key0
+22:12:47.923 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56939
+22:12:47.923 [Thread-8] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.923 [Thread-16] (12347) INFO  - Getting value for key test1key1
+22:12:47.927 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56940
+22:12:47.928 [Thread-16] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.928 [Thread-17] (12348) INFO  - Getting value for key test1key0
+22:12:47.931 [Thread-17] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.931 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56941
+22:12:47.931 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56942
+22:12:47.931 [Thread-10] (12346) INFO  - Getting value for key test1key1
+22:12:47.931 [Thread-10] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.931 [Thread-17] (12347) INFO  - Getting value for key test1key0
+22:12:47.931 [Thread-17] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.931 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56943
+22:12:47.939 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56944
+22:12:47.939 [Thread-18] (12348) INFO  - Getting value for key test1key1
+22:12:47.939 [Thread-18] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.939 [Thread-9] (12349) INFO  - Getting value for key test1key0
+22:12:47.939 [Thread-9] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.939 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56945
+22:12:47.947 [Thread-18] (12347) INFO  - Getting value for key test1key1
+22:12:47.947 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56946
+22:12:47.947 [Thread-18] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.947 [Thread-19] (12348) INFO  - Getting value for key test1key0
+22:12:47.947 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56947
+22:12:47.947 [Thread-19] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.947 [Thread-11] (12346) INFO  - Getting value for key test1key1
+22:12:47.947 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56948
+22:12:47.947 [Thread-11] (12346) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.955 [Thread-19] (12347) INFO  - Getting value for key test1key0
+22:12:47.955 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56949
+22:12:47.955 [Thread-19] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.959 [Thread-20] (12348) INFO  - Getting value for key test1key1
+22:12:47.959 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56950
+22:12:47.959 [Thread-20] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.959 [Thread-10] (12349) INFO  - Getting value for key test1key0
+22:12:47.963 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56951
+22:12:47.963 [Thread-10] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.963 [Thread-20] (12347) INFO  - Getting value for key test1key1
+22:12:47.963 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56952
+22:12:47.963 [Thread-20] (12347) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:12:47.963 [Thread-21] (12348) INFO  - Getting value for key test1key0
+22:12:47.963 [Thread-21] (12348) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.971 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56953
+22:12:47.971 [Thread-21] (12347) INFO  - Getting value for key test1key0
+22:12:47.971 [Thread-21] (12347) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:47.971 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56954
+22:12:47.979 [Thread-11] (12349) INFO  - Getting value for key test1key0
+22:12:47.979 [Thread-11] (12349) INFO  - Get request for key: test1key0 with value: test1value0 and version: 1
+22:12:51.425 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56961
+22:12:51.425 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56962
+22:12:51.425 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56964
+22:12:51.429 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56966
+22:12:51.429 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56967
+22:12:51.429 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56968
+22:12:51.429 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56963
+22:12:51.434 [Thread-12] (12346) INFO  - Acquiring write lock for key: test2key
+22:12:51.433 [Thread-13] (12346) INFO  - Acquiring write lock for key: test2key
+22:12:51.434 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56965
+22:12:51.441 [Thread-13] (12346) INFO  - Releasing lock for key test2key
+22:12:51.449 [Thread-1] (12345) INFO  - Releasing lock for key test2key
+22:12:51.449 [Thread-23] (12348) INFO  - Releasing lock for key test2key
+22:12:51.449 [Thread-0] (12345) INFO  - Acquiring write lock for key: test2key
+22:12:51.449 [Thread-12] (12349) INFO  - Releasing lock for key test2key
+22:12:51.457 [Thread-22] (12348) INFO  - Acquiring write lock for key: test2key
+22:12:51.457 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56969
+22:12:51.457 [Thread-22] (12347) INFO  - Acquiring write lock for key: test2key
+22:12:51.457 [Thread-12] (12346) INFO  - Putting value for key test2key
+22:12:51.457 [Thread-12] (12346) INFO  - Put request for key: test2key with value: test2value and version: 1
+22:12:51.457 [Thread-14] (12346) INFO  - Getting value for key test2key
+22:12:51.465 [Thread-14] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.473 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56970
+22:12:51.474 [Thread-2] (12345) INFO  - Getting value for key test2key
+22:12:51.474 [Thread-2] (12345) WARN  - Failed to acquire read lock for key: test2key
+22:12:51.474 [Thread-0] (12345) INFO  - Putting value for key test2key
+22:12:51.474 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56971
+22:12:51.474 [Thread-0] (12345) INFO  - Put request for key: test2key with value: test2value and version: 1
+22:12:51.482 [Thread-22] (12348) INFO  - Putting value for key test2key
+22:12:51.482 [Thread-22] (12348) INFO  - Put request for key: test2key with value: test2value and version: 1
+22:12:51.482 [Thread-24] (12348) INFO  - Getting value for key test2key
+22:12:51.482 [Thread-24] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.482 [Thread-22] (12347) INFO  - Putting value for key test2key
+22:12:51.482 [Thread-22] (12347) INFO  - Put request for key: test2key with value: test2value and version: 1
+22:12:51.482 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56972
+22:12:51.482 [Thread-15] (12346) INFO  - Getting value for key test2key
+22:12:51.490 [Thread-15] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.490 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56973
+22:12:51.490 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56974
+22:12:51.490 [Thread-16] (12346) INFO  - Getting value for key test2key
+22:12:51.490 [Thread-16] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.490 [Thread-3] (12345) INFO  - Getting value for key test2key
+22:12:51.490 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56975
+22:12:51.498 [Thread-25] (12348) INFO  - Getting value for key test2key
+22:12:51.498 [Thread-25] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.498 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56976
+22:12:51.498 [Thread-3] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.498 [Thread-13] (12349) INFO  - Getting value for key test2key
+22:12:51.498 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56977
+22:12:51.498 [Thread-13] (12349) INFO  - Get request for key: test2key with value:  and version: -1
+22:12:51.506 [Thread-26] (12348) INFO  - Getting value for key test2key
+22:12:51.506 [Thread-26] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.509 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56978
+22:12:51.509 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56979
+22:12:51.512 [Thread-14] (12349) INFO  - Trying to update stale response for key: test2key
+22:12:51.512 [Thread-17] (12346) INFO  - Getting value for key test2key
+22:12:51.514 [Thread-14] (12349) INFO  - Updated stale response for key: test2key to: test2value with version: 1
+22:12:51.514 [Thread-17] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.514 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56980
+22:12:51.514 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56981
+22:12:51.519 [Thread-18] (12346) INFO  - Getting value for key test2key
+22:12:51.519 [Thread-4] (12345) INFO  - Getting value for key test2key
+22:12:51.519 [Thread-18] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.519 [Thread-4] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.523 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56982
+22:12:51.523 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56983
+22:12:51.523 [Thread-27] (12348) INFO  - Getting value for key test2key
+22:12:51.523 [Thread-27] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.523 [Thread-28] (12348) INFO  - Getting value for key test2key
+22:12:51.523 [Thread-28] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.523 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56984
+22:12:51.531 [Thread-15] (12349) INFO  - Getting value for key test2key
+22:12:51.531 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56985
+22:12:51.531 [Thread-15] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.531 [Thread-19] (12346) INFO  - Getting value for key test2key
+22:12:51.535 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56986
+22:12:51.535 [Thread-19] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.535 [Thread-20] (12346) INFO  - Getting value for key test2key
+22:12:51.537 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56987
+22:12:51.537 [Thread-20] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.539 [Thread-5] (12345) INFO  - Getting value for key test2key
+22:12:51.539 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56988
+22:12:51.539 [Thread-5] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.539 [Thread-29] (12348) INFO  - Getting value for key test2key
+22:12:51.539 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56989
+22:12:51.539 [Thread-29] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.539 [Thread-30] (12348) INFO  - Getting value for key test2key
+22:12:51.547 [Thread-30] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.547 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56990
+22:12:51.547 [Thread-16] (12349) INFO  - Getting value for key test2key
+22:12:51.547 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56991
+22:12:51.547 [Thread-16] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.547 [Thread-21] (12346) INFO  - Getting value for key test2key
+22:12:51.547 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56992
+22:12:51.547 [Thread-21] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.547 [Thread-22] (12346) INFO  - Getting value for key test2key
+22:12:51.555 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56993
+22:12:51.555 [Thread-22] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.555 [Thread-6] (12345) INFO  - Getting value for key test2key
+22:12:51.555 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56994
+22:12:51.555 [Thread-6] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.555 [Thread-31] (12348) INFO  - Getting value for key test2key
+22:12:51.555 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56995
+22:12:51.555 [Thread-31] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.563 [Thread-32] (12348) INFO  - Getting value for key test2key
+22:12:51.563 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56996
+22:12:51.563 [Thread-32] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.563 [Thread-17] (12349) INFO  - Getting value for key test2key
+22:12:51.563 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56997
+22:12:51.563 [Thread-17] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.563 [Thread-23] (12346) INFO  - Getting value for key test2key
+22:12:51.563 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56998
+22:12:51.563 [Thread-23] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.563 [Thread-24] (12346) INFO  - Getting value for key test2key
+22:12:51.571 [Thread-24] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.571 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 56999
+22:12:51.571 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57000
+22:12:51.571 [Thread-7] (12345) INFO  - Getting value for key test2key
+22:12:51.571 [Thread-33] (12348) INFO  - Getting value for key test2key
+22:12:51.571 [Thread-7] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.571 [Thread-33] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.571 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57001
+22:12:51.571 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57002
+22:12:51.579 [Thread-34] (12348) INFO  - Getting value for key test2key
+22:12:51.579 [Thread-18] (12349) INFO  - Getting value for key test2key
+22:12:51.579 [Thread-34] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.579 [Thread-18] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.579 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57004
+22:12:51.579 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57003
+22:12:51.579 [Thread-25] (12346) INFO  - Getting value for key test2key
+22:12:51.579 [Thread-26] (12346) INFO  - Getting value for key test2key
+22:12:51.579 [Thread-25] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.579 [Thread-26] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.587 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57005
+22:12:51.587 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57006
+22:12:51.587 [Thread-35] (12348) INFO  - Getting value for key test2key
+22:12:51.587 [Thread-8] (12345) INFO  - Getting value for key test2key
+22:12:51.587 [Thread-35] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.587 [Thread-8] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.587 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57007
+22:12:51.587 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57008
+22:12:51.595 [Thread-36] (12348) INFO  - Getting value for key test2key
+22:12:51.595 [Thread-19] (12349) INFO  - Getting value for key test2key
+22:12:51.595 [Thread-36] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.595 [Thread-19] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.595 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57009
+22:12:51.595 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57010
+22:12:51.595 [Thread-27] (12346) INFO  - Getting value for key test2key
+22:12:51.595 [Thread-27] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.595 [Thread-28] (12346) INFO  - Getting value for key test2key
+22:12:51.595 [Thread-28] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.603 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57011
+22:12:51.603 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57012
+22:12:51.603 [Thread-9] (12345) INFO  - Getting value for key test2key
+22:12:51.603 [Thread-37] (12348) INFO  - Getting value for key test2key
+22:12:51.603 [Thread-37] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.603 [Thread-9] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.603 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57014
+22:12:51.603 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57013
+22:12:51.611 [Thread-38] (12348) INFO  - Getting value for key test2key
+22:12:51.611 [Thread-20] (12349) INFO  - Getting value for key test2key
+22:12:51.611 [Thread-20] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.611 [Thread-38] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.611 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57016
+22:12:51.611 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57015
+22:12:51.611 [Thread-29] (12346) INFO  - Getting value for key test2key
+22:12:51.611 [Thread-29] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.611 [Thread-30] (12346) INFO  - Getting value for key test2key
+22:12:51.611 [Thread-30] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.619 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57017
+22:12:51.619 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57018
+22:12:51.619 [Thread-10] (12345) INFO  - Getting value for key test2key
+22:12:51.619 [Thread-10] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.619 [Thread-39] (12348) INFO  - Getting value for key test2key
+22:12:51.619 [Thread-39] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.619 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57019
+22:12:51.619 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57020
+22:12:51.619 [Thread-40] (12348) INFO  - Getting value for key test2key
+22:12:51.627 [Thread-40] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.627 [Thread-21] (12349) INFO  - Getting value for key test2key
+22:12:51.627 [Thread-21] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.627 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57021
+22:12:51.627 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57022
+22:12:51.627 [Thread-31] (12346) INFO  - Getting value for key test2key
+22:12:51.627 [Thread-31] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.627 [Thread-32] (12346) INFO  - Getting value for key test2key
+22:12:51.627 [Thread-32] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.635 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57023
+22:12:51.635 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57024
+22:12:51.635 [Thread-11] (12345) INFO  - Getting value for key test2key
+22:12:51.635 [Thread-41] (12348) INFO  - Getting value for key test2key
+22:12:51.635 [Thread-11] (12345) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.635 [Thread-41] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.635 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57025
+22:12:51.643 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57026
+22:12:51.643 [Thread-42] (12348) INFO  - Getting value for key test2key
+22:12:51.643 [Thread-42] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.643 [Thread-22] (12349) INFO  - Getting value for key test2key
+22:12:51.643 [Thread-22] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.643 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57027
+22:12:51.643 [Thread-33] (12346) INFO  - Getting value for key test2key
+22:12:51.643 [Thread-33] (12346) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.651 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57028
+22:12:51.651 [Thread-43] (12348) INFO  - Getting value for key test2key
+22:12:51.651 [Thread-43] (12348) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:51.651 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57029
+22:12:51.651 [Thread-23] (12349) INFO  - Getting value for key test2key
+22:12:51.651 [Thread-23] (12349) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:12:55.205 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57041
+22:12:55.205 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57039
+22:12:55.205 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57040
+22:12:55.205 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57042
+22:12:55.205 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57043
+22:12:55.205 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57044
+22:12:55.205 [Thread-34] (12346) INFO  - Getting value for key test3key
+22:12:55.210 [Thread-34] (12346) INFO  - Get request for key: test3key with value:  and version: -1
+22:12:55.205 [Thread-12] (12345) INFO  - Getting value for key test3key
+22:12:55.205 [Thread-35] (12346) INFO  - Acquiring write lock for key: test3key
+22:12:55.210 [Thread-12] (12345) INFO  - Get request for key: test3key with value:  and version: -1
+22:12:55.226 [Thread-13] (12345) INFO  - Acquiring write lock for key: test3key
+22:12:55.226 [Thread-44] (12348) INFO  - Acquiring write lock for key: test3key
+22:12:55.226 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57046
+22:12:55.226 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57045
+22:12:55.234 [Thread-23] (12347) INFO  - Acquiring write lock for key: test3key
+22:12:55.234 [Thread-24] (12347) INFO  - Getting value for key test3key
+22:12:55.234 [Thread-14] (12345) INFO  - Getting value for key test3key
+22:12:55.234 [Thread-35] (12346) INFO  - Putting value for key test3key
+22:12:55.234 [Thread-35] (12346) INFO  - Put request for key: test3key with value: writeInProgressValue and version: 1
+22:12:55.234 [Thread-14] (12345) WARN  - Failed to acquire read lock for key: test3key
+22:12:55.234 [Thread-24] (12347) WARN  - Failed to acquire read lock for key: test3key
+22:12:55.241 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57047
+22:12:55.242 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57048
+22:12:55.242 [Thread-45] (12348) INFO  - Getting value for key test3key
+22:12:55.242 [Thread-45] (12348) WARN  - Failed to acquire read lock for key: test3key
+22:12:55.242 [Thread-24] (12349) INFO  - Getting value for key test3key
+22:12:55.242 [Thread-24] (12349) INFO  - Get request for key: test3key with value:  and version: -1
+22:12:58.829 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57056
+22:12:58.829 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57055
+22:12:58.829 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57058
+22:12:58.829 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57057
+22:12:58.829 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57059
+22:12:58.829 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57060
+22:12:58.829 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57061
+22:12:58.829 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57062
+22:12:58.837 [Thread-36] (12346) INFO  - Acquiring write lock for key: test4key0
+22:12:58.837 [Thread-37] (12346) INFO  - Acquiring write lock for key: test4key6
+22:12:58.853 [Thread-15] (12345) INFO  - Acquiring write lock for key: test4key0
+22:12:58.853 [Thread-16] (12345) INFO  - Acquiring write lock for key: test4key6
+22:12:58.853 [Thread-46] (12348) INFO  - Acquiring write lock for key: test4key6
+22:12:58.853 [Thread-47] (12348) INFO  - Acquiring write lock for key: test4key0
+22:12:58.861 [Thread-25] (12347) INFO  - Acquiring write lock for key: test4key6
+22:12:58.861 [Thread-25] (12349) INFO  - Acquiring write lock for key: test4key0
+22:12:58.861 [Thread-36] (12346) INFO  - Putting value for key test4key0
+22:12:58.861 [Thread-37] (12346) INFO  - Putting value for key test4key6
+22:12:58.861 [Thread-37] (12346) INFO  - Put request for key: test4key6 with value: newValue6 and version: 1
+22:12:58.861 [Thread-36] (12346) INFO  - Put request for key: test4key0 with value: newValue0 and version: 1
+22:12:58.877 [Thread-15] (12345) INFO  - Putting value for key test4key0
+22:12:58.877 [Thread-16] (12345) INFO  - Putting value for key test4key6
+22:12:58.877 [Thread-15] (12345) INFO  - Put request for key: test4key0 with value: newValue0 and version: 1
+22:12:58.877 [Thread-16] (12345) INFO  - Put request for key: test4key6 with value: newValue6 and version: 1
+22:12:58.877 [Thread-47] (12348) INFO  - Putting value for key test4key0
+22:12:58.877 [Thread-46] (12348) INFO  - Putting value for key test4key6
+22:12:58.877 [Thread-47] (12348) INFO  - Put request for key: test4key0 with value: newValue0 and version: 1
+22:12:58.877 [Thread-46] (12348) INFO  - Put request for key: test4key6 with value: newValue6 and version: 1
+22:12:58.885 [Thread-25] (12347) INFO  - Putting value for key test4key6
+22:12:58.885 [Thread-25] (12349) INFO  - Putting value for key test4key0
+22:12:58.885 [Thread-25] (12347) INFO  - Put request for key: test4key6 with value: newValue6 and version: 1
+22:12:58.885 [Thread-25] (12349) INFO  - Put request for key: test4key0 with value: newValue0 and version: 1
+22:12:58.894 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57064
+22:12:58.894 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57065
+22:12:58.894 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57063
+22:12:58.894 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57070
+22:12:58.894 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57067
+22:12:58.894 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57069
+22:12:58.894 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57066
+22:12:58.894 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57068
+22:12:58.894 [Thread-39] (12346) INFO  - Acquiring write lock for key: test4key1
+22:12:58.894 [Thread-18] (12345) INFO  - Acquiring write lock for key: test4key1
+22:12:58.894 [Thread-38] (12346) INFO  - Acquiring write lock for key: test4key7
+22:12:58.901 [Thread-48] (12348) INFO  - Acquiring write lock for key: test4key1
+22:12:58.901 [Thread-17] (12345) INFO  - Acquiring write lock for key: test4key7
+22:12:58.901 [Thread-26] (12347) INFO  - Acquiring write lock for key: test4key1
+22:12:58.901 [Thread-39] (12346) INFO  - Putting value for key test4key1
+22:12:58.901 [Thread-49] (12348) INFO  - Acquiring write lock for key: test4key7
+22:12:58.901 [Thread-39] (12346) INFO  - Put request for key: test4key1 with value: newValue1 and version: 1
+22:12:58.909 [Thread-26] (12349) INFO  - Acquiring write lock for key: test4key7
+22:12:58.909 [Thread-18] (12345) INFO  - Putting value for key test4key1
+22:12:58.909 [Thread-18] (12345) INFO  - Put request for key: test4key1 with value: newValue1 and version: 1
+22:12:58.909 [Thread-38] (12346) INFO  - Putting value for key test4key7
+22:12:58.909 [Thread-48] (12348) INFO  - Putting value for key test4key1
+22:12:58.909 [Thread-38] (12346) INFO  - Put request for key: test4key7 with value: newValue7 and version: 1
+22:12:58.909 [Thread-48] (12348) INFO  - Put request for key: test4key1 with value: newValue1 and version: 1
+22:12:58.909 [Thread-26] (12347) INFO  - Putting value for key test4key1
+22:12:58.909 [Thread-17] (12345) INFO  - Putting value for key test4key7
+22:12:58.909 [Thread-26] (12347) INFO  - Put request for key: test4key1 with value: newValue1 and version: 1
+22:12:58.909 [Thread-17] (12345) INFO  - Put request for key: test4key7 with value: newValue7 and version: 1
+22:12:58.909 [Thread-49] (12348) INFO  - Putting value for key test4key7
+22:12:58.909 [Thread-49] (12348) INFO  - Put request for key: test4key7 with value: newValue7 and version: 1
+22:12:58.917 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57071
+22:12:58.917 [Thread-26] (12349) INFO  - Putting value for key test4key7
+22:12:58.919 [Thread-26] (12349) INFO  - Put request for key: test4key7 with value: newValue7 and version: 1
+22:12:58.919 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57072
+22:12:58.919 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57073
+22:12:58.919 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57074
+22:12:58.919 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57075
+22:12:58.919 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57076
+22:12:58.919 [Thread-40] (12346) INFO  - Acquiring write lock for key: test4key0
+22:12:58.919 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57077
+22:12:58.926 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57078
+22:12:58.926 [Thread-19] (12345) INFO  - Acquiring write lock for key: test4key0
+22:12:58.926 [Thread-41] (12346) INFO  - Acquiring write lock for key: test4key1
+22:12:58.926 [Thread-50] (12348) INFO  - Acquiring write lock for key: test4key0
+22:12:58.930 [Thread-27] (12347) INFO  - Acquiring write lock for key: test4key0
+22:12:58.930 [Thread-20] (12345) INFO  - Acquiring write lock for key: test4key1
+22:12:58.931 [Thread-40] (12346) INFO  - Putting value for key test4key0
+22:12:58.931 [Thread-40] (12346) INFO  - Put request for key: test4key0 with value: newValue0 and version: 2
+22:12:58.934 [Thread-19] (12345) INFO  - Putting value for key test4key0
+22:12:58.934 [Thread-19] (12345) INFO  - Put request for key: test4key0 with value: newValue0 and version: 2
+22:12:58.934 [Thread-50] (12348) INFO  - Putting value for key test4key0
+22:12:58.931 [Thread-51] (12348) INFO  - Acquiring write lock for key: test4key1
+22:12:58.934 [Thread-50] (12348) INFO  - Put request for key: test4key0 with value: newValue0 and version: 2
+22:12:58.934 [Thread-27] (12347) INFO  - Putting value for key test4key0
+22:12:58.934 [Thread-27] (12349) INFO  - Acquiring write lock for key: test4key1
+22:12:58.934 [Thread-27] (12347) INFO  - Put request for key: test4key0 with value: newValue0 and version: 2
+22:12:58.934 [Thread-41] (12346) INFO  - Putting value for key test4key1
+22:12:58.942 [Thread-41] (12346) INFO  - Put request for key: test4key1 with value: newValue1 and version: 2
+22:12:58.942 [Thread-20] (12345) INFO  - Putting value for key test4key1
+22:12:58.942 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57079
+22:12:58.942 [Thread-20] (12345) INFO  - Put request for key: test4key1 with value: newValue1 and version: 2
+22:12:58.942 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57080
+22:12:58.942 [Thread-51] (12348) INFO  - Putting value for key test4key1
+22:12:58.942 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57081
+22:12:58.942 [Thread-51] (12348) INFO  - Put request for key: test4key1 with value: newValue1 and version: 2
+22:12:58.942 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57082
+22:12:58.942 [Thread-27] (12349) INFO  - Putting value for key test4key1
+22:12:58.942 [Thread-42] (12346) INFO  - Acquiring write lock for key: test4key9
+22:12:58.942 [Thread-27] (12349) INFO  - Put request for key: test4key1 with value: newValue1 and version: 2
+22:12:58.949 [Thread-21] (12345) INFO  - Acquiring write lock for key: test4key9
+22:12:58.950 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57083
+22:12:58.950 [Thread-52] (12348) INFO  - Acquiring write lock for key: test4key9
+22:12:58.950 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57084
+22:12:58.950 [Thread-28] (12347) INFO  - Acquiring write lock for key: test4key9
+22:12:58.950 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57085
+22:12:58.950 [Thread-42] (12346) INFO  - Putting value for key test4key9
+22:12:58.950 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57086
+22:12:58.950 [Thread-42] (12346) INFO  - Put request for key: test4key9 with value: newValue9 and version: 1
+22:12:58.950 [Thread-43] (12346) INFO  - Acquiring write lock for key: test4key3
+22:12:58.958 [Thread-21] (12345) INFO  - Putting value for key test4key9
+22:12:58.958 [Thread-22] (12345) INFO  - Acquiring write lock for key: test4key3
+22:12:58.958 [Thread-21] (12345) INFO  - Put request for key: test4key9 with value: newValue9 and version: 1
+22:12:58.958 [Thread-52] (12348) INFO  - Putting value for key test4key9
+22:12:58.958 [Thread-53] (12348) INFO  - Acquiring write lock for key: test4key3
+22:12:58.958 [Thread-52] (12348) INFO  - Put request for key: test4key9 with value: newValue9 and version: 1
+22:12:58.958 [Thread-28] (12349) INFO  - Acquiring write lock for key: test4key3
+22:12:58.958 [Thread-28] (12347) INFO  - Putting value for key test4key9
+22:12:58.958 [Thread-28] (12347) INFO  - Put request for key: test4key9 with value: newValue9 and version: 1
+22:12:58.958 [Thread-43] (12346) INFO  - Putting value for key test4key3
+22:12:58.958 [Thread-43] (12346) INFO  - Put request for key: test4key3 with value: newValue3 and version: 1
+22:12:58.966 [Thread-22] (12345) INFO  - Putting value for key test4key3
+22:12:58.966 [Thread-22] (12345) INFO  - Put request for key: test4key3 with value: newValue3 and version: 1
+22:12:58.966 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57087
+22:12:58.970 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57088
+22:12:58.970 [Thread-53] (12348) INFO  - Putting value for key test4key3
+22:12:58.970 [Thread-53] (12348) INFO  - Put request for key: test4key3 with value: newValue3 and version: 1
+22:12:58.970 [Thread-28] (12349) INFO  - Putting value for key test4key3
+22:12:58.970 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57089
+22:12:58.974 [Thread-28] (12349) INFO  - Put request for key: test4key3 with value: newValue3 and version: 1
+22:12:58.974 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57090
+22:12:58.974 [Thread-44] (12346) INFO  - Acquiring write lock for key: test4key2
+22:12:58.974 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57091
+22:12:58.978 [Thread-23] (12345) INFO  - Acquiring write lock for key: test4key2
+22:12:58.978 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57092
+22:12:58.978 [Thread-54] (12348) INFO  - Acquiring write lock for key: test4key2
+22:12:58.978 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57093
+22:12:58.978 [Thread-29] (12347) INFO  - Acquiring write lock for key: test4key2
+22:12:58.978 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57094
+22:12:58.983 [Thread-45] (12346) INFO  - Acquiring write lock for key: test4key8
+22:12:58.983 [Thread-44] (12346) INFO  - Putting value for key test4key2
+22:12:58.983 [Thread-44] (12346) INFO  - Put request for key: test4key2 with value: newValue2 and version: 1
+22:12:58.983 [Thread-24] (12345) INFO  - Acquiring write lock for key: test4key8
+22:12:58.983 [Thread-23] (12345) INFO  - Putting value for key test4key2
+22:12:58.983 [Thread-55] (12348) INFO  - Acquiring write lock for key: test4key8
+22:12:58.983 [Thread-23] (12345) INFO  - Put request for key: test4key2 with value: newValue2 and version: 1
+22:12:58.983 [Thread-54] (12348) INFO  - Putting value for key test4key2
+22:12:58.983 [Thread-54] (12348) INFO  - Put request for key: test4key2 with value: newValue2 and version: 1
+22:12:58.983 [Thread-29] (12349) INFO  - Acquiring write lock for key: test4key8
+22:12:58.991 [Thread-29] (12347) INFO  - Putting value for key test4key2
+22:12:58.991 [Thread-45] (12346) INFO  - Putting value for key test4key8
+22:12:58.991 [Thread-29] (12347) INFO  - Put request for key: test4key2 with value: newValue2 and version: 1
+22:12:58.991 [Thread-45] (12346) INFO  - Put request for key: test4key8 with value: newValue8 and version: 1
+22:12:58.991 [Thread-24] (12345) INFO  - Putting value for key test4key8
+22:12:58.995 [Thread-24] (12345) INFO  - Put request for key: test4key8 with value: newValue8 and version: 1
+22:12:58.995 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57095
+22:12:58.995 [Thread-55] (12348) INFO  - Putting value for key test4key8
+22:12:58.995 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57096
+22:12:58.995 [Thread-55] (12348) INFO  - Put request for key: test4key8 with value: newValue8 and version: 1
+22:12:58.995 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57097
+22:12:58.995 [Thread-29] (12349) INFO  - Putting value for key test4key8
+22:12:58.999 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57098
+22:12:58.999 [Thread-29] (12349) INFO  - Put request for key: test4key8 with value: newValue8 and version: 1
+22:12:58.999 [Thread-46] (12346) INFO  - Acquiring write lock for key: test4key3
+22:12:58.999 [Thread-25] (12345) INFO  - Acquiring write lock for key: test4key3
+22:12:58.999 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57099
+22:12:58.999 [Thread-56] (12348) INFO  - Acquiring write lock for key: test4key3
+22:12:58.999 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57100
+22:12:59.007 [Thread-30] (12347) INFO  - Acquiring write lock for key: test4key3
+22:12:59.007 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57101
+22:12:59.009 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57102
+22:12:59.009 [Thread-46] (12346) INFO  - Putting value for key test4key3
+22:12:59.009 [Thread-47] (12346) INFO  - Acquiring write lock for key: test4key5
+22:12:59.009 [Thread-46] (12346) INFO  - Put request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.009 [Thread-25] (12345) INFO  - Putting value for key test4key3
+22:12:59.009 [Thread-26] (12345) INFO  - Acquiring write lock for key: test4key5
+22:12:59.009 [Thread-25] (12345) INFO  - Put request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.009 [Thread-56] (12348) INFO  - Putting value for key test4key3
+22:12:59.009 [Thread-57] (12348) INFO  - Acquiring write lock for key: test4key5
+22:12:59.009 [Thread-56] (12348) INFO  - Put request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.009 [Thread-30] (12347) INFO  - Putting value for key test4key3
+22:12:59.009 [Thread-30] (12349) INFO  - Acquiring write lock for key: test4key5
+22:12:59.016 [Thread-30] (12347) INFO  - Put request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.016 [Thread-47] (12346) INFO  - Putting value for key test4key5
+22:12:59.019 [Thread-47] (12346) INFO  - Put request for key: test4key5 with value: newValue5 and version: 1
+22:12:59.020 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57104
+22:12:59.021 [Thread-26] (12345) INFO  - Putting value for key test4key5
+22:12:59.022 [Thread-26] (12345) INFO  - Put request for key: test4key5 with value: newValue5 and version: 1
+22:12:59.022 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57105
+22:12:59.023 [Thread-57] (12348) INFO  - Putting value for key test4key5
+22:12:59.024 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57106
+22:12:59.025 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57107
+22:12:59.025 [Thread-48] (12346) INFO  - Acquiring write lock for key: test4key4
+22:12:59.026 [Thread-57] (12348) INFO  - Put request for key: test4key5 with value: newValue5 and version: 1
+22:12:59.028 [Thread-30] (12349) INFO  - Putting value for key test4key5
+22:12:59.028 [Thread-27] (12345) INFO  - Acquiring write lock for key: test4key4
+22:12:59.028 [Thread-30] (12349) INFO  - Put request for key: test4key5 with value: newValue5 and version: 1
+22:12:59.028 [Thread-58] (12348) INFO  - Acquiring write lock for key: test4key4
+22:12:59.028 [Thread-31] (12347) INFO  - Acquiring write lock for key: test4key4
+22:12:59.028 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57108
+22:12:59.034 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57109
+22:12:59.035 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57110
+22:12:59.035 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57111
+22:12:59.028 [Thread-48] (12346) INFO  - Putting value for key test4key4
+22:12:59.035 [Thread-49] (12346) INFO  - Acquiring write lock for key: test4key6
+22:12:59.035 [Thread-48] (12346) INFO  - Put request for key: test4key4 with value: newValue4 and version: 1
+22:12:59.040 [Thread-27] (12345) INFO  - Putting value for key test4key4
+22:12:59.040 [Thread-28] (12345) INFO  - Acquiring write lock for key: test4key6
+22:12:59.040 [Thread-27] (12345) INFO  - Put request for key: test4key4 with value: newValue4 and version: 1
+22:12:59.040 [Thread-58] (12348) INFO  - Putting value for key test4key4
+22:12:59.040 [Thread-59] (12348) INFO  - Acquiring write lock for key: test4key6
+22:12:59.044 [Thread-58] (12348) INFO  - Put request for key: test4key4 with value: newValue4 and version: 1
+22:12:59.044 [Thread-31] (12347) INFO  - Putting value for key test4key4
+22:12:59.044 [Thread-31] (12349) INFO  - Acquiring write lock for key: test4key6
+22:12:59.044 [Thread-31] (12347) INFO  - Put request for key: test4key4 with value: newValue4 and version: 1
+22:12:59.044 [Thread-49] (12346) INFO  - Putting value for key test4key6
+22:12:59.044 [Thread-49] (12346) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.049 [Thread-28] (12345) INFO  - Putting value for key test4key6
+22:12:59.049 [Thread-28] (12345) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.049 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57112
+22:12:59.052 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57113
+22:12:59.049 [Thread-59] (12348) INFO  - Putting value for key test4key6
+22:12:59.052 [Thread-59] (12348) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.052 [Thread-31] (12349) INFO  - Putting value for key test4key6
+22:12:59.052 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57114
+22:12:59.052 [Thread-31] (12349) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.052 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57115
+22:12:59.052 [Thread-50] (12346) INFO  - Acquiring write lock for key: test4key8
+22:12:59.052 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57116
+22:12:59.060 [Thread-29] (12345) INFO  - Acquiring write lock for key: test4key8
+22:12:59.060 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57117
+22:12:59.061 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57118
+22:12:59.061 [Thread-60] (12348) INFO  - Acquiring write lock for key: test4key8
+22:12:59.061 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57119
+22:12:59.061 [Thread-32] (12347) INFO  - Acquiring write lock for key: test4key8
+22:12:59.061 [Thread-50] (12346) INFO  - Putting value for key test4key8
+22:12:59.061 [Thread-50] (12346) INFO  - Put request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.061 [Thread-51] (12346) INFO  - Acquiring write lock for key: test4key4
+22:12:59.068 [Thread-29] (12345) INFO  - Putting value for key test4key8
+22:12:59.068 [Thread-29] (12345) INFO  - Put request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.068 [Thread-30] (12345) INFO  - Acquiring write lock for key: test4key4
+22:12:59.068 [Thread-60] (12348) INFO  - Putting value for key test4key8
+22:12:59.068 [Thread-60] (12348) INFO  - Put request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.068 [Thread-61] (12348) INFO  - Acquiring write lock for key: test4key4
+22:12:59.068 [Thread-32] (12347) INFO  - Putting value for key test4key8
+22:12:59.068 [Thread-32] (12347) INFO  - Put request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.068 [Thread-32] (12349) INFO  - Acquiring write lock for key: test4key4
+22:12:59.076 [Thread-51] (12346) INFO  - Putting value for key test4key4
+22:12:59.076 [Thread-51] (12346) INFO  - Put request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.076 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57120
+22:12:59.076 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57121
+22:12:59.076 [Thread-30] (12345) INFO  - Putting value for key test4key4
+22:12:59.076 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57122
+22:12:59.076 [Thread-30] (12345) INFO  - Put request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.076 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57123
+22:12:59.076 [Thread-61] (12348) INFO  - Putting value for key test4key4
+22:12:59.076 [Thread-52] (12346) INFO  - Acquiring write lock for key: test4key7
+22:12:59.076 [Thread-61] (12348) INFO  - Put request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.076 [Thread-31] (12345) INFO  - Acquiring write lock for key: test4key7
+22:12:59.084 [Thread-32] (12349) INFO  - Putting value for key test4key4
+22:12:59.084 [Thread-32] (12349) INFO  - Put request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.084 [Thread-62] (12348) INFO  - Acquiring write lock for key: test4key7
+22:12:59.089 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57124
+22:12:59.089 [Thread-33] (12347) INFO  - Acquiring write lock for key: test4key7
+22:12:59.089 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57125
+22:12:59.089 [Thread-52] (12346) INFO  - Putting value for key test4key7
+22:12:59.092 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57126
+22:12:59.092 [Thread-52] (12346) INFO  - Put request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.092 [Thread-31] (12345) INFO  - Putting value for key test4key7
+22:12:59.092 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57127
+22:12:59.092 [Thread-31] (12345) INFO  - Put request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.092 [Thread-53] (12346) INFO  - Acquiring write lock for key: test4key2
+22:12:59.092 [Thread-62] (12348) INFO  - Putting value for key test4key7
+22:12:59.092 [Thread-62] (12348) INFO  - Put request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.092 [Thread-32] (12345) INFO  - Acquiring write lock for key: test4key2
+22:12:59.092 [Thread-33] (12347) INFO  - Putting value for key test4key7
+22:12:59.092 [Thread-33] (12347) INFO  - Put request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.092 [Thread-63] (12348) INFO  - Acquiring write lock for key: test4key2
+22:12:59.101 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57128
+22:12:59.101 [Thread-33] (12349) INFO  - Acquiring write lock for key: test4key2
+22:12:59.101 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57129
+22:12:59.101 [Thread-53] (12346) INFO  - Putting value for key test4key2
+22:12:59.101 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57130
+22:12:59.101 [Thread-53] (12346) INFO  - Put request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.101 [Thread-32] (12345) INFO  - Putting value for key test4key2
+22:12:59.101 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57131
+22:12:59.109 [Thread-54] (12346) INFO  - Acquiring write lock for key: test4key5
+22:12:59.109 [Thread-32] (12345) INFO  - Put request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.109 [Thread-63] (12348) INFO  - Putting value for key test4key2
+22:12:59.109 [Thread-33] (12345) INFO  - Acquiring write lock for key: test4key5
+22:12:59.109 [Thread-63] (12348) INFO  - Put request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.109 [Thread-33] (12349) INFO  - Putting value for key test4key2
+22:12:59.109 [Thread-64] (12348) INFO  - Acquiring write lock for key: test4key5
+22:12:59.113 [Thread-33] (12349) INFO  - Put request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.113 [Thread-34] (12347) INFO  - Acquiring write lock for key: test4key5
+22:12:59.113 [Thread-54] (12346) INFO  - Putting value for key test4key5
+22:12:59.113 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57132
+22:12:59.117 [Thread-54] (12346) INFO  - Put request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.117 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57133
+22:12:59.117 [Thread-33] (12345) INFO  - Putting value for key test4key5
+22:12:59.117 [Thread-33] (12345) INFO  - Put request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.117 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57134
+22:12:59.117 [Thread-64] (12348) INFO  - Putting value for key test4key5
+22:12:59.117 [Thread-64] (12348) INFO  - Put request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.117 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57135
+22:12:59.117 [Thread-55] (12346) INFO  - Acquiring write lock for key: test4key9
+22:12:59.123 [Thread-34] (12347) INFO  - Putting value for key test4key5
+22:12:59.123 [Thread-34] (12347) INFO  - Put request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.123 [Thread-34] (12345) INFO  - Acquiring write lock for key: test4key9
+22:12:59.125 [Thread-65] (12348) INFO  - Acquiring write lock for key: test4key9
+22:12:59.125 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57136
+22:12:59.125 [Thread-34] (12349) INFO  - Acquiring write lock for key: test4key9
+22:12:59.125 [Thread-55] (12346) INFO  - Putting value for key test4key9
+22:12:59.125 [Thread-56] (12346) INFO  - Getting value for key test4key0
+22:12:59.125 [Thread-55] (12346) INFO  - Put request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.125 [Thread-56] (12346) INFO  - Get request for key: test4key0 with value: newValue0 and version: 2
+22:12:59.125 [Thread-34] (12345) INFO  - Putting value for key test4key9
+22:12:59.125 [Thread-34] (12345) INFO  - Put request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.133 [Thread-65] (12348) INFO  - Putting value for key test4key9
+22:12:59.133 [Thread-65] (12348) INFO  - Put request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.133 [Thread-34] (12349) INFO  - Putting value for key test4key9
+22:12:59.133 [Thread-34] (12349) INFO  - Put request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.133 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57137
+22:12:59.141 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57138
+22:12:59.141 [Thread-57] (12346) INFO  - Getting value for key test4key0
+22:12:59.141 [Thread-57] (12346) INFO  - Get request for key: test4key0 with value: newValue0 and version: 2
+22:12:59.141 [Thread-66] (12348) INFO  - Getting value for key test4key0
+22:12:59.141 [Thread-66] (12348) INFO  - Get request for key: test4key0 with value: newValue0 and version: 2
+22:12:59.141 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57139
+22:12:59.141 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57140
+22:12:59.141 [Thread-35] (12349) INFO  - Getting value for key test4key0
+22:12:59.141 [Thread-35] (12345) INFO  - Getting value for key test4key0
+22:12:59.141 [Thread-35] (12349) INFO  - Get request for key: test4key0 with value: newValue0 and version: 1
+22:12:59.141 [Thread-35] (12345) INFO  - Get request for key: test4key0 with value: newValue0 and version: 2
+22:12:59.149 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57142
+22:12:59.149 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57141
+22:12:59.149 [Thread-67] (12348) INFO  - Getting value for key test4key0
+22:12:59.149 [Thread-36] (12349) INFO  - Trying to update stale response for key: test4key0
+22:12:59.149 [Thread-67] (12348) INFO  - Get request for key: test4key0 with value: newValue0 and version: 2
+22:12:59.149 [Thread-36] (12349) INFO  - Updated stale response for key: test4key0 to: newValue0 with version: 2
+22:12:59.157 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57143
+22:12:59.157 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57144
+22:12:59.157 [Thread-58] (12346) INFO  - Getting value for key test4key1
+22:12:59.157 [Thread-59] (12346) INFO  - Getting value for key test4key1
+22:12:59.157 [Thread-58] (12346) INFO  - Get request for key: test4key1 with value: newValue1 and version: 2
+22:12:59.157 [Thread-59] (12346) INFO  - Get request for key: test4key1 with value: newValue1 and version: 2
+22:12:59.157 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57145
+22:12:59.157 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57146
+22:12:59.157 [Thread-36] (12345) INFO  - Getting value for key test4key1
+22:12:59.157 [Thread-68] (12348) INFO  - Getting value for key test4key1
+22:12:59.157 [Thread-36] (12345) INFO  - Get request for key: test4key1 with value: newValue1 and version: 2
+22:12:59.165 [Thread-68] (12348) INFO  - Get request for key: test4key1 with value: newValue1 and version: 2
+22:12:59.165 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57147
+22:12:59.165 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57148
+22:12:59.165 [Thread-69] (12348) INFO  - Getting value for key test4key1
+22:12:59.165 [Thread-37] (12349) INFO  - Getting value for key test4key1
+22:12:59.165 [Thread-69] (12348) INFO  - Get request for key: test4key1 with value: newValue1 and version: 2
+22:12:59.165 [Thread-37] (12349) INFO  - Get request for key: test4key1 with value: newValue1 and version: 2
+22:12:59.165 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57149
+22:12:59.173 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57150
+22:12:59.173 [Thread-60] (12346) INFO  - Getting value for key test4key2
+22:12:59.173 [Thread-61] (12346) INFO  - Getting value for key test4key2
+22:12:59.173 [Thread-60] (12346) INFO  - Get request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.173 [Thread-61] (12346) INFO  - Get request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.173 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57151
+22:12:59.173 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57152
+22:12:59.173 [Thread-70] (12348) INFO  - Getting value for key test4key2
+22:12:59.173 [Thread-37] (12345) INFO  - Getting value for key test4key2
+22:12:59.173 [Thread-37] (12345) INFO  - Get request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.173 [Thread-70] (12348) INFO  - Get request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.181 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57153
+22:12:59.181 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57154
+22:12:59.181 [Thread-71] (12348) INFO  - Getting value for key test4key2
+22:12:59.181 [Thread-38] (12349) INFO  - Getting value for key test4key2
+22:12:59.181 [Thread-71] (12348) INFO  - Get request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.181 [Thread-38] (12349) INFO  - Get request for key: test4key2 with value: newValue2 and version: 2
+22:12:59.189 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57155
+22:12:59.189 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57156
+22:12:59.189 [Thread-62] (12346) INFO  - Getting value for key test4key3
+22:12:59.189 [Thread-63] (12346) INFO  - Getting value for key test4key3
+22:12:59.189 [Thread-62] (12346) INFO  - Get request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.189 [Thread-63] (12346) INFO  - Get request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.189 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57157
+22:12:59.189 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57158
+22:12:59.189 [Thread-38] (12345) INFO  - Getting value for key test4key3
+22:12:59.189 [Thread-72] (12348) INFO  - Getting value for key test4key3
+22:12:59.189 [Thread-38] (12345) INFO  - Get request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.198 [Thread-72] (12348) INFO  - Get request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.198 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57159
+22:12:59.198 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57160
+22:12:59.198 [Thread-73] (12348) INFO  - Getting value for key test4key3
+22:12:59.198 [Thread-39] (12349) INFO  - Getting value for key test4key3
+22:12:59.198 [Thread-73] (12348) INFO  - Get request for key: test4key3 with value: newValue3 and version: 2
+22:12:59.198 [Thread-39] (12349) INFO  - Get request for key: test4key3 with value: newValue3 and version: 1
+22:12:59.198 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57161
+22:12:59.206 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57162
+22:12:59.206 [Thread-64] (12346) INFO  - Getting value for key test4key4
+22:12:59.206 [Thread-64] (12346) INFO  - Get request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.206 [Thread-40] (12349) INFO  - Trying to update stale response for key: test4key3
+22:12:59.206 [Thread-40] (12349) INFO  - Updated stale response for key: test4key3 to: newValue3 with version: 2
+22:12:59.206 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57163
+22:12:59.210 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57164
+22:12:59.210 [Thread-39] (12345) INFO  - Getting value for key test4key4
+22:12:59.210 [Thread-39] (12345) INFO  - Get request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.210 [Thread-65] (12346) INFO  - Getting value for key test4key4
+22:12:59.214 [Thread-65] (12346) INFO  - Get request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.214 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57165
+22:12:59.214 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57166
+22:12:59.214 [Thread-74] (12348) INFO  - Getting value for key test4key4
+22:12:59.214 [Thread-74] (12348) INFO  - Get request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.214 [Thread-75] (12348) INFO  - Getting value for key test4key4
+22:12:59.214 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57167
+22:12:59.214 [Thread-75] (12348) INFO  - Get request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.214 [Thread-66] (12346) INFO  - Getting value for key test4key5
+22:12:59.222 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57168
+22:12:59.222 [Thread-66] (12346) INFO  - Get request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.222 [Thread-41] (12349) INFO  - Getting value for key test4key4
+22:12:59.222 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57169
+22:12:59.222 [Thread-41] (12349) INFO  - Get request for key: test4key4 with value: newValue4 and version: 2
+22:12:59.222 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57170
+22:12:59.222 [Thread-40] (12345) INFO  - Getting value for key test4key5
+22:12:59.230 [Thread-40] (12345) INFO  - Get request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.230 [Thread-67] (12346) INFO  - Getting value for key test4key5
+22:12:59.230 [Thread-67] (12346) INFO  - Get request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.230 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57171
+22:12:59.230 [Thread-76] (12348) INFO  - Getting value for key test4key5
+22:12:59.230 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57173
+22:12:59.230 [Thread-76] (12348) INFO  - Get request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.230 [Thread-77] (12348) INFO  - Getting value for key test4key5
+22:12:59.230 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57174
+22:12:59.238 [Thread-77] (12348) INFO  - Get request for key: test4key5 with value: newValue5 and version: 2
+22:12:59.238 [Thread-68] (12346) INFO  - Getting value for key test4key6
+22:12:59.238 [Thread-68] (12346) INFO  - Get request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.238 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57175
+22:12:59.238 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57176
+22:12:59.238 [Thread-42] (12349) INFO  - Getting value for key test4key5
+22:12:59.238 [Thread-42] (12349) INFO  - Get request for key: test4key5 with value: newValue5 and version: 1
+22:12:59.238 [Thread-41] (12345) INFO  - Getting value for key test4key6
+22:12:59.246 [Thread-41] (12345) INFO  - Get request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.246 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57177
+22:12:59.246 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57178
+22:12:59.246 [Thread-43] (12349) INFO  - Trying to update stale response for key: test4key5
+22:12:59.249 [Thread-43] (12349) INFO  - Updated stale response for key: test4key5 to: newValue5 with version: 2
+22:12:59.249 [Thread-78] (12348) INFO  - Getting value for key test4key6
+22:12:59.249 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57179
+22:12:59.249 [Thread-78] (12348) INFO  - Get request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.254 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57180
+22:12:59.254 [Thread-69] (12346) INFO  - Getting value for key test4key6
+22:12:59.254 [Thread-69] (12346) INFO  - Get request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.254 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57181
+22:12:59.254 [Thread-70] (12346) INFO  - Getting value for key test4key7
+22:12:59.294 [Thread-70] (12346) INFO  - Get request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.303 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57182
+22:12:59.302 [Thread-79] (12348) INFO  - Getting value for key test4key6
+22:12:59.303 [Thread-79] (12348) INFO  - Get request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.309 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57183
+22:12:59.311 [Thread-42] (12345) INFO  - Getting value for key test4key7
+22:12:59.311 [Thread-42] (12345) INFO  - Get request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.319 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57184
+22:12:59.311 [Thread-44] (12349) INFO  - Getting value for key test4key6
+22:12:59.319 [Thread-44] (12349) INFO  - Get request for key: test4key6 with value: newValue6 and version: 2
+22:12:59.319 [Thread-80] (12348) INFO  - Getting value for key test4key7
+22:12:59.319 [Thread-80] (12348) INFO  - Get request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.319 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57185
+22:12:59.319 [Thread-71] (12346) INFO  - Getting value for key test4key7
+22:12:59.319 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57186
+22:12:59.319 [Thread-71] (12346) INFO  - Get request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.327 [Thread-72] (12346) INFO  - Getting value for key test4key8
+22:12:59.328 [Thread-72] (12346) INFO  - Get request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.328 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57188
+22:12:59.328 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57189
+22:12:59.328 [Thread-81] (12348) INFO  - Getting value for key test4key7
+22:12:59.331 [Thread-81] (12348) INFO  - Get request for key: test4key7 with value: newValue7 and version: 2
+22:12:59.331 [Thread-43] (12345) INFO  - Getting value for key test4key8
+22:12:59.332 [Thread-43] (12345) INFO  - Get request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.332 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57190
+22:12:59.332 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57191
+22:12:59.332 [Thread-45] (12349) INFO  - Getting value for key test4key7
+22:12:59.336 [Thread-45] (12349) INFO  - Get request for key: test4key7 with value: newValue7 and version: 1
+22:12:59.336 [Thread-82] (12348) INFO  - Getting value for key test4key8
+22:12:59.336 [Thread-82] (12348) INFO  - Get request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.336 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57192
+22:12:59.341 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57193
+22:12:59.341 [Thread-46] (12349) INFO  - Trying to update stale response for key: test4key7
+22:12:59.341 [Thread-46] (12349) INFO  - Updated stale response for key: test4key7 to: newValue7 with version: 2
+22:12:59.341 [Thread-73] (12346) INFO  - Getting value for key test4key9
+22:12:59.341 [Thread-73] (12346) INFO  - Get request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.341 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57194
+22:12:59.345 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57195
+22:12:59.345 [Thread-74] (12346) INFO  - Getting value for key test4key8
+22:12:59.345 [Thread-74] (12346) INFO  - Get request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.345 [Thread-44] (12345) INFO  - Getting value for key test4key9
+22:12:59.345 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57196
+22:12:59.349 [Thread-44] (12345) INFO  - Get request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.349 [Thread-83] (12348) INFO  - Getting value for key test4key8
+22:12:59.349 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57197
+22:12:59.349 [Thread-83] (12348) INFO  - Get request for key: test4key8 with value: newValue8 and version: 2
+22:12:59.353 [Thread-84] (12348) INFO  - Getting value for key test4key9
+22:12:59.353 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57198
+22:12:59.353 [Thread-84] (12348) INFO  - Get request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.353 [Thread-47] (12349) INFO  - Getting value for key test4key8
+22:12:59.353 [Thread-47] (12349) INFO  - Get request for key: test4key8 with value: newValue8 and version: 1
+22:12:59.353 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57199
+22:12:59.353 [Thread-48] (12349) INFO  - Trying to update stale response for key: test4key8
+22:12:59.361 [Thread-48] (12349) INFO  - Updated stale response for key: test4key8 to: newValue8 with version: 2
+22:12:59.361 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57200
+22:12:59.361 [Thread-75] (12346) INFO  - Getting value for key test4key9
+22:12:59.361 [Thread-75] (12346) INFO  - Get request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.369 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57201
+22:12:59.377 [Thread-85] (12348) INFO  - Getting value for key test4key9
+22:12:59.377 [Thread-85] (12348) INFO  - Get request for key: test4key9 with value: newValue9 and version: 2
+22:12:59.377 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57202
+22:12:59.377 [Thread-49] (12349) INFO  - Getting value for key test4key9
+22:12:59.377 [Thread-49] (12349) INFO  - Get request for key: test4key9 with value: newValue9 and version: 2
+22:13:08.569 [pool-2-thread-1] (12345) INFO  - Get request for key: test4key4 with value: newValue4 and version: 2
+22:13:08.571 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57208
+22:13:08.587 [Thread-86] (12348) INFO  - Trying to update stale response for key: test4key4
+22:13:08.589 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57209
+22:13:08.589 [Thread-76] (12346) INFO  - Trying to update stale response for key: test4key4
+22:13:12.286 [pool-2-thread-1] (12346) INFO  - Get request for key: test4key2 with value: newValue2 and version: 2
+22:13:12.298 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57211
+22:13:12.311 [Thread-77] (12346) INFO  - Trying to update stale response for key: test4key2
+22:13:12.311 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57212
+22:13:12.316 [Thread-45] (12345) INFO  - Trying to update stale response for key: test4key2
+22:13:15.986 [pool-2-thread-1] (12347) INFO  - Get request for key: test2key with value: test2value and version: 1
+22:13:15.994 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57216
+22:13:16.010 [Thread-50] (12349) INFO  - Trying to update stale response for key: test2key
+22:13:16.026 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57217
+22:13:16.026 [Thread-35] (12347) INFO  - Trying to update stale response for key: test2key
+22:13:19.429 [pool-2-thread-1] (12348) INFO  - Get request for key: test1key1 with value: test1value1 and version: 1
+22:13:19.429 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57218
+22:13:19.445 [Thread-46] (12345) INFO  - Trying to update stale response for key: test1key1
+22:13:19.445 [Thread-46] (12345) INFO  - Updated stale response for key: test1key1 to: test1value1 with version: 1
+22:13:19.453 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57219
+22:13:19.453 [Thread-87] (12348) INFO  - Trying to update stale response for key: test1key1
+22:13:22.536 [pool-2-thread-1] (12349) INFO  - Get request for key: test4key7 with value: newValue7 and version: 2
+22:13:22.578 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57223
+22:13:22.610 [Thread-78] (12346) INFO  - Trying to update stale response for key: test4key7
+22:13:22.610 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 57224
+22:13:22.618 [Thread-88] (12348) INFO  - Trying to update stale response for key: test4key7

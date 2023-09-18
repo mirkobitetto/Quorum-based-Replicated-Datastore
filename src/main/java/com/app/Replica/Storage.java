@@ -100,6 +100,7 @@ public class Storage {
             } else {
                 version = versions.get(key);
             }
+            logger.info("Get request for key: " + key + " with value: " + value + " and version: " + version);
 
             // Return a copy of the value with the current version number
             return new String(value + " " + version);
@@ -119,6 +120,7 @@ public class Storage {
         try {
             store.put(key, value);
             versions.put(key, version);
+            logger.info("Put request for key: " + key + " with value: " + value + " and version: " + version);
             return true;
         } finally {
             // Release the write lock on the key
