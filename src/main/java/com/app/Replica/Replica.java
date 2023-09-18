@@ -15,8 +15,8 @@ import org.apache.logging.log4j.ThreadContext;
 public class Replica {
     public static void main(String[] args) {
 
-        final Logger logger = LogManager.getLogger(Replica.class);
         System.setProperty("log4j2.isThreadContextMapInheritable", "true");
+        final Logger logger = LogManager.getLogger(Replica.class);
 
         if (args.length != 1) {
             logger.info("Usage: java Replica <serverPort>");
@@ -52,27 +52,28 @@ public class Replica {
             AntiEntropy antiEntropy = new AntiEntropy(replica, antiEntropyIntervalInSeconds);
             antiEntropy.startAntiEntropy();
 
-            ServerSocket serverSocket = new ServerSocket(serverPort);
-            logger.info("Replica listening on port " + serverPort);
+            try (ServerSocket serverSocket = new ServerSocket(serverPort)) {
+                logger.info("Replica listening on port " + serverPort);
 
-            while (true) {
-                // Wait for a client connection
-                Socket clientSocket = serverSocket.accept();
+                while (true) {
+                    // Wait for a client connection
+                    Socket clientSocket = serverSocket.accept();
 
-                if (isReplicaConnection(clientSocket, replicaIPs)) {
-                    // This is a replica connection
-                    logger.info("Replica connected. Replica IP: " + clientSocket.getInetAddress().getHostAddress()
-                            + " Port: " + clientSocket.getPort());
-                } else {
-                    // This is a client connection
-                    logger.info("Client connected. Client IP: " + clientSocket.getInetAddress().getHostAddress()
-                            + " Port: " + clientSocket.getPort());
+                    if (isReplicaConnection(clientSocket, replicaIPs)) {
+                        // This is a replica connection
+                        logger.info("Replica connected. Replica IP: " + clientSocket.getInetAddress().getHostAddress()
+                                + " Port: " + clientSocket.getPort());
+                    } else {
+                        // This is a client connection
+                        logger.info("Client connected. Client IP: " + clientSocket.getInetAddress().getHostAddress()
+                                + " Port: " + clientSocket.getPort());
+                    }
+
+                    // Create a new thread to handle the client request
+                    StorageHandler requestHandler = new StorageHandler(clientSocket, replica);
+                    Thread thread = new Thread(requestHandler);
+                    thread.start();
                 }
-
-                // Create a new thread to handle the client request
-                StorageHandler requestHandler = new StorageHandler(clientSocket, replica);
-                Thread thread = new Thread(requestHandler);
-                thread.start();
             }
         } catch (IOException e) {
             e.printStackTrace();

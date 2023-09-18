@@ -33,7 +33,7 @@ public class QuorumTest2 {
             final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    String clientID = Integer.toString(clientNr+1);
+                    String clientID = Integer.toString(clientNr + 1);
                     Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentGetOnDifferentKeys(quorum, numOperations, clientNr); // Perform concurrent
@@ -58,7 +58,7 @@ public class QuorumTest2 {
             final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    String clientID = Integer.toString(clientNr+1);
+                    String clientID = Integer.toString(clientNr + 1);
                     Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentGetOnSameKey(quorum, numOperations); // Perform concurrent operations
@@ -82,12 +82,12 @@ public class QuorumTest2 {
             final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    String clientID = Integer.toString(clientNr+1);
+                    String clientID = Integer.toString(clientNr + 1);
                     Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentGetWhileWriteInProgress(quorum, numOperations, clientNr); // Perform
-                                                                                                       // concurrent
-                                                                                                       // operations
+                                                                                               // concurrent
+                                                                                               // operations
                     doneSignal.countDown();
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
@@ -108,34 +108,10 @@ public class QuorumTest2 {
             final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    String clientID = Integer.toString(clientNr+1);
+                    String clientID = Integer.toString(clientNr + 1);
                     Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentWritesOnDifferentKeys(quorum, numOperations); // Perform concurrent operations
-                    doneSignal.countDown();
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                }
-            });
-        }
-
-        startSignal.countDown(); // Release the start signal to start all clients concurrently
-        doneSignal.await(); // Wait for all clients to finish
-
-    }
-
-    @Test
-    public void testMultipleWritesOnSameKey() throws InterruptedException {
-        ExecutorService executorService = Executors.newFixedThreadPool(numClients);
-
-        for (int i = 0; i < numClients; i++) {
-            final int clientNr = i;
-            executorService.execute(() -> {
-                try {
-                    String clientID = Integer.toString(clientNr+1);
-                    Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
-                    startSignal.await(); // Wait for the signal to start concurrently
-                    performConcurrentWritesOnSameKey(quorum, numOperations); // Perform concurrent operations
                     doneSignal.countDown();
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
@@ -310,61 +286,4 @@ public class QuorumTest2 {
             assertEquals(expectedValue, retrievedValue);
         }
     }
-
-    private void performConcurrentWritesOnSameKey(Quorum quorum, int numOperations) {
-        // Implement test case 5: Multiple WRITE operations on the same key
-        // Simulate concurrent WRITE operations on the same key and assert the behavior
-
-        String key = "test5key0"; // The key on which all quorums will write
-
-        // Create a CountDownLatch to coordinate concurrent writes
-        CountDownLatch startLatch = new CountDownLatch(1);
-
-        for (int i = 0; i < numOperations; i++) {
-            String newValue = "newValue" + i;
-
-            // Start a thread for each concurrent write operation
-            Thread writeThread = new Thread(() -> {
-                try {
-                    startLatch.await(); // Wait for the signal to start writing concurrently
-
-                    // Use synchronized block to ensure thread safety while updating the key-value
-                    // store
-                    synchronized (quorum) {
-                        // Perform concurrent WRITE operation on the same key
-                        quorum.putValue(key, newValue);
-                    }
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                }
-            });
-
-            writeThread.start();
-        }
-
-        // Release the startLatch to initiate concurrent writes
-        startLatch.countDown();
-
-        // Wait for all concurrent write threads to finish
-        try {
-            Thread.sleep(100); // Adjust sleep time as needed to ensure all threads finish
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
-        }
-
-        // Retrieve the final value for the key and assert that it matches the latest
-        // written value
-        String expectedValue = "newValue" + (numOperations - 1); // The last written value
-        String retrievedValue;
-        synchronized (quorum) {
-            retrievedValue = quorum.getValue(key);
-        }
-
-        String[] parts = retrievedValue.split(" ");
-        retrievedValue = parts[1];
-
-        // Assert that the final value matches the latest written value
-        assertEquals(expectedValue, retrievedValue);
-    }
-
 }

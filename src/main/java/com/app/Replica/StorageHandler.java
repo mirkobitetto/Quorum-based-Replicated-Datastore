@@ -12,7 +12,7 @@ public class StorageHandler implements Runnable {
 
     String port = ThreadContext.get("port");
 
-    final Logger logger = LogManager.getLogger(StorageHandler.class);
+    final Logger logger = LogManager.getLogger(Replica.class);
 
     private Socket clientSocket;
     private Storage replica;

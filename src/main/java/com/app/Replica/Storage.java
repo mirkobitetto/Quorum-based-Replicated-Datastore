@@ -15,7 +15,7 @@ public class Storage {
 
     String port = ThreadContext.get("port");
 
-    final Logger logger = LogManager.getLogger(Storage.class);
+    final Logger logger = LogManager.getLogger(Replica.class);
 
     // Data structure to store key-value pairs
     private ConcurrentHashMap<String, String> store = new ConcurrentHashMap<>();
