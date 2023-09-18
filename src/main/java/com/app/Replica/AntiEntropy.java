@@ -15,7 +15,16 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
+
 public class AntiEntropy {
+
+    String port = ThreadContext.get("port");
+
+    final Logger logger = LogManager.getLogger(AntiEntropy.class);
+
     private Storage storage;
     private int intervalInSeconds;
     private List<InetSocketAddress> replicaAddresses;
@@ -117,7 +126,7 @@ public class AntiEntropy {
             InetSocketAddress replicaAddress = shuffledAddresses.get(i);
             if (!sendUpdateRequest(replicaAddress, key, value, version)) {
                 // Handle the case where the update request failed
-                System.out.println("Failed to send update request to replica: " + replicaAddress);
+                logger.warn("Failed to send update request to replica: " + replicaAddress);
             }
         }
     }
@@ -137,7 +146,7 @@ public class AntiEntropy {
             return updateResponse.equals("UPDATE_RECEIVED");
 
         } catch (IOException e) {
-            System.out.println("Failed to send anti-entropy message to replica: " + replicaAddress);
+            logger.warn("Failed to send anti-entropy message to replica: " + replicaAddress);
         }
 
         // The update request failed

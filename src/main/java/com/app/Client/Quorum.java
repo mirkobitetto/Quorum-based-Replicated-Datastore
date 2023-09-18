@@ -190,7 +190,6 @@ public class Quorum {
             try {
                 lockAcquired = connection.acquireLock(key);
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             if (lockAcquired == -1) {
@@ -238,7 +237,6 @@ public class Quorum {
             try {
                 connection.closeConnection();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -250,7 +248,6 @@ public class Quorum {
             try {
                 connection.releaseLock(key);
             } catch (IOException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

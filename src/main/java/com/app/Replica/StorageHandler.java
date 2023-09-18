@@ -4,7 +4,16 @@ import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
+
 public class StorageHandler implements Runnable {
+
+    String port = ThreadContext.get("port");
+
+    final Logger logger = LogManager.getLogger(StorageHandler.class);
+
     private Socket clientSocket;
     private Storage replica;
 
@@ -27,7 +36,7 @@ public class StorageHandler implements Runnable {
                 String response = "";
 
                 if ("ACQUIRE_LOCK".equals(method) && parts.length == 2) {
-                    System.out.println("Acquiring write lock for key: " + parts[1]);
+                    logger.info("Acquiring write lock for key: " + parts[1]);
                     String key = parts[1];
                     InetSocketAddress clientAddress = new InetSocketAddress(
                             clientSocket.getInetAddress().getHostAddress(), clientSocket.getPort());
@@ -35,19 +44,19 @@ public class StorageHandler implements Runnable {
                     response = lockResult.isSuccess() ? "LOCK_ACQUIRED " + lockResult.getCurrentVersion()
                             : "LOCK_NOT_ACQUIRED";
                 } else if ("RELEASE_LOCK".equals(method) && parts.length == 2) {
-                    System.out.println("Releasing lock for key " + parts[1]);
+                    logger.info("Releasing lock for key " + parts[1]);
                     String key = parts[1];
                     InetSocketAddress clientAddress = new InetSocketAddress(
                             clientSocket.getInetAddress().getHostAddress(), clientSocket.getPort());
                     replica.releaseWriteLock(key, clientAddress);
                     response = "LOCK_RELEASED";
                 } else if ("GET".equals(method) && parts.length == 2) {
-                    System.out.println("Getting value for key " + parts[1]);
+                    logger.info("Getting value for key " + parts[1]);
                     String key = parts[1];
                     String value = replica.get(key);
                     response = (value != null) ? "GET_SUCCESS " + value : "GET_FAILED";
                 } else if ("PUT".equals(method) && parts.length == 4) {
-                    System.out.println("Putting value for key " + parts[1]);
+                    logger.info("Putting value for key " + parts[1]);
                     String key = parts[1];
                     String value = parts[2];
                     Integer version = Integer.parseInt(parts[3]);
@@ -57,7 +66,7 @@ public class StorageHandler implements Runnable {
                     response = success ? "PUT_SUCCESS" : "PUT_FAILED";
                 } else if ("UPDATE".equals(method) && parts.length == 4) {
                     // Handle the "UPDATE" request
-                    System.out.println("Trying to update stale response for key: " + parts[1]);
+                    logger.info("Trying to update stale response for key: " + parts[1]);
                     String key = parts[1];
                     String value = parts[2];
                     int receivedVersion = Integer.parseInt(parts[3]);

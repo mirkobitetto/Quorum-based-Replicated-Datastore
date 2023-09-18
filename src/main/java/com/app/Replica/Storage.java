@@ -7,7 +7,16 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
+
 public class Storage {
+
+    String port = ThreadContext.get("port");
+
+    final Logger logger = LogManager.getLogger(Storage.class);
+
     // Data structure to store key-value pairs
     private ConcurrentHashMap<String, String> store = new ConcurrentHashMap<>();
 
@@ -37,7 +46,6 @@ public class Storage {
                     return new WriteLockResult(false, 0); // Lock not acquired
                 }
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         } else if (currentHolder.equals(holder)) {
@@ -62,7 +70,6 @@ public class Storage {
                     lock.writeLock().unlock();
                 }
             } catch (Exception e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
 
@@ -78,7 +85,7 @@ public class Storage {
 
         if (!lockAcquired) {
             // Failed to acquire the lock, return null or handle the case as needed
-            System.out.println("Failed to acquire read lock for key: " + key);
+            logger.warn("Failed to acquire read lock for key: " + key);
             return null;
         }
 
@@ -128,7 +135,7 @@ public class Storage {
         boolean readLockAcquired = lock.readLock().tryLock();
         if (!readLockAcquired) {
             // Failed to acquire read lock, no need to proceed
-            System.out.println("Update failed for key " + key + " with value " + value + " and version "
+            logger.warn("Update failed for key " + key + " with value " + value + " and version "
                     + receivedVersion + ". Read lock could not be acquired");
             return;
         }
@@ -145,7 +152,7 @@ public class Storage {
                 boolean writeLockAcquired = lock.writeLock().tryLock();
                 if (!writeLockAcquired) {
                     // Failed to acquire write lock, do not update
-                    System.out.println("Update failed for key " + key + " with value " + value + " and version "
+                    logger.warn("Update failed for key " + key + " with value " + value + " and version "
                             + receivedVersion + ". Write lock could not be acquired");
                     return;
                 }
@@ -153,7 +160,7 @@ public class Storage {
                 try {
                     store.put(key, value);
                     versions.put(key, receivedVersion);
-                    System.out.println("Updated stale response for key: " + key + " to: " + value + " with version: "
+                    logger.info("Updated stale response for key: " + key + " to: " + value + " with version: "
                             + receivedVersion);
                 } finally {
                     // Release the write lock

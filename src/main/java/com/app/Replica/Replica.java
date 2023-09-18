@@ -8,10 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.ThreadContext;
+
 public class Replica {
     public static void main(String[] args) {
+
+        final Logger logger = LogManager.getLogger(Replica.class);
+        System.setProperty("log4j2.isThreadContextMapInheritable", "true");
+
         if (args.length != 1) {
-            System.out.println("Usage: java Replica <serverPort>");
+            logger.info("Usage: java Replica <serverPort>");
             return;
         }
 
@@ -21,14 +29,16 @@ public class Replica {
         try {
             serverPort = Integer.parseInt(args[0]);
         } catch (NumberFormatException e) {
-            System.out.println("Invalid server port. Please provide a valid integer.");
+            logger.error("Invalid server port. Please provide a valid integer.");
             return;
         }
+
+        ThreadContext.put("port", String.valueOf(serverPort));
 
         try {
             Properties properties = loadConfigFile("config.properties");
             if (properties == null) {
-                System.out.println("Error: Failed to load configuration file.");
+                logger.error("Error: Failed to load configuration file.");
                 return;
             }
 
@@ -43,7 +53,7 @@ public class Replica {
             antiEntropy.startAntiEntropy();
 
             ServerSocket serverSocket = new ServerSocket(serverPort);
-            System.out.println("Replica listening on port " + serverPort);
+            logger.info("Replica listening on port " + serverPort);
 
             while (true) {
                 // Wait for a client connection
@@ -51,12 +61,11 @@ public class Replica {
 
                 if (isReplicaConnection(clientSocket, replicaIPs)) {
                     // This is a replica connection
-                    System.out
-                            .println("Replica connected. Replica IP: " + clientSocket.getInetAddress().getHostAddress()
-                                    + " Port: " + clientSocket.getPort());
+                    logger.info("Replica connected. Replica IP: " + clientSocket.getInetAddress().getHostAddress()
+                            + " Port: " + clientSocket.getPort());
                 } else {
                     // This is a client connection
-                    System.out.println("Client connected. Client IP: " + clientSocket.getInetAddress().getHostAddress()
+                    logger.info("Client connected. Client IP: " + clientSocket.getInetAddress().getHostAddress()
                             + " Port: " + clientSocket.getPort());
                 }
 

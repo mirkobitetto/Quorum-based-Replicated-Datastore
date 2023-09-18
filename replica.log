@@ -1,0 +1,802 @@
+18:56:50.368 [main] (12345) INFO  - Replica listening on port 12345
+18:57:00.675 [main] (12346) INFO  - Replica listening on port 12346
+18:57:06.060 [main] (12347) INFO  - Replica listening on port 12347
+18:57:15.322 [main] (12349) INFO  - Replica listening on port 12349
+18:57:27.882 [main] (12348) INFO  - Replica listening on port 12348
+18:58:54.940 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51102
+18:58:54.952 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51105
+18:58:54.950 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51103
+18:58:54.949 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51104
+18:58:54.978 [Thread-0] () INFO  - Acquiring write lock for key: ket
+18:58:55.038 [Thread-0] () INFO  - Acquiring write lock for key: ket
+18:58:55.047 [Thread-0] () INFO  - Acquiring write lock for key: ket
+18:58:55.055 [Thread-0] () INFO  - Acquiring write lock for key: ket
+18:58:55.069 [Thread-0] () INFO  - Putting value for key ket
+18:58:55.105 [Thread-0] () INFO  - Putting value for key ket
+18:58:55.110 [Thread-0] () INFO  - Putting value for key ket
+18:58:55.116 [Thread-0] () INFO  - Putting value for key ket
+18:58:59.277 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51108
+18:58:59.280 [Thread-1] () INFO  - Getting value for key ket
+18:58:59.325 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51109
+18:58:59.346 [Thread-0] () INFO  - Getting value for key ket
+18:58:59.355 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51110
+18:58:59.367 [Thread-1] () INFO  - Getting value for key ket
+18:58:59.383 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51111
+18:58:59.391 [Thread-1] () INFO  - Trying to update stale response for key: ket
+18:58:59.420 [Thread-1] () INFO  - Updated stale response for key: ket to: value with version: 1
+18:59:00.647 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51112
+18:59:00.657 [Thread-2] () INFO  - Trying to update stale response for key: ket
+18:59:00.662 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51113
+18:59:00.667 [Thread-1] () INFO  - Trying to update stale response for key: ket
+18:59:06.139 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51119
+18:59:06.146 [Thread-2] () INFO  - Trying to update stale response for key: ket
+18:59:06.152 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51120
+18:59:06.179 [Thread-2] () INFO  - Trying to update stale response for key: ket
+18:59:15.307 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51128
+18:59:15.343 [Thread-3] () INFO  - Trying to update stale response for key: ket
+18:59:15.349 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51129
+18:59:15.357 [Thread-2] () INFO  - Trying to update stale response for key: ket
+18:59:27.853 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51137
+18:59:27.866 [Thread-3] () INFO  - Trying to update stale response for key: ket
+18:59:27.871 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51138
+18:59:27.875 [Thread-3] () INFO  - Trying to update stale response for key: ket
+18:59:50.344 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51146
+18:59:50.351 [Thread-1] () INFO  - Trying to update stale response for key: ket
+18:59:50.355 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51147
+18:59:50.357 [Thread-3] () INFO  - Trying to update stale response for key: ket
+19:00:00.643 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51150
+19:00:00.645 [Thread-4] () INFO  - Trying to update stale response for key: ket
+19:00:00.649 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51151
+19:00:00.651 [Thread-4] () INFO  - Trying to update stale response for key: ket
+19:00:06.032 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51154
+19:00:06.034 [Thread-5] () INFO  - Trying to update stale response for key: ket
+19:00:06.037 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51155
+19:00:06.040 [Thread-2] () INFO  - Trying to update stale response for key: ket
+19:00:15.293 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51158
+19:00:15.295 [Thread-4] () INFO  - Trying to update stale response for key: ket
+19:00:15.298 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51159
+19:00:15.301 [Thread-5] () INFO  - Trying to update stale response for key: ket
+19:00:27.842 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51165
+19:00:27.844 [Thread-6] () INFO  - Trying to update stale response for key: ket
+19:00:27.847 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51166
+19:00:27.850 [Thread-6] () INFO  - Trying to update stale response for key: ket
+19:00:50.341 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51175
+19:00:50.366 [Thread-7] () INFO  - Trying to update stale response for key: ket
+19:00:50.372 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51176
+19:00:50.374 [Thread-7] () INFO  - Trying to update stale response for key: ket
+19:01:00.657 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51179
+19:01:00.659 [Thread-3] () INFO  - Trying to update stale response for key: ket
+19:01:00.662 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51180
+19:01:00.665 [Thread-5] () INFO  - Trying to update stale response for key: ket
+19:01:06.039 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51183
+19:01:06.040 [Thread-4] () INFO  - Trying to update stale response for key: ket
+19:01:06.043 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51184
+19:01:06.045 [Thread-8] () INFO  - Trying to update stale response for key: ket
+19:01:15.288 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51187
+19:01:15.290 [Thread-5] () INFO  - Trying to update stale response for key: ket
+19:01:15.292 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51188
+19:01:15.293 [Thread-6] () INFO  - Trying to update stale response for key: ket
+19:01:27.838 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51193
+19:01:27.840 [Thread-6] () INFO  - Trying to update stale response for key: ket
+19:01:27.844 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51194
+19:01:27.846 [Thread-9] () INFO  - Trying to update stale response for key: ket
+19:01:50.339 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51205
+19:01:50.341 [Thread-10] () INFO  - Trying to update stale response for key: ket
+19:01:50.346 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51206
+19:01:50.349 [Thread-4] () INFO  - Trying to update stale response for key: ket
+19:02:00.655 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51209
+19:02:00.658 [Thread-7] () INFO  - Trying to update stale response for key: ket
+19:02:00.663 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51210
+19:02:00.666 [Thread-8] () INFO  - Trying to update stale response for key: ket
+19:02:06.035 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51214
+19:02:06.041 [Thread-11] () INFO  - Trying to update stale response for key: ket
+19:02:06.044 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51215
+19:02:06.048 [Thread-5] () INFO  - Trying to update stale response for key: ket
+19:02:15.288 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51218
+19:02:15.290 [Thread-7] () INFO  - Trying to update stale response for key: ket
+19:02:15.293 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51219
+19:02:15.297 [Thread-6] () INFO  - Trying to update stale response for key: ket
+19:02:27.842 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51224
+19:02:27.847 [Thread-9] () INFO  - Trying to update stale response for key: ket
+19:02:27.850 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51225
+19:02:27.853 [Thread-12] () INFO  - Trying to update stale response for key: ket
+19:02:50.337 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51238
+19:02:50.340 [Thread-13] () INFO  - Trying to update stale response for key: ket
+19:02:50.352 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51239
+19:02:50.370 [Thread-10] () INFO  - Trying to update stale response for key: ket
+19:03:00.658 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51243
+19:03:00.661 [Thread-11] () INFO  - Trying to update stale response for key: ket
+19:03:00.664 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51244
+19:03:00.667 [Thread-7] () INFO  - Trying to update stale response for key: ket
+19:03:06.035 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51246
+19:03:06.037 [Thread-8] () INFO  - Trying to update stale response for key: ket
+19:03:06.041 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51247
+19:03:06.043 [Thread-12] () INFO  - Trying to update stale response for key: ket
+19:03:15.298 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51259
+19:03:15.310 [Thread-9] () INFO  - Trying to update stale response for key: ket
+19:03:15.321 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51260
+19:03:15.326 [Thread-13] () INFO  - Trying to update stale response for key: ket
+19:03:27.841 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51265
+19:03:27.844 [Thread-14] () INFO  - Trying to update stale response for key: ket
+19:03:27.846 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51266
+19:03:27.848 [Thread-10] () INFO  - Trying to update stale response for key: ket
+19:03:50.349 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51277
+19:03:50.367 [Thread-14] () INFO  - Trying to update stale response for key: ket
+19:03:50.375 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51278
+19:03:50.382 [Thread-8] () INFO  - Trying to update stale response for key: ket
+19:04:00.650 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51283
+19:04:00.658 [Thread-8] () INFO  - Trying to update stale response for key: ket
+19:04:00.663 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51284
+19:04:00.667 [Thread-9] () INFO  - Trying to update stale response for key: ket
+19:04:06.040 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51285
+19:04:06.042 [Thread-9] () INFO  - Trying to update stale response for key: ket
+19:04:06.049 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51286
+19:04:06.054 [Thread-15] () INFO  - Trying to update stale response for key: ket
+19:04:15.287 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51291
+19:04:15.289 [Thread-10] () INFO  - Trying to update stale response for key: ket
+19:04:15.294 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51292
+19:04:15.301 [Thread-11] () INFO  - Trying to update stale response for key: ket
+19:04:27.842 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51295
+19:04:27.843 [Thread-15] () INFO  - Trying to update stale response for key: ket
+19:04:27.847 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51296
+19:04:27.848 [Thread-12] () INFO  - Trying to update stale response for key: ket
+19:04:50.345 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51306
+19:04:50.349 [Thread-11] () INFO  - Trying to update stale response for key: ket
+19:04:50.352 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51307
+19:04:50.355 [Thread-16] () INFO  - Trying to update stale response for key: ket
+19:05:00.649 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51312
+19:05:00.652 [Thread-10] () INFO  - Trying to update stale response for key: ket
+19:05:00.656 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51313
+19:05:00.659 [Thread-12] () INFO  - Trying to update stale response for key: ket
+19:05:06.041 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51317
+19:05:06.044 [Thread-11] () INFO  - Trying to update stale response for key: ket
+19:05:06.051 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51318
+19:05:06.054 [Thread-17] () INFO  - Trying to update stale response for key: ket
+19:05:15.291 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51321
+19:05:15.294 [Thread-18] () INFO  - Trying to update stale response for key: ket
+19:05:15.300 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51322
+19:05:15.303 [Thread-13] () INFO  - Trying to update stale response for key: ket
+19:05:27.842 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51327
+19:05:27.844 [Thread-19] () INFO  - Trying to update stale response for key: ket
+19:05:27.847 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51328
+19:05:27.849 [Thread-16] () INFO  - Trying to update stale response for key: ket
+19:05:50.344 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51338
+19:05:50.347 [Thread-17] () INFO  - Trying to update stale response for key: ket
+19:05:50.350 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51339
+19:05:50.352 [Thread-12] () INFO  - Trying to update stale response for key: ket
+19:06:00.646 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51342
+19:06:00.648 [Thread-20] () INFO  - Trying to update stale response for key: ket
+19:06:00.650 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51343
+19:06:00.652 [Thread-14] () INFO  - Trying to update stale response for key: ket
+19:06:06.042 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51354
+19:06:06.044 [Thread-18] () INFO  - Trying to update stale response for key: ket
+19:06:06.048 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51355
+19:06:06.051 [Thread-13] () INFO  - Trying to update stale response for key: ket
+19:06:15.301 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51358
+19:06:15.307 [Thread-15] () INFO  - Trying to update stale response for key: ket
+19:06:15.319 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51359
+19:06:15.324 [Thread-14] () INFO  - Trying to update stale response for key: ket
+19:06:27.839 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51364
+19:06:27.842 [Thread-21] () INFO  - Trying to update stale response for key: ket
+19:06:27.846 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51365
+19:06:27.850 [Thread-16] () INFO  - Trying to update stale response for key: ket
+19:06:50.340 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51375
+19:06:50.346 [Thread-22] () INFO  - Trying to update stale response for key: ket
+19:06:50.352 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51376
+19:06:50.364 [Thread-17] () INFO  - Trying to update stale response for key: ket
+19:07:00.650 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51379
+19:07:00.656 [Thread-19] () INFO  - Trying to update stale response for key: ket
+19:07:00.663 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51380
+19:07:00.671 [Thread-23] () INFO  - Trying to update stale response for key: ket
+19:07:06.035 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51383
+19:07:06.038 [Thread-24] () INFO  - Trying to update stale response for key: ket
+19:07:06.041 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51384
+19:07:06.044 [Thread-20] () INFO  - Trying to update stale response for key: ket
+19:07:15.302 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51387
+19:07:15.305 [Thread-13] () INFO  - Trying to update stale response for key: ket
+19:07:15.309 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51388
+19:07:15.311 [Thread-25] () INFO  - Trying to update stale response for key: ket
+19:07:27.840 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51393
+19:07:27.844 [Thread-18] () INFO  - Trying to update stale response for key: ket
+19:07:27.847 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51394
+19:07:27.851 [Thread-14] () INFO  - Trying to update stale response for key: ket
+19:07:50.338 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51408
+19:07:50.340 [Thread-21] () INFO  - Trying to update stale response for key: ket
+19:07:50.344 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51409
+19:07:50.348 [Thread-26] () INFO  - Trying to update stale response for key: ket
+19:08:00.654 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51412
+19:08:00.656 [Thread-15] () INFO  - Trying to update stale response for key: ket
+19:08:00.660 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51413
+19:08:00.662 [Thread-22] () INFO  - Trying to update stale response for key: ket
+19:08:06.034 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51416
+19:08:06.041 [Thread-15] () INFO  - Trying to update stale response for key: ket
+19:08:06.048 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51417
+19:08:06.059 [Thread-23] () INFO  - Trying to update stale response for key: ket
+19:08:15.299 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51420
+19:08:15.301 [Thread-16] () INFO  - Trying to update stale response for key: ket
+19:08:15.305 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51421
+19:08:15.308 [Thread-16] () INFO  - Trying to update stale response for key: ket
+19:08:27.850 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51431
+19:08:27.853 [Thread-17] () INFO  - Trying to update stale response for key: ket
+19:08:27.858 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51432
+19:08:27.861 [Thread-17] () INFO  - Trying to update stale response for key: ket
+19:08:50.334 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51442
+19:08:50.339 [Thread-19] () INFO  - Trying to update stale response for key: ket
+19:08:50.343 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51443
+19:08:50.346 [Thread-27] () INFO  - Trying to update stale response for key: ket
+19:09:00.658 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51446
+19:09:00.661 [Thread-24] () INFO  - Trying to update stale response for key: ket
+19:09:00.665 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51447
+19:09:00.670 [Thread-18] () INFO  - Trying to update stale response for key: ket
+19:09:06.033 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51450
+19:09:06.036 [Thread-20] () INFO  - Trying to update stale response for key: ket
+19:09:06.039 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51451
+19:09:06.041 [Thread-25] () INFO  - Trying to update stale response for key: ket
+19:09:15.296 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51454
+19:09:15.298 [Thread-19] () INFO  - Trying to update stale response for key: ket
+19:09:15.305 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51455
+19:09:15.308 [Thread-28] () INFO  - Trying to update stale response for key: ket
+19:09:27.845 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51460
+19:09:27.848 [Thread-21] () INFO  - Trying to update stale response for key: ket
+19:09:27.850 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51461
+19:09:27.852 [Thread-29] () INFO  - Trying to update stale response for key: ket
+19:09:50.341 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51469
+19:09:50.344 [Thread-22] () INFO  - Trying to update stale response for key: ket
+19:09:50.348 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51470
+19:09:50.351 [Thread-20] () INFO  - Trying to update stale response for key: ket
+19:10:00.649 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51475
+19:10:00.651 [Thread-23] () INFO  - Trying to update stale response for key: ket
+19:10:00.654 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51476
+19:10:00.658 [Thread-26] () INFO  - Trying to update stale response for key: ket
+19:10:06.035 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51477
+19:10:06.037 [Thread-24] () INFO  - Trying to update stale response for key: ket
+19:10:06.040 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51478
+19:10:06.043 [Thread-21] () INFO  - Trying to update stale response for key: ket
+19:10:15.295 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51483
+19:10:15.297 [Thread-27] () INFO  - Trying to update stale response for key: ket
+19:10:15.300 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51484
+19:10:15.303 [Thread-22] () INFO  - Trying to update stale response for key: ket
+19:10:27.838 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51487
+19:10:27.840 [Thread-18] () INFO  - Trying to update stale response for key: ket
+19:10:27.844 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51488
+19:10:27.847 [Thread-25] () INFO  - Trying to update stale response for key: ket
+19:10:50.349 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51498
+19:10:50.351 [Thread-23] () INFO  - Trying to update stale response for key: ket
+19:10:50.358 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51499
+19:10:50.363 [Thread-30] () INFO  - Trying to update stale response for key: ket
+19:11:00.661 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51504
+19:11:00.668 [Thread-28] () INFO  - Trying to update stale response for key: ket
+19:11:00.673 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51505
+19:11:00.680 [Thread-24] () INFO  - Trying to update stale response for key: ket
+19:11:06.043 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51508
+19:11:06.046 [Thread-25] () INFO  - Trying to update stale response for key: ket
+19:11:06.049 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51509
+19:11:06.052 [Thread-31] () INFO  - Trying to update stale response for key: ket
+19:11:15.292 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51512
+19:11:15.295 [Thread-29] () INFO  - Trying to update stale response for key: ket
+19:11:15.298 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51513
+19:11:15.302 [Thread-26] () INFO  - Trying to update stale response for key: ket
+19:11:27.851 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51517
+19:11:27.854 [Thread-19] () INFO  - Trying to update stale response for key: ket
+19:11:27.860 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51518
+19:11:27.862 [Thread-27] () INFO  - Trying to update stale response for key: ket
+19:11:50.335 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51531
+19:11:50.338 [Thread-26] () INFO  - Trying to update stale response for key: ket
+19:11:50.345 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51532
+19:11:50.353 [Thread-28] () INFO  - Trying to update stale response for key: ket
+19:12:00.647 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51535
+19:12:00.651 [Thread-30] () INFO  - Trying to update stale response for key: ket
+19:12:00.655 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51536
+19:12:00.659 [Thread-20] () INFO  - Trying to update stale response for key: ket
+19:12:06.039 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51539
+19:12:06.042 [Thread-29] () INFO  - Trying to update stale response for key: ket
+19:12:06.045 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51540
+19:12:06.047 [Thread-21] () INFO  - Trying to update stale response for key: ket
+19:12:15.302 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51543
+19:12:15.304 [Thread-32] () INFO  - Trying to update stale response for key: ket
+19:12:15.307 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51544
+19:12:15.310 [Thread-31] () INFO  - Trying to update stale response for key: ket
+19:12:27.845 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51549
+19:12:27.848 [Thread-32] () INFO  - Trying to update stale response for key: ket
+19:12:27.852 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51550
+19:12:27.855 [Thread-22] () INFO  - Trying to update stale response for key: ket
+19:12:50.344 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51559
+19:12:50.349 [Thread-33] () INFO  - Trying to update stale response for key: ket
+19:12:50.353 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51560
+19:12:50.358 [Thread-30] () INFO  - Trying to update stale response for key: ket
+19:13:00.649 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51564
+19:13:00.651 [Thread-33] () INFO  - Trying to update stale response for key: ket
+19:13:00.654 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51565
+19:13:00.659 [Thread-23] () INFO  - Trying to update stale response for key: ket
+19:13:06.040 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51568
+19:13:06.043 [Thread-34] () INFO  - Trying to update stale response for key: ket
+19:13:06.046 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51569
+19:13:06.049 [Thread-31] () INFO  - Trying to update stale response for key: ket
+19:13:15.298 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51572
+19:13:15.302 [Thread-35] () INFO  - Trying to update stale response for key: ket
+19:13:15.305 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51573
+19:13:15.310 [Thread-32] () INFO  - Trying to update stale response for key: ket
+19:13:27.847 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51580
+19:13:27.848 [Thread-34] () INFO  - Trying to update stale response for key: ket
+19:13:27.851 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51581
+19:13:27.854 [Thread-36] () INFO  - Trying to update stale response for key: ket
+19:13:50.336 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51592
+19:13:50.341 [Thread-24] () INFO  - Trying to update stale response for key: ket
+19:13:50.345 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51593
+19:13:50.348 [Thread-27] () INFO  - Trying to update stale response for key: ket
+19:14:00.650 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51597
+19:14:00.653 [Thread-28] () INFO  - Trying to update stale response for key: ket
+19:14:00.657 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51598
+19:14:00.660 [Thread-35] () INFO  - Trying to update stale response for key: ket
+19:14:06.031 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51601
+19:14:06.032 [Thread-29] () INFO  - Trying to update stale response for key: ket
+19:14:06.035 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51602
+19:14:06.037 [Thread-33] () INFO  - Trying to update stale response for key: ket
+19:14:15.294 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51605
+19:14:15.296 [Thread-34] () INFO  - Trying to update stale response for key: ket
+19:14:15.298 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51606
+19:14:15.301 [Thread-36] () INFO  - Trying to update stale response for key: ket
+19:14:27.849 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51611
+19:14:27.852 [Thread-25] () INFO  - Trying to update stale response for key: ket
+19:14:27.855 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51612
+19:14:27.858 [Thread-30] () INFO  - Trying to update stale response for key: ket
+19:14:50.338 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51621
+19:14:50.340 [Thread-26] () INFO  - Trying to update stale response for key: ket
+19:14:50.344 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51622
+19:14:50.347 [Thread-37] () INFO  - Trying to update stale response for key: ket
+19:15:00.647 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51625
+19:15:00.650 [Thread-35] () INFO  - Trying to update stale response for key: ket
+19:15:00.653 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51626
+19:15:00.656 [Thread-37] () INFO  - Trying to update stale response for key: ket
+19:15:06.044 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51629
+19:15:06.046 [Thread-38] () INFO  - Trying to update stale response for key: ket
+19:15:06.050 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51630
+19:15:06.053 [Thread-38] () INFO  - Trying to update stale response for key: ket
+19:15:15.294 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51639
+19:15:15.297 [Thread-39] () INFO  - Trying to update stale response for key: ket
+19:15:15.300 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51640
+19:15:15.305 [Thread-39] () INFO  - Trying to update stale response for key: ket
+19:15:27.840 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51645
+19:15:27.843 [Thread-40] () INFO  - Trying to update stale response for key: ket
+19:15:27.847 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51646
+19:15:27.849 [Thread-36] () INFO  - Trying to update stale response for key: ket
+19:15:50.344 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51655
+19:15:50.352 [Thread-31] () INFO  - Trying to update stale response for key: ket
+19:15:50.355 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51656
+19:15:50.359 [Thread-40] () INFO  - Trying to update stale response for key: ket
+19:16:00.655 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51661
+19:16:00.658 [Thread-37] () INFO  - Trying to update stale response for key: ket
+19:16:00.665 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51662
+19:16:00.668 [Thread-41] () INFO  - Trying to update stale response for key: ket
+19:16:06.044 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51663
+19:16:06.046 [Thread-42] () INFO  - Trying to update stale response for key: ket
+19:16:06.049 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51664
+19:16:06.052 [Thread-41] () INFO  - Trying to update stale response for key: ket
+19:16:15.289 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51669
+19:16:15.290 [Thread-32] () INFO  - Trying to update stale response for key: ket
+19:16:15.292 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51670
+19:16:15.295 [Thread-27] () INFO  - Trying to update stale response for key: ket
+19:16:27.848 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51673
+19:16:27.850 [Thread-33] () INFO  - Trying to update stale response for key: ket
+19:16:27.853 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51674
+19:16:27.855 [Thread-42] () INFO  - Trying to update stale response for key: ket
+19:16:50.338 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51686
+19:16:50.341 [Thread-43] () INFO  - Trying to update stale response for key: ket
+19:16:50.344 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51687
+19:16:50.347 [Thread-34] () INFO  - Trying to update stale response for key: ket
+19:17:00.645 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51693
+19:17:00.648 [Thread-43] () INFO  - Trying to update stale response for key: ket
+19:17:00.653 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51694
+19:17:00.664 [Thread-28] () INFO  - Trying to update stale response for key: ket
+19:17:06.032 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51697
+19:17:06.038 [Thread-35] () INFO  - Trying to update stale response for key: ket
+19:17:06.042 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51698
+19:17:06.045 [Thread-44] () INFO  - Trying to update stale response for key: ket
+19:17:15.287 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51701
+19:17:15.289 [Thread-36] () INFO  - Trying to update stale response for key: ket
+19:17:15.291 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51702
+19:17:15.293 [Thread-45] () INFO  - Trying to update stale response for key: ket
+19:17:27.844 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51706
+19:17:27.846 [Thread-38] () INFO  - Trying to update stale response for key: ket
+19:17:27.850 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51707
+19:17:27.852 [Thread-29] () INFO  - Trying to update stale response for key: ket
+19:17:50.345 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51716
+19:17:50.351 [Thread-30] () INFO  - Trying to update stale response for key: ket
+19:17:50.355 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51717
+19:17:50.357 [Thread-46] () INFO  - Trying to update stale response for key: ket
+19:18:00.648 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51720
+19:18:00.650 [Thread-39] () INFO  - Trying to update stale response for key: ket
+19:18:00.654 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51721
+19:18:00.656 [Thread-31] () INFO  - Trying to update stale response for key: ket
+19:18:06.036 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51724
+19:18:06.038 [Thread-40] () INFO  - Trying to update stale response for key: ket
+19:18:06.042 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51725
+19:18:06.045 [Thread-47] () INFO  - Trying to update stale response for key: ket
+19:18:15.290 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51728
+19:18:15.292 [Thread-48] () INFO  - Trying to update stale response for key: ket
+19:18:15.295 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51729
+19:18:15.296 [Thread-32] () INFO  - Trying to update stale response for key: ket
+19:18:27.842 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51734
+19:18:27.845 [Thread-33] () INFO  - Trying to update stale response for key: ket
+19:18:27.847 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51735
+19:18:27.849 [Thread-49] () INFO  - Trying to update stale response for key: ket
+19:18:50.342 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51744
+19:18:50.344 [Thread-50] () INFO  - Trying to update stale response for key: ket
+19:18:50.349 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51745
+19:18:50.352 [Thread-41] () INFO  - Trying to update stale response for key: ket
+19:19:00.653 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51750
+19:19:00.655 [Thread-37] () INFO  - Trying to update stale response for key: ket
+19:19:00.660 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51751
+19:19:00.663 [Thread-44] () INFO  - Trying to update stale response for key: ket
+19:19:06.042 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51754
+19:19:06.045 [Thread-51] () INFO  - Trying to update stale response for key: ket
+19:19:06.059 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51755
+19:19:06.062 [Thread-38] () INFO  - Trying to update stale response for key: ket
+19:19:15.288 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51758
+19:19:15.290 [Thread-52] () INFO  - Trying to update stale response for key: ket
+19:19:15.293 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51759
+19:19:15.295 [Thread-34] () INFO  - Trying to update stale response for key: ket
+19:19:27.847 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51764
+19:19:27.849 [Thread-45] () INFO  - Trying to update stale response for key: ket
+19:19:27.852 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51765
+19:19:27.854 [Thread-42] () INFO  - Trying to update stale response for key: ket
+19:19:50.333 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51773
+19:19:50.339 [Thread-43] () INFO  - Trying to update stale response for key: ket
+19:19:50.344 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51774
+19:19:50.347 [Thread-39] () INFO  - Trying to update stale response for key: ket
+19:20:00.643 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51777
+19:20:00.647 [Thread-53] () INFO  - Trying to update stale response for key: ket
+19:20:00.650 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51778
+19:20:00.652 [Thread-35] () INFO  - Trying to update stale response for key: ket
+19:20:06.043 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51781
+19:20:06.045 [Thread-54] () INFO  - Trying to update stale response for key: ket
+19:20:06.052 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51782
+19:20:06.056 [Thread-36] () INFO  - Trying to update stale response for key: ket
+19:20:15.288 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51785
+19:20:15.291 [Thread-40] () INFO  - Trying to update stale response for key: ket
+19:20:15.296 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51786
+19:20:15.297 [Thread-55] () INFO  - Trying to update stale response for key: ket
+19:20:27.841 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51792
+19:20:27.844 [Thread-37] () INFO  - Trying to update stale response for key: ket
+19:20:27.846 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51793
+19:20:27.848 [Thread-41] () INFO  - Trying to update stale response for key: ket
+19:20:50.342 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51801
+19:20:50.344 [Thread-56] () INFO  - Trying to update stale response for key: ket
+19:20:50.349 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51802
+19:20:50.351 [Thread-38] () INFO  - Trying to update stale response for key: ket
+19:21:00.651 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51806
+19:21:00.655 [Thread-39] () INFO  - Trying to update stale response for key: ket
+19:21:00.658 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51807
+19:21:00.661 [Thread-46] () INFO  - Trying to update stale response for key: ket
+19:21:06.041 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51810
+19:21:06.045 [Thread-47] () INFO  - Trying to update stale response for key: ket
+19:21:06.049 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51811
+19:21:06.053 [Thread-57] () INFO  - Trying to update stale response for key: ket
+19:21:15.292 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51814
+19:21:15.295 [Thread-42] () INFO  - Trying to update stale response for key: ket
+19:21:15.298 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51815
+19:21:15.301 [Thread-44] () INFO  - Trying to update stale response for key: ket
+19:21:27.841 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51820
+19:21:27.845 [Thread-40] () INFO  - Trying to update stale response for key: ket
+19:21:27.848 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51821
+19:21:27.850 [Thread-58] () INFO  - Trying to update stale response for key: ket
+19:21:50.344 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51832
+19:21:50.346 [Thread-41] () INFO  - Trying to update stale response for key: ket
+19:21:50.350 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51833
+19:21:50.354 [Thread-45] () INFO  - Trying to update stale response for key: ket
+19:22:00.646 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51840
+19:22:00.648 [Thread-48] () INFO  - Trying to update stale response for key: ket
+19:22:00.651 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51841
+19:22:00.653 [Thread-43] () INFO  - Trying to update stale response for key: ket
+19:22:06.045 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51842
+19:22:06.047 [Thread-46] () INFO  - Trying to update stale response for key: ket
+19:22:06.050 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51843
+19:22:06.056 [Thread-42] () INFO  - Trying to update stale response for key: ket
+19:22:15.298 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51848
+19:22:15.300 [Thread-49] () INFO  - Trying to update stale response for key: ket
+19:22:15.304 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51849
+19:22:15.307 [Thread-59] () INFO  - Trying to update stale response for key: ket
+19:22:27.838 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51852
+19:22:27.841 [Thread-47] () INFO  - Trying to update stale response for key: ket
+19:22:27.844 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51853
+19:22:27.846 [Thread-50] () INFO  - Trying to update stale response for key: ket
+19:22:50.349 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51861
+19:22:50.352 [Thread-44] () INFO  - Trying to update stale response for key: ket
+19:22:50.356 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51862
+19:22:50.358 [Thread-43] () INFO  - Trying to update stale response for key: ket
+19:23:00.655 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51868
+19:23:00.657 [Thread-48] () INFO  - Trying to update stale response for key: ket
+19:23:00.662 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51869
+19:23:00.665 [Thread-44] () INFO  - Trying to update stale response for key: ket
+19:23:06.036 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51872
+19:23:06.038 [Thread-45] () INFO  - Trying to update stale response for key: ket
+19:23:06.044 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51873
+19:23:06.047 [Thread-45] () INFO  - Trying to update stale response for key: ket
+19:23:15.292 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51876
+19:23:15.295 [Thread-49] () INFO  - Trying to update stale response for key: ket
+19:23:15.299 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51877
+19:23:15.302 [Thread-46] () INFO  - Trying to update stale response for key: ket
+19:23:27.849 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51909
+19:23:27.869 [Thread-46] () INFO  - Trying to update stale response for key: ket
+19:23:27.873 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51910
+19:23:27.897 [Thread-50] () INFO  - Trying to update stale response for key: ket
+19:23:50.338 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51926
+19:23:50.342 [Thread-51] () INFO  - Trying to update stale response for key: ket
+19:23:50.351 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51927
+19:23:50.353 [Thread-51] () INFO  - Trying to update stale response for key: ket
+19:24:00.655 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51930
+19:24:00.658 [Thread-60] () INFO  - Trying to update stale response for key: ket
+19:24:00.662 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51931
+19:24:00.665 [Thread-47] () INFO  - Trying to update stale response for key: ket
+19:24:06.046 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51934
+19:24:06.047 [Thread-47] () INFO  - Trying to update stale response for key: ket
+19:24:06.050 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51935
+19:24:06.052 [Thread-52] () INFO  - Trying to update stale response for key: ket
+19:24:15.287 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51938
+19:24:15.289 [Thread-53] () INFO  - Trying to update stale response for key: ket
+19:24:15.292 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51939
+19:24:15.295 [Thread-61] () INFO  - Trying to update stale response for key: ket
+19:24:27.845 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51963
+19:24:27.847 [Thread-48] () INFO  - Trying to update stale response for key: ket
+19:24:27.850 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51964
+19:24:27.853 [Thread-52] () INFO  - Trying to update stale response for key: ket
+19:24:50.344 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51972
+19:24:50.346 [Thread-48] () INFO  - Trying to update stale response for key: ket
+19:24:50.350 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51973
+19:24:50.354 [Thread-54] () INFO  - Trying to update stale response for key: ket
+19:25:00.649 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51976
+19:25:00.651 [Thread-55] () INFO  - Trying to update stale response for key: ket
+19:25:00.654 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51977
+19:25:00.658 [Thread-49] () INFO  - Trying to update stale response for key: ket
+19:25:06.041 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51981
+19:25:06.044 [Thread-56] () INFO  - Trying to update stale response for key: ket
+19:25:06.047 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51982
+19:25:06.049 [Thread-49] () INFO  - Trying to update stale response for key: ket
+19:25:15.290 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51985
+19:25:15.293 [Thread-57] () INFO  - Trying to update stale response for key: ket
+19:25:15.301 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51986
+19:25:15.306 [Thread-62] () INFO  - Trying to update stale response for key: ket
+19:25:27.853 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51991
+19:25:27.855 [Thread-53] () INFO  - Trying to update stale response for key: ket
+19:25:27.858 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 51992
+19:25:27.861 [Thread-58] () INFO  - Trying to update stale response for key: ket
+19:25:50.336 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52001
+19:25:50.338 [Thread-50] () INFO  - Trying to update stale response for key: ket
+19:25:50.341 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52002
+19:25:50.343 [Thread-63] () INFO  - Trying to update stale response for key: ket
+19:26:00.655 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52005
+19:26:00.657 [Thread-64] () INFO  - Trying to update stale response for key: ket
+19:26:00.661 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52006
+19:26:00.663 [Thread-50] () INFO  - Trying to update stale response for key: ket
+19:26:06.043 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52009
+19:26:06.045 [Thread-54] () INFO  - Trying to update stale response for key: ket
+19:26:06.048 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52010
+19:26:06.050 [Thread-51] () INFO  - Trying to update stale response for key: ket
+19:26:15.299 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52014
+19:26:15.302 [Thread-51] () INFO  - Trying to update stale response for key: ket
+19:26:15.313 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52015
+19:26:15.316 [Thread-55] () INFO  - Trying to update stale response for key: ket
+19:26:27.847 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52022
+19:26:27.849 [Thread-52] () INFO  - Trying to update stale response for key: ket
+19:26:27.852 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52023
+19:26:27.855 [Thread-65] () INFO  - Trying to update stale response for key: ket
+19:26:50.337 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52033
+19:26:50.339 [Thread-52] () INFO  - Trying to update stale response for key: ket
+19:26:50.343 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52034
+19:26:50.345 [Thread-59] () INFO  - Trying to update stale response for key: ket
+19:27:00.646 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52037
+19:27:00.648 [Thread-53] () INFO  - Trying to update stale response for key: ket
+19:27:00.651 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52038
+19:27:00.656 [Thread-53] () INFO  - Trying to update stale response for key: ket
+19:27:06.035 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52044
+19:27:06.036 [Thread-66] () INFO  - Trying to update stale response for key: ket
+19:27:06.040 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52045
+19:27:06.044 [Thread-56] () INFO  - Trying to update stale response for key: ket
+19:27:15.289 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52049
+19:27:15.293 [Thread-60] () INFO  - Trying to update stale response for key: ket
+19:27:15.297 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52050
+19:27:15.302 [Thread-67] () INFO  - Trying to update stale response for key: ket
+19:27:27.850 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52056
+19:27:27.852 [Thread-68] () INFO  - Trying to update stale response for key: ket
+19:27:27.855 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52057
+19:27:27.857 [Thread-54] () INFO  - Trying to update stale response for key: ket
+19:27:50.337 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52065
+19:27:50.340 [Thread-69] () INFO  - Trying to update stale response for key: ket
+19:27:50.343 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52066
+19:27:50.345 [Thread-57] () INFO  - Trying to update stale response for key: ket
+19:28:00.651 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52071
+19:28:00.655 [Thread-61] () INFO  - Trying to update stale response for key: ket
+19:28:00.658 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52072
+19:28:00.661 [Thread-55] () INFO  - Trying to update stale response for key: ket
+19:28:06.036 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52073
+19:28:06.038 [Thread-70] () INFO  - Trying to update stale response for key: ket
+19:28:06.041 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52074
+19:28:06.044 [Thread-58] () INFO  - Trying to update stale response for key: ket
+19:28:15.289 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52079
+19:28:15.292 [Thread-62] () INFO  - Trying to update stale response for key: ket
+19:28:15.295 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52080
+19:28:15.297 [Thread-54] () INFO  - Trying to update stale response for key: ket
+19:28:27.846 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52083
+19:28:27.848 [Thread-63] () INFO  - Trying to update stale response for key: ket
+19:28:27.850 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52084
+19:28:27.853 [Thread-56] () INFO  - Trying to update stale response for key: ket
+19:28:50.346 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52095
+19:28:50.348 [Thread-55] () INFO  - Trying to update stale response for key: ket
+19:28:50.352 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52096
+19:28:50.354 [Thread-71] () INFO  - Trying to update stale response for key: ket
+19:29:00.647 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52101
+19:29:00.650 [Thread-57] () INFO  - Trying to update stale response for key: ket
+19:29:00.656 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52102
+19:29:00.659 [Thread-56] () INFO  - Trying to update stale response for key: ket
+19:29:06.039 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52105
+19:29:06.042 [Thread-57] () INFO  - Trying to update stale response for key: ket
+19:29:06.046 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52106
+19:29:06.049 [Thread-59] () INFO  - Trying to update stale response for key: ket
+19:29:15.298 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52110
+19:29:15.301 [Thread-72] () INFO  - Trying to update stale response for key: ket
+19:29:15.305 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52111
+19:29:15.308 [Thread-58] () INFO  - Trying to update stale response for key: ket
+19:29:27.866 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52116
+19:29:27.897 [Thread-58] () INFO  - Trying to update stale response for key: ket
+19:29:27.907 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52117
+19:29:27.940 [Thread-60] () INFO  - Trying to update stale response for key: ket
+19:29:50.336 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52126
+19:29:50.338 [Thread-61] () INFO  - Trying to update stale response for key: ket
+19:29:50.343 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52127
+19:29:50.345 [Thread-73] () INFO  - Trying to update stale response for key: ket
+19:30:00.649 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52130
+19:30:00.655 [Thread-59] () INFO  - Trying to update stale response for key: ket
+19:30:00.669 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52131
+19:30:00.734 [Thread-59] () INFO  - Trying to update stale response for key: ket
+19:30:06.046 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52134
+19:30:06.050 [Thread-64] () INFO  - Trying to update stale response for key: ket
+19:30:06.055 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52135
+19:30:06.060 [Thread-60] () INFO  - Trying to update stale response for key: ket
+19:30:15.300 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52138
+19:30:15.304 [Thread-65] () INFO  - Trying to update stale response for key: ket
+19:30:15.307 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52139
+19:30:15.311 [Thread-60] () INFO  - Trying to update stale response for key: ket
+19:30:27.853 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52148
+19:30:27.855 [Thread-66] () INFO  - Trying to update stale response for key: ket
+19:30:27.859 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52149
+19:30:27.863 [Thread-61] () INFO  - Trying to update stale response for key: ket
+19:30:50.348 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52157
+19:30:50.351 [Thread-62] () INFO  - Trying to update stale response for key: ket
+19:30:50.355 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52158
+19:30:50.356 [Thread-67] () INFO  - Trying to update stale response for key: ket
+19:31:00.655 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52161
+19:31:00.739 [Thread-63] () INFO  - Trying to update stale response for key: ket
+19:31:00.744 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52162
+19:31:00.748 [Thread-61] () INFO  - Trying to update stale response for key: ket
+19:31:06.037 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52167
+19:31:06.040 [Thread-62] () INFO  - Trying to update stale response for key: ket
+19:31:06.044 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52168
+19:31:06.049 [Thread-68] () INFO  - Trying to update stale response for key: ket
+19:31:15.293 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52171
+19:31:15.298 [Thread-62] () INFO  - Trying to update stale response for key: ket
+19:31:15.301 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52172
+19:31:15.304 [Thread-63] () INFO  - Trying to update stale response for key: ket
+19:31:27.842 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52177
+19:31:27.847 [Thread-63] () INFO  - Trying to update stale response for key: ket
+19:31:27.851 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52178
+19:31:27.853 [Thread-64] () INFO  - Trying to update stale response for key: ket
+19:31:50.345 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52189
+19:31:50.347 [Thread-65] () INFO  - Trying to update stale response for key: ket
+19:31:50.351 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52190
+19:31:50.355 [Thread-69] () INFO  - Trying to update stale response for key: ket
+19:32:00.652 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52193
+19:32:00.654 [Thread-70] () INFO  - Trying to update stale response for key: ket
+19:32:00.658 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52194
+19:32:00.660 [Thread-64] () INFO  - Trying to update stale response for key: ket
+19:32:06.033 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52197
+19:32:06.036 [Thread-74] () INFO  - Trying to update stale response for key: ket
+19:32:06.039 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52198
+19:32:06.043 [Thread-64] () INFO  - Trying to update stale response for key: ket
+19:32:15.293 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52201
+19:32:15.296 [Thread-66] () INFO  - Trying to update stale response for key: ket
+19:32:15.299 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52202
+19:32:15.301 [Thread-71] () INFO  - Trying to update stale response for key: ket
+19:32:27.849 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52207
+19:32:27.854 [Thread-65] () INFO  - Trying to update stale response for key: ket
+19:32:27.859 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52208
+19:32:27.863 [Thread-65] () INFO  - Trying to update stale response for key: ket
+19:32:50.338 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52217
+19:32:50.340 [Thread-75] () INFO  - Trying to update stale response for key: ket
+19:32:50.344 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52218
+19:32:50.347 [Thread-66] () INFO  - Trying to update stale response for key: ket
+19:33:00.644 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52221
+19:33:00.646 [Thread-67] () INFO  - Trying to update stale response for key: ket
+19:33:00.649 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52222
+19:33:00.652 [Thread-67] () INFO  - Trying to update stale response for key: ket
+19:33:06.032 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52225
+19:33:06.034 [Thread-72] () INFO  - Trying to update stale response for key: ket
+19:33:06.036 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52226
+19:33:06.038 [Thread-66] () INFO  - Trying to update stale response for key: ket
+19:33:15.290 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52232
+19:33:15.292 [Thread-68] () INFO  - Trying to update stale response for key: ket
+19:33:15.294 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52233
+19:33:15.296 [Thread-68] () INFO  - Trying to update stale response for key: ket
+19:33:27.840 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52238
+19:33:27.842 [Thread-69] () INFO  - Trying to update stale response for key: ket
+19:33:27.845 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52239
+19:33:27.848 [Thread-73] () INFO  - Trying to update stale response for key: ket
+19:33:50.339 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52249
+19:33:50.341 [Thread-67] () INFO  - Trying to update stale response for key: ket
+19:33:50.343 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52250
+19:33:50.345 [Thread-74] () INFO  - Trying to update stale response for key: ket
+19:34:00.647 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52262
+19:34:00.650 [Thread-70] () INFO  - Trying to update stale response for key: ket
+19:34:00.657 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52263
+19:34:00.663 [Thread-69] () INFO  - Trying to update stale response for key: ket
+19:34:06.035 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52265
+19:34:06.037 [Thread-70] () INFO  - Trying to update stale response for key: ket
+19:34:06.040 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52266
+19:34:06.043 [Thread-76] () INFO  - Trying to update stale response for key: ket
+19:34:15.288 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52271
+19:34:15.291 [Thread-71] () INFO  - Trying to update stale response for key: ket
+19:34:15.294 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52272
+19:34:15.296 [Thread-75] () INFO  - Trying to update stale response for key: ket
+19:34:27.854 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52278
+19:34:27.860 [Thread-72] () INFO  - Trying to update stale response for key: ket
+19:34:27.864 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52279
+19:34:27.870 [Thread-68] () INFO  - Trying to update stale response for key: ket
+19:34:50.340 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52287
+19:34:50.343 [Thread-76] () INFO  - Trying to update stale response for key: ket
+19:34:50.346 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52288
+19:34:50.347 [Thread-71] () INFO  - Trying to update stale response for key: ket
+19:35:00.646 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52293
+19:35:00.648 [Thread-69] () INFO  - Trying to update stale response for key: ket
+19:35:00.652 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52294
+19:35:00.654 [Thread-72] () INFO  - Trying to update stale response for key: ket
+19:35:06.040 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52296
+19:35:06.042 [Thread-77] () INFO  - Trying to update stale response for key: ket
+19:35:06.045 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52297
+19:35:06.047 [Thread-73] () INFO  - Trying to update stale response for key: ket
+19:35:15.298 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52302
+19:35:15.300 [Thread-74] () INFO  - Trying to update stale response for key: ket
+19:35:15.303 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52303
+19:35:15.306 [Thread-77] () INFO  - Trying to update stale response for key: ket
+19:35:27.852 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52307
+19:35:27.854 [Thread-70] () INFO  - Trying to update stale response for key: ket
+19:35:27.857 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52308
+19:35:27.860 [Thread-73] () INFO  - Trying to update stale response for key: ket
+19:35:50.333 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52318
+19:35:50.335 [Thread-71] () INFO  - Trying to update stale response for key: ket
+19:35:50.339 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52319
+19:35:50.341 [Thread-75] () INFO  - Trying to update stale response for key: ket
+19:36:00.645 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52324
+19:36:00.648 [Thread-74] () INFO  - Trying to update stale response for key: ket
+19:36:00.652 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52325
+19:36:00.654 [Thread-72] () INFO  - Trying to update stale response for key: ket
+19:36:06.039 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52328
+19:36:06.049 [Thread-76] () INFO  - Trying to update stale response for key: ket
+19:36:06.056 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52329
+19:36:06.063 [Thread-78] () INFO  - Trying to update stale response for key: ket
+19:36:15.289 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52332
+19:36:15.291 [Thread-77] () INFO  - Trying to update stale response for key: ket
+19:36:15.295 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52333
+19:36:15.297 [Thread-75] () INFO  - Trying to update stale response for key: ket
+19:36:27.842 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52338
+19:36:27.845 [Thread-73] () INFO  - Trying to update stale response for key: ket
+19:36:27.849 [main] (12346) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52339
+19:36:27.852 [Thread-76] () INFO  - Trying to update stale response for key: ket
+19:36:50.341 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52354
+19:36:50.351 [Thread-78] () INFO  - Trying to update stale response for key: ket
+19:36:50.356 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52355
+19:36:50.358 [Thread-79] () INFO  - Trying to update stale response for key: ket
+19:37:00.647 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52358
+19:37:00.650 [Thread-80] () INFO  - Trying to update stale response for key: ket
+19:37:00.652 [main] (12348) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52359
+19:37:00.655 [Thread-74] () INFO  - Trying to update stale response for key: ket
+19:37:06.051 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52362
+19:37:06.056 [Thread-78] () INFO  - Trying to update stale response for key: ket
+19:37:06.061 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52363
+19:37:06.064 [Thread-81] () INFO  - Trying to update stale response for key: ket
+19:37:15.299 [main] (12349) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52366
+19:37:15.302 [Thread-79] () INFO  - Trying to update stale response for key: ket
+19:37:15.305 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52367
+19:37:15.313 [Thread-79] () INFO  - Trying to update stale response for key: ket
+19:37:27.843 [main] (12345) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52375
+19:37:27.846 [Thread-82] () INFO  - Trying to update stale response for key: ket
+19:37:27.849 [main] (12347) INFO  - Replica connected. Replica IP: 127.0.0.1 Port: 52376
+19:37:27.852 [Thread-80] () INFO  - Trying to update stale response for key: ket
