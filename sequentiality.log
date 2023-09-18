@@ -1,0 +1,156 @@
+Replica 12345:
+22:56:39.258 [Thread-0] (12345) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:56:43.873 [Thread-13] (12345) INFO  - Put request for key: test2key with value: test2value and version: 1
+
+test1key1: ['test1value1']
+test2key: ['test2value']
+
+
+Replica 12346:
+22:56:39.242 [Thread-0] (12346) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:56:39.250 [Thread-1] (12346) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:56:43.857 [Thread-2] (12346) INFO  - Put request for key: test2key with value: test2value and version: 1
+22:56:51.660 [Thread-26] (12346) INFO  - Put request for key: test4key0 with value: newValue35 and version: 1
+22:56:51.668 [Thread-28] (12346) INFO  - Put request for key: test4key6 with value: newValue8 and version: 1
+22:56:51.709 [Thread-29] (12346) INFO  - Put request for key: test4key4 with value: newValue19 and version: 1
+22:56:51.711 [Thread-30] (12346) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:56:51.746 [Thread-32] (12346) INFO  - Put request for key: test4key2 with value: newValue91 and version: 1
+22:56:51.746 [Thread-31] (12346) INFO  - Put request for key: test4key7 with value: newValue39 and version: 1
+22:56:51.778 [Thread-33] (12346) INFO  - Put request for key: test4key1 with value: newValue81 and version: 1
+22:56:51.778 [Thread-34] (12346) INFO  - Put request for key: test4key5 with value: newValue35 and version: 1
+22:56:51.810 [Thread-35] (12346) INFO  - Put request for key: test4key5 with value: newValue31 and version: 2
+22:56:51.810 [Thread-36] (12346) INFO  - Put request for key: test4key1 with value: newValue84 and version: 2
+22:56:51.851 [Thread-38] (12346) INFO  - Put request for key: test4key3 with value: newValue13 and version: 1
+22:56:51.851 [Thread-37] (12346) INFO  - Put request for key: test4key4 with value: newValue37 and version: 2
+22:56:51.891 [Thread-40] (12346) INFO  - Put request for key: test4key8 with value: newValue86 and version: 1
+22:56:51.895 [Thread-39] (12346) INFO  - Put request for key: test4key7 with value: newValue95 and version: 2
+22:56:51.931 [Thread-41] (12346) INFO  - Put request for key: test4key9 with value: newValue58 and version: 1
+22:56:51.947 [Thread-43] (12346) INFO  - Put request for key: test4key8 with value: newValue49 and version: 2
+22:56:52.020 [Thread-44] (12346) INFO  - Put request for key: test4key2 with value: newValue35 and version: 2
+22:56:52.028 [Thread-45] (12346) INFO  - Put request for key: test4key3 with value: newValue63 and version: 2
+
+test1key1: ['test1value1']
+test1key0: ['test1value0']
+test2key: ['test2value']
+test4key0: ['newValue35']
+test4key6: ['newValue8', 'newValue6']
+test4key4: ['newValue19', 'newValue37']
+test4key2: ['newValue91', 'newValue35']
+test4key7: ['newValue39', 'newValue95']
+test4key1: ['newValue81', 'newValue84']
+test4key5: ['newValue35', 'newValue31']
+test4key3: ['newValue13', 'newValue63']
+test4key8: ['newValue86', 'newValue49']
+test4key9: ['newValue58']
+
+
+Replica 12347:
+22:56:39.266 [Thread-0] (12347) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:56:39.266 [Thread-1] (12347) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:56:43.880 [Thread-13] (12347) INFO  - Put request for key: test2key with value: test2value and version: 1
+22:56:51.684 [Thread-36] (12347) INFO  - Put request for key: test4key0 with value: newValue35 and version: 1
+22:56:51.684 [Thread-38] (12347) INFO  - Put request for key: test4key6 with value: newValue8 and version: 1
+22:56:51.713 [Thread-39] (12347) INFO  - Put request for key: test4key4 with value: newValue19 and version: 1
+22:56:51.717 [Thread-40] (12347) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:56:51.753 [Thread-42] (12347) INFO  - Put request for key: test4key2 with value: newValue91 and version: 1
+22:56:51.753 [Thread-41] (12347) INFO  - Put request for key: test4key7 with value: newValue39 and version: 1
+22:56:51.778 [Thread-43] (12347) INFO  - Put request for key: test4key1 with value: newValue81 and version: 1
+22:56:51.778 [Thread-44] (12347) INFO  - Put request for key: test4key5 with value: newValue35 and version: 1
+22:56:51.810 [Thread-45] (12347) INFO  - Put request for key: test4key5 with value: newValue31 and version: 2
+22:56:51.810 [Thread-46] (12347) INFO  - Put request for key: test4key1 with value: newValue84 and version: 2
+22:56:51.851 [Thread-47] (12347) INFO  - Put request for key: test4key3 with value: newValue13 and version: 1
+22:56:51.851 [Thread-48] (12347) INFO  - Put request for key: test4key4 with value: newValue37 and version: 2
+22:56:51.899 [Thread-49] (12347) INFO  - Put request for key: test4key8 with value: newValue86 and version: 1
+22:56:51.899 [Thread-50] (12347) INFO  - Put request for key: test4key7 with value: newValue95 and version: 2
+22:56:51.939 [Thread-51] (12347) INFO  - Put request for key: test4key9 with value: newValue58 and version: 1
+22:56:51.955 [Thread-53] (12347) INFO  - Put request for key: test4key8 with value: newValue49 and version: 2
+22:56:52.020 [Thread-54] (12347) INFO  - Put request for key: test4key2 with value: newValue35 and version: 2
+22:56:52.037 [Thread-55] (12347) INFO  - Put request for key: test4key3 with value: newValue63 and version: 2
+
+test1key0: ['test1value0']
+test1key1: ['test1value1']
+test2key: ['test2value']
+test4key0: ['newValue35']
+test4key6: ['newValue8', 'newValue6']
+test4key4: ['newValue19', 'newValue37']
+test4key2: ['newValue91', 'newValue35']
+test4key7: ['newValue39', 'newValue95']
+test4key1: ['newValue81', 'newValue84']
+test4key5: ['newValue35', 'newValue31']
+test4key3: ['newValue13', 'newValue63']
+test4key8: ['newValue86', 'newValue49']
+test4key9: ['newValue58']
+
+
+Replica 12348:
+22:56:39.258 [Thread-0] (12348) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:56:39.266 [Thread-1] (12348) INFO  - Put request for key: test1key1 with value: test1value1 and version: 1
+22:56:43.878 [Thread-22] (12348) INFO  - Put request for key: test2key with value: test2value and version: 1
+22:56:51.676 [Thread-24] (12348) INFO  - Put request for key: test4key0 with value: newValue35 and version: 1
+22:56:51.676 [Thread-26] (12348) INFO  - Put request for key: test4key6 with value: newValue8 and version: 1
+22:56:51.711 [Thread-27] (12348) INFO  - Put request for key: test4key4 with value: newValue19 and version: 1
+22:56:51.715 [Thread-28] (12348) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:56:51.746 [Thread-30] (12348) INFO  - Put request for key: test4key2 with value: newValue91 and version: 1
+22:56:51.753 [Thread-29] (12348) INFO  - Put request for key: test4key7 with value: newValue39 and version: 1
+22:56:51.778 [Thread-31] (12348) INFO  - Put request for key: test4key1 with value: newValue81 and version: 1
+22:56:51.778 [Thread-32] (12348) INFO  - Put request for key: test4key5 with value: newValue35 and version: 1
+22:56:51.810 [Thread-33] (12348) INFO  - Put request for key: test4key5 with value: newValue31 and version: 2
+22:56:51.810 [Thread-34] (12348) INFO  - Put request for key: test4key1 with value: newValue84 and version: 2
+22:56:51.851 [Thread-35] (12348) INFO  - Put request for key: test4key3 with value: newValue13 and version: 1
+22:56:51.851 [Thread-36] (12348) INFO  - Put request for key: test4key4 with value: newValue37 and version: 2
+22:56:51.895 [Thread-37] (12348) INFO  - Put request for key: test4key8 with value: newValue86 and version: 1
+22:56:51.899 [Thread-38] (12348) INFO  - Put request for key: test4key7 with value: newValue95 and version: 2
+22:56:51.931 [Thread-39] (12348) INFO  - Put request for key: test4key9 with value: newValue58 and version: 1
+22:56:51.947 [Thread-41] (12348) INFO  - Put request for key: test4key8 with value: newValue49 and version: 2
+22:56:52.020 [Thread-42] (12348) INFO  - Put request for key: test4key2 with value: newValue35 and version: 2
+22:56:52.028 [Thread-43] (12348) INFO  - Put request for key: test4key3 with value: newValue63 and version: 2
+
+test1key0: ['test1value0']
+test1key1: ['test1value1']
+test2key: ['test2value']
+test4key0: ['newValue35']
+test4key6: ['newValue8', 'newValue6']
+test4key4: ['newValue19', 'newValue37']
+test4key2: ['newValue91', 'newValue35']
+test4key7: ['newValue39', 'newValue95']
+test4key1: ['newValue81', 'newValue84']
+test4key5: ['newValue35', 'newValue31']
+test4key3: ['newValue13', 'newValue63']
+test4key8: ['newValue86', 'newValue49']
+test4key9: ['newValue58']
+
+
+Replica 12349:
+22:56:39.266 [Thread-0] (12349) INFO  - Put request for key: test1key0 with value: test1value0 and version: 1
+22:56:51.684 [Thread-26] (12349) INFO  - Put request for key: test4key0 with value: newValue35 and version: 1
+22:56:51.684 [Thread-28] (12349) INFO  - Put request for key: test4key6 with value: newValue8 and version: 1
+22:56:51.714 [Thread-29] (12349) INFO  - Put request for key: test4key4 with value: newValue19 and version: 1
+22:56:51.721 [Thread-30] (12349) INFO  - Put request for key: test4key6 with value: newValue6 and version: 2
+22:56:51.753 [Thread-32] (12349) INFO  - Put request for key: test4key2 with value: newValue91 and version: 1
+22:56:51.753 [Thread-31] (12349) INFO  - Put request for key: test4key7 with value: newValue39 and version: 1
+22:56:51.778 [Thread-33] (12349) INFO  - Put request for key: test4key1 with value: newValue81 and version: 1
+22:56:51.778 [Thread-34] (12349) INFO  - Put request for key: test4key5 with value: newValue35 and version: 1
+22:56:51.818 [Thread-36] (12349) INFO  - Put request for key: test4key1 with value: newValue84 and version: 2
+22:56:51.818 [Thread-35] (12349) INFO  - Put request for key: test4key5 with value: newValue31 and version: 2
+22:56:51.859 [Thread-38] (12349) INFO  - Put request for key: test4key4 with value: newValue37 and version: 2
+22:56:51.859 [Thread-37] (12349) INFO  - Put request for key: test4key3 with value: newValue13 and version: 1
+22:56:51.899 [Thread-39] (12349) INFO  - Put request for key: test4key8 with value: newValue86 and version: 1
+22:56:51.899 [Thread-40] (12349) INFO  - Put request for key: test4key7 with value: newValue95 and version: 2
+22:56:51.939 [Thread-42] (12349) INFO  - Put request for key: test4key9 with value: newValue58 and version: 1
+22:56:51.955 [Thread-43] (12349) INFO  - Put request for key: test4key8 with value: newValue49 and version: 2
+22:56:52.028 [Thread-44] (12349) INFO  - Put request for key: test4key2 with value: newValue35 and version: 2
+22:56:52.039 [Thread-45] (12349) INFO  - Put request for key: test4key3 with value: newValue63 and version: 2
+
+test1key0: ['test1value0']
+test4key0: ['newValue35']
+test4key6: ['newValue8', 'newValue6']
+test4key4: ['newValue19', 'newValue37']
+test4key2: ['newValue91', 'newValue35']
+test4key7: ['newValue39', 'newValue95']
+test4key1: ['newValue81', 'newValue84']
+test4key5: ['newValue35', 'newValue31']
+test4key3: ['newValue13', 'newValue63']
+test4key8: ['newValue86', 'newValue49']
+test4key9: ['newValue58']
+
+
