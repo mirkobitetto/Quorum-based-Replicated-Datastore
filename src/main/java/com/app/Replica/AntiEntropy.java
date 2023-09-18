@@ -136,7 +136,7 @@ public class AntiEntropy {
                 PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
                 BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
 
-            String updateRequest = "UPDATE " + key + " " + value + " " + version;
+            String updateRequest = "Replica "+ replicaAddress + ": UPDATE " + key + " " + value + " " + version;
             output.println(updateRequest);
 
             // Receive the response from the replica

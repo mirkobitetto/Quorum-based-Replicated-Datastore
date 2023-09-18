@@ -21,7 +21,8 @@ public class QuorumTest1 {
     @Before
     public void setUp() {
         // Initialize the Quorum instance here if needed.
-        quorum = new Quorum();
+        String clientID = Integer.toString((int) (Math.random() * 1000));
+        quorum = new Quorum(clientID);
     }
 
     @Test
