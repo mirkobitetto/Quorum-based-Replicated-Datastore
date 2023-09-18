@@ -6,7 +6,6 @@ import static org.junit.Assert.*;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 /**
  * This class contains unit tests for the {@link com.app.Client.Quorum} class.
@@ -34,7 +33,8 @@ public class QuorumTest2 {
             final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    Quorum quorum = new Quorum(); // Create a Quorum instance for each client
+                    String clientID = Integer.toString(clientNr+1);
+                    Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentGetOnDifferentKeys(quorum, numOperations, clientNr); // Perform concurrent
                                                                                           // operations
@@ -55,9 +55,11 @@ public class QuorumTest2 {
         ExecutorService executorService = Executors.newFixedThreadPool(numClients);
 
         for (int i = 0; i < numClients; i++) {
+            final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    Quorum quorum = new Quorum(); // Create a Quorum instance for each client
+                    String clientID = Integer.toString(clientNr+1);
+                    Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentGetOnSameKey(quorum, numOperations); // Perform concurrent operations
                     doneSignal.countDown();
@@ -77,12 +79,13 @@ public class QuorumTest2 {
         ExecutorService executorService = Executors.newFixedThreadPool(numClients);
 
         for (int i = 0; i < numClients; i++) {
-            final int writeQuorumIndex = i;
+            final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    Quorum quorum = new Quorum(); // Create a Quorum instance for each client
+                    String clientID = Integer.toString(clientNr+1);
+                    Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
-                    performConcurrentGetWhileWriteInProgress(quorum, numOperations, writeQuorumIndex); // Perform
+                    performConcurrentGetWhileWriteInProgress(quorum, numOperations, clientNr); // Perform
                                                                                                        // concurrent
                                                                                                        // operations
                     doneSignal.countDown();
@@ -102,9 +105,11 @@ public class QuorumTest2 {
         ExecutorService executorService = Executors.newFixedThreadPool(numClients);
 
         for (int i = 0; i < numClients; i++) {
+            final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    Quorum quorum = new Quorum(); // Create a Quorum instance for each client
+                    String clientID = Integer.toString(clientNr+1);
+                    Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentWritesOnDifferentKeys(quorum, numOperations); // Perform concurrent operations
                     doneSignal.countDown();
@@ -124,9 +129,11 @@ public class QuorumTest2 {
         ExecutorService executorService = Executors.newFixedThreadPool(numClients);
 
         for (int i = 0; i < numClients; i++) {
+            final int clientNr = i;
             executorService.execute(() -> {
                 try {
-                    Quorum quorum = new Quorum(); // Create a Quorum instance for each client
+                    String clientID = Integer.toString(clientNr+1);
+                    Quorum quorum = new Quorum(clientID); // Create a Quorum instance for each client
                     startSignal.await(); // Wait for the signal to start concurrently
                     performConcurrentWritesOnSameKey(quorum, numOperations); // Perform concurrent operations
                     doneSignal.countDown();

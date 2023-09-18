@@ -12,14 +12,16 @@ import java.util.Set;
 public class Quorum {
     private List<String> readQuorumList;
     private List<String> writeQuorumList;
+    private String clientID;
 
-    public Quorum() {
+    public Quorum(String clientID) {
         try {
+            this.clientID = clientID;
             // Load the configuration file using the ClassLoader
             Properties properties = loadConfigFile("config.properties");
 
             if (properties == null) {
-                System.out.println("Error: Failed to load configuration file.");
+                System.out.println("Error in Client " + clientID + ": Failed to load configuration file.");
                 return;
             }
 
@@ -30,7 +32,7 @@ public class Quorum {
 
             // Perform runtime checks on the read quorum and write quorum
             if (writeQuorum <= numReplicas / 2 || writeQuorum + readQuorum <= numReplicas) {
-                System.out.println("Error: Invalid read and write quorum values. Please check the configuration file.");
+                System.out.println("Error in Client " + clientID + ": Invalid read and write quorum values. Please check the configuration file.");
                 return;
             }
 
@@ -40,7 +42,7 @@ public class Quorum {
                 String replicaKey = "replica" + i;
                 String replicaInfo = properties.getProperty(replicaKey);
                 if (replicaInfo == null) {
-                    System.out.println("Replica information not found for " + replicaKey);
+                    System.out.println("Client " + clientID + ": Replica information not found for " + replicaKey);
                     return;
                 }
                 replicaInfoList.add(replicaInfo);
@@ -63,8 +65,8 @@ public class Quorum {
             writeQuorumList = new ArrayList<>(writeQuorumSet);
 
             // Print the read quorum and write quorum
-            System.out.println("Read quorum: " + readQuorumList);
-            System.out.println("Write quorum: " + writeQuorumList);
+            System.out.println("Read quorum Client " + clientID + ": " + readQuorumList);
+            System.out.println("Write quorum Client " + clientID + ": " + writeQuorumList);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -105,11 +107,11 @@ public class Quorum {
             int serverPort = Integer.parseInt(parts[1]);
 
             try {
-                ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort);
+                ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort, clientID);
                 String value = connection.get(key);
                 values.add(value);
                 serverSocket.add(serverAddress + ":" + serverPort);
-                System.out.println("GET operation successful on Replica " + connection.toString() + ". Key: " + key
+                System.out.println("Client " + clientID + ":\nGET operation successful on Replica " + connection.toString() + ". Key: " + key
                         + " Value: " + value);
                 connection.closeConnection();
 
@@ -148,9 +150,9 @@ public class Quorum {
                     String valueToSend = mostRecentValue.split(" ")[1];
                     int serverPort = Integer.parseInt(serverInfo[1]);
                     try {
-                        ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort);
+                        ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort, clientID);
                         connection.update(key, valueToSend, highestVersionNumber);
-                        System.out.println("UPDATE operation sent on Replica " + connection.toString()
+                        System.out.println("Client " + clientID + ":\nUPDATE operation sent on Replica " + connection.toString()
                                 + ". Key: " + key + " Value: " + valueToSend);
                         connection.closeConnection();
                     } catch (Exception e) {
@@ -160,14 +162,14 @@ public class Quorum {
             }
         }
 
-        System.out.println("GET RESULT: " + mostRecentValue);
+        System.out.println("Client " + clientID + ":\nResult of GET operation: " + mostRecentValue);
         return mostRecentValue;
 
     }
 
     public String putValue(String key, String value) {
         if (key == null || value == null) {
-            throw new IllegalArgumentException("Key or value cannot be null");
+            throw new IllegalArgumentException("Client " + clientID + ":\nKey or value cannot be null");
         }
         // Create connections to replicas
         List<ReplicaConnection> replicaConnections = new ArrayList<>();
@@ -176,7 +178,7 @@ public class Quorum {
             String serverAddress = parts[0];
             int serverPort = Integer.parseInt(parts[1]);
             try {
-                ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort);
+                ReplicaConnection connection = new ReplicaConnection(serverAddress, serverPort, clientID);
                 replicaConnections.add(connection);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -195,12 +197,12 @@ public class Quorum {
             }
             if (lockAcquired == -1) {
                 System.out
-                        .println("Failed to acquire lock on Replica: " + (connection.toString() + " for key: " + key));
+                        .println("Client " + clientID + ":\nFailed to acquire lock on Replica: " + (connection.toString() + " for key: " + key));
                 releaseLocks(replicaConnections, key);
                 closeReplicaConnections(replicaConnections);
                 return "false";
             } else {
-                System.out.println("Lock acquired on Replica " + (connection.toString())
+                System.out.println("Client " + clientID + ":\nLock acquired on Replica " + (connection.toString())
                         + " Key: " + key + " Version Number: " + lockAcquired);
                 versionNumbers.add(lockAcquired);
             }
@@ -214,11 +216,11 @@ public class Quorum {
             try {
                 if (connection.put(key, value, newVersionNumber)) {
                     System.out
-                            .println("PUT operation successful on Replica " + (connection.toString())
+                            .println("Client " + clientID + ":\nPUT operation successful on Replica " + (connection.toString())
                                     + ". Key: " + key + " Value: " + value + " Version Number: " + newVersionNumber);
                 } else {
                     System.out
-                            .println("PUT operation failed on Replica " + (connection.toString()) + " for key: " + key);
+                            .println("Client " + clientID + ":\nPUT operation failed on Replica " + (connection.toString()) + " for key: " + key);
                 }
             } catch (Exception e) {
                 e.printStackTrace();
@@ -227,7 +229,7 @@ public class Quorum {
 
         // Close connections to replicas
         closeReplicaConnections(replicaConnections);
-        System.out.println("PUT operation successful");
+        System.out.println("Client " + clientID + ":\nPUT operation successful");
 
         return "true";
     }

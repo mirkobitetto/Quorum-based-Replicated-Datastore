@@ -7,7 +7,8 @@ public class Client {
         printAsciiArt();
         System.out.println("Welcome to the Quorum-based Replicated Datastore Client!\n");
 
-        Quorum quorum = new Quorum();
+        String clientID = Integer.toString((int) (Math.random() * 1000));
+        Quorum quorum = new Quorum(clientID);
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
